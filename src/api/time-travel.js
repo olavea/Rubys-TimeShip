@@ -2,8 +2,8 @@
 // Try changing some stuff and see what happens
 // http://localhost:8000/api/time-travel
 
-const CORRECT_YEAR = "2026";
-const CORRECT_CITY = "Oslo";
+const CORRECT_YEAR = "1554";
+const CORRECT_CITY = "London";
 
 export default function handler(req, res) {
   const { city, year } = req.body;
