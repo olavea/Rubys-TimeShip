@@ -16,8 +16,15 @@
   },
   "dependencies": {
     "@raae/gatsby-plugin-new-css": "0.0.1",
+    "dotenv": "^10.0.0",
     "gatsby": "4.0.2",
     "gatsby-plugin-gatsby-cloud": "4.0.0",
+    "gatsby-plugin-image": "^2.1.1",
+    "gatsby-plugin-sanity-image": "^0.10.0",
+    "gatsby-plugin-sharp": "^4.1.2",
+    "gatsby-source-filesystem": "^4.1.1",
+    "gatsby-source-sanity": "^7.1.0",
+    "gatsby-transformer-sharp": "^4.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }
