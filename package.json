@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@raae/gatsby-plugin-new-css": "0.0.1",
+    "@supabase/supabase-js": "^1.27.0",
     "gatsby": "4.0.2",
     "gatsby-plugin-gatsby-cloud": "4.0.0",
     "react": "17.0.2",
