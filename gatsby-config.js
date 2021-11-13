@@ -32,6 +32,7 @@ module.exports = {
         projectId: "fr5nacyp",
         dataset: "production",
       },
-    }
+    },
+    `@raae/gatsby-plugin-let-it-snow`
   ],
 };
