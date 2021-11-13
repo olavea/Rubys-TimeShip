@@ -18,8 +18,6 @@ async function sharkCookieBaking({ graphql, actions}) {
 //        create a shark page for that pizza 🍕🎩🦈
       const { createPage } = actions
       // //     3. 🦈
-
-
     data.sharkyCookie.nodes.forEach(shark => {
 
 //     4.  🎩 🦈
@@ -27,15 +25,14 @@ async function sharkCookieBaking({ graphql, actions}) {
             //     A. is for Ahoy! On the path we embark
             path: `shark/${shark.originalFilename}`,
             //     B. is a bake-template for baking a shark
-            //     change name to bakeTemplate
             component: bakeSharkRecipeTemplate,
-            //     C. is the context a fox and a kitten 🦊 + 😺 = 🦷
+            //     C. is the context a fox + a kitten 🦊 + 😺
             context: {
                 fox: 'is hungry',
                 id: shark.id,
             },
             //     D. is for DSG, defer to get bitten
-
+            defer: true,
         })
         console.log(shark.name, '🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈');
     });
