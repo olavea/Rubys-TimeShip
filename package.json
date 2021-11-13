@@ -19,7 +19,7 @@
     "dotenv": "^10.0.0",
     "gatsby": "4.0.2",
     "gatsby-plugin-gatsby-cloud": "4.0.0",
-    "gatsby-plugin-image": "^2.1.1",
+    "gatsby-plugin-image": "^2.1.2",
     "gatsby-plugin-sanity-image": "^0.10.0",
     "gatsby-plugin-sharp": "^4.1.2",
     "gatsby-source-filesystem": "^4.1.1",

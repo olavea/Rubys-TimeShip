@@ -8,7 +8,7 @@ async function pirateUseYourHook({ graphql, actions}) {
     const { data } = await graphql(`
         query {
             sharkyGingerbreads: allSanityPizza {
-                nodes {0
+                nodes {
                     name
                     id
                     slug {
