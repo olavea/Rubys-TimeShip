@@ -14,7 +14,7 @@ module.exports = {
     "gatsby-plugin-image",
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-source-filesystem`,
+//    `gatsby-source-filesystem`,
     {
       // this is the name of the plugin i am adding. Says Wes Bos
       resolve: 'gatsby-source-sanity',

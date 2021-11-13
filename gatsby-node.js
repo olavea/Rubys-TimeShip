@@ -1,49 +1,47 @@
 const path = require('path');
 
-
-async function pirateUseYourHook({ graphql, actions}) {
-// //     1. 🍕
-    const pizzaTemplate = path.resolve('./src/templates/Pizza.js');
-// //     2. 🍕🏴‍☠️
+async function sharkCookieBaking({ graphql, actions}) {
+    //     1. 🍕🗺️ Get a pizza template for this page 🍕🗺️🏴‍☠️
+    const bakeSharkRecipeTemplate = path.resolve('./src/templates/Pizza.js');
+    //     2. 🍕🖼️ Query all pizza images inside my sanity🍕🖼️ 🏴‍☠️🏴‍☠️🏴‍☠️
     const { data } = await graphql(`
         query {
-            sharkyGingerbreads: allSanityPizza {
-                nodes {
-                    name
-                    id
-                    slug {
-                        current
-                    }
-                }
+            sharkyCookie: allSanityImageAsset {
+              nodes {
+                id
+                originalFilename
+              }
             }
         }
       `);
-//     4. A 🎩 🦈
+//     3. 🍕🎩🦈 Loop over each pizza image and
+//        create a shark page for that pizza 🍕🎩🦈
       const { createPage } = actions
       // //     3. 🦈
 
 
-    data.sharkyGingerbreads.nodes.forEach(shark => {
+    data.sharkyCookie.nodes.forEach(shark => {
 
-//     4. B 🎩 🦈
+//     4.  🎩 🦈
         createPage({
-            //     4. C 🎩 🦈
-            path: `shark/${shark.name}`,
-            //     4. D 🎩 🦈
-            component: pizzaTemplate,
-            //     4. F 🎩 🦈
+            //     A. is for Ahoy! On the path we embark
+            path: `shark/${shark.originalFilename}`,
+            //     B. is a bake-template for baking a shark
+            //     change name to bakeTemplate
+            component: bakeSharkRecipeTemplate,
+            //     C. is the context a fox and a kitten 🦊 + 😺 = 🦷
             context: {
-                slug: shark.slug.current,
+                fox: 'is hungry',
+                id: shark.id,
             },
+            //     D. is for DSG, defer to get bitten
 
         })
         console.log(shark.name, '🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈');
     });
 };
 
-
-
-// //     0.
+// //     0. Cap'n CreatePages Hook
 exports.createPages = async (params) => {
-    await pirateUseYourHook(params);
+    await sharkCookieBaking(params);
 };
