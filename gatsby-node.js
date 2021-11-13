@@ -18,7 +18,7 @@ async function sharkCookieBaking({ graphql, actions}) {
 //        create a shark page for that pizza 🍕🎩🦈
       const { createPage } = actions
       // //     3. 🦈
-    data.sharkyCookie.nodes.forEach(shark => {
+      data.sharkyCookie.nodes.forEach(shark => {
 
 //     4.  🎩 🦈
         createPage({
@@ -32,7 +32,8 @@ async function sharkCookieBaking({ graphql, actions}) {
                 id: shark.id,
             },
             //     D. is for DSG, defer to get bitten
-            defer: true,
+            defer: false,
+
         })
         console.log(shark.name, '🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈');
     });
