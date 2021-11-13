@@ -17,7 +17,7 @@ import { createClient } from "@supabase/supabase-js";
  */
 export default ({
   supabaseUrl = process.env.SUPABASE_URL,
-  supabaseKey = process.env.SUPABASE_KEY,
+  supabaseKey = process.env.SUPABASE_SECRET_KEY,
 } = {}) => {
   const log = (...args) => {
     console.log("Travel:", ...args);
