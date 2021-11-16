@@ -1,45 +1,36 @@
-const path = require('path');
-
-async function sharkCookieBaking({ graphql, actions}) {
-    //     1. 🍕🗺️ Get a pizza template for this page 🍕🗺️🏴‍☠️
-    const bakeSharkRecipeTemplate = path.resolve('./src/templates/Pizza.js');
-    //     2. 🍕🖼️ Query all pizza images inside my sanity🍕🖼️ 🏴‍☠️🏴‍☠️🏴‍☠️
-    const { data } = await graphql(`
-        query {
-            sharkyCookie: allSanityImageAsset {
-              nodes {
-                id
-                originalFilename
-              }
+const path = require('path')
+async function bakingBunny({ graphql, actions }) {
+//      2. Song
+    const bakingSong = path.resolve('./src/templates/Pizza.js');
+//      3. Supplies in Sanity
+        const { data } = await graphql(`{
+            cookieSupplies: allSanityImageAsset {
+                nodes {
+                    id
+                }
             }
-        }
-      `);
-//     3. 🍕🎩🦈 Loop over each pizza image and
-//        create a shark page for that pizza 🍕🎩🦈
-      const { createPage } = actions
-      // //     3. 🦈
-      data.sharkyCookie.nodes.forEach(shark => {
-
-//     4.  🎩 🦈
-        createPage({
-            //     A. is for Ahoy! On the path we embark
-            path: `shark/${shark.originalFilename}`,
-            //     B. is a bake-template for baking a shark
-            component: bakeSharkRecipeTemplate,
-            //     C. is the context a fox + a kitten 🦊 + 😺
-            context: {
-                fox: 'is hungry',
-                id: shark.id,
-            },
-            //     D. is for DSG, defer to get bitten
-            defer: false,
-
-        })
-        console.log(shark.name, '🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈🦈');
-    });
+        }`)
+        // console.log(data.cookieSupplies.nodes);
+//     4. S-Loop over each tasty image and create a page for that image
+        const { createPage } = actions
+        data.cookieSupplies.nodes.forEach((shark, index) => {
+            createPage({
+                //     A. «Ahoy!» Says Fox «A path?! We'll embark!»
+                        path: `shark/${shark.id}`,
+                //     B. Is a kitten's bakingSong about a shark.
+                        component: bakingSong,
+                //     C. is the context, a fox hungry for kitten.
+                        context: {
+                            id: shark.id
+                        },
+                //     D. Is the plan «Let's defer to get bitten.»
+                        defer: index + 1 > 3,
+                //     E.
+                        ownerNodeId: shark.id,
+                });
+        });
 };
-
-// //     0. Cap'n CreatePages Hook
+//     1. Cap'n Catsby's createPages hook
 exports.createPages = async (params) => {
-    await sharkCookieBaking(params);
+    await bakingBunny(params)
 };

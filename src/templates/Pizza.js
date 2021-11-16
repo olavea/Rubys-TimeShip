@@ -2,6 +2,9 @@ import React from "react"
 import { graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
+// const path = require('path');
+
+
 export default function SinglePizzaPieratePage({ data }) {
     return (
         <div>
