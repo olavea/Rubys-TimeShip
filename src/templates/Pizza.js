@@ -22,7 +22,7 @@ export default function SinglePizzaPieratePage({ data }) {
 // based on the id passed in
 // via context in gatsby-node.js
 export const query = graphql`
-    query MyQuery($id: String) {
+    query MyQuery($id: String!) {
         sharkName: sanityImageAsset(id: {eq: $id}) {
             id
             gatsbyImageData(width: 800)
