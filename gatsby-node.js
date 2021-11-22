@@ -1,47 +1,42 @@
-const path = require('path')
-
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-
-  return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('./src/templates/blog-entry.js')
-            // I made my own graphQL query
-      resolve(
-        graphql(
-          `{
-           posts: allStoryblokEntry(filter: {field_component: {eq: "Post"}}) {
-              edges {
-                node {
-                  name
-                  full_slug
-                }
-              }
+//              0. ↪️ createPages hook ↩️
+exports.createPages = async ({ graphql, actions }) => {
+//              1. bakingSong = Lilly the Bunny require granny Shark's recipe
+    const bakingSong = require.resolve('./src/templates/recipe.js')
+//              2. Baking supplies = image nodes in Storyblok
+    const { data } = await graphql(`{
+        bakingSupplies: allStoryblokEntry(sort: {
+            fields: created_at,
+            order: DESC
+        })  {
+            nodes {
+                full_slug
+                id
             }
-          }`
-        ).then(result => {
-          if (result.errors) {
-            console.log(result.errors)
-            reject(result.errors)
           }
-            // I renamed variabe this to allSharks
-          const allSharks = result.data.posts.edges
+    }`)
+    console.log(data.bakingSupplies.nodes);
+//              Where are the nodes?
 
-          allSharks.forEach((entry) => {
-            // I added deferred: false, just because ....
-            // 👇 the name of content type
-            if(entry.slug !== "blog") {
-              const page = {
-                  defer: false,
-                  path: `/${entry.node.full_slug}`,
-                  component: blogPostTemplate,
-                  context: {
-                    story: entry.node
-                  }
-              }
-              createPage(page)
-            }
-          })
-        })
-      )
-    })
-}
+//              3. Loop over the image nodes and for each create a page
+//              A. 🦊
+//              B. 🐰
+//              C. 🐯
+//              D. 🎩
+    data.bakingSupplies.nodes.forEach((babySharkBatch, index) => {
+        actions.createPage({
+
+//              A. 🦊 «Ahoy! A path?!» Shouts Fox and embarks. and
+            path: `/${babySharkBatch.full_slug}`,
+//              B. 🐰 Bunny sings badly and bakes all the sharks.
+            component: bakingSong,
+//              C. 🐯 is the context: { fox: 'is hungry for kitten' } and
+            context: {
+                fox: 'is hungry for kitten',
+                id: babySharkBatch.id,
+            },
+
+//              D. 🎩 They defer the good cookies and maybe get bitten
+            defer: index + 1 > 1,
+        });
+    });
+};
