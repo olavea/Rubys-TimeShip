@@ -1,15 +1,19 @@
 import { graphql } from "gatsby";
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image"
-//              0. ↪️ createPages hook ↩️
 
-//              1. bakingSong = Lilly the Bunny require granny Shark's recipe
 
-//              2. bakingSupplies: = image nodes in Storyblok
+//              -1. Minus .md markDown
+
+//              00. ↪️ createPages hook ↩️
+
+//              01. bakingSong = Lilly the Bunny require granny Shark's recipe
+
+//              02. bakingSupplies: = image nodes in Storyblok
 
 //              Where are the nodes?
 
-//              3. Loop over the image nodes and for each create a page
+//              03. Loop over the image nodes and for each create a page
 //              A. 🦊
 //              B. 🐰
 //              C. 🐯
