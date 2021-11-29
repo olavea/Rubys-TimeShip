@@ -39,6 +39,19 @@ const IndexPage = () => {
         </p>
       </header>
 
+      <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
+        <fieldset>
+            <p>
+                <label htmlFor="amount">Amount Dollars: </label>
+                <br />
+                <input type="number" id="amount" name="amount" defaultValue="10" />
+            </p>
+            <p>
+                <button>Donate</button>
+            </p>
+        </fieldset>
+      </form>
+
       <form onSubmit={handleSubmit}>
         <fieldset disabled={isDisabled}>
           <p>
