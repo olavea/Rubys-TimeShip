@@ -11,13 +11,20 @@ exports.createPages = async ({ graphql, actions }) => {
     console.log('Madness? MADNESS?! This. Is. PAAAageees! 💪😺👢');
 
     const { data } = await graphql(`{
-        bakingSupplies: allFile {
+        bakingSupplies: allFile(sort: {fields: name, order: ASC}) {
           edges {
+            previous {
+              name
+            }
             node {
               id
               name
             }
+            next {
+              name
+            }
           }
+
         }
     }`)
     console.log(data.bakingSupplies.edges);
@@ -34,6 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
         context: {
           fox: 'is hungry for kitten',
           id: windowFullOfBabySharkCookies.node.id,  //babySharkBatch.localFile.id,
+          next: windowFullOfBabySharkCookies.next.name,
         },
 //              D. 🎩 They defer the good cookies and maybe get bitten
 //              Where are the nodes?

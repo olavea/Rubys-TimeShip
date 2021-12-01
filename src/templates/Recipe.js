@@ -3,7 +3,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image"
 import Img from "gatsby-image"
 
-export default function SinglePizzaPage({data}) {
+export default function SinglePizzaPage({data}, props) {
   console.log(data)
 //  console.log(data)
     return (
@@ -17,7 +17,8 @@ export default function SinglePizzaPage({data}) {
           src= {data.file.publicURL}
           alt= {data.file.name}
         />
-        <p> 🦈: {data.file.name}  🔽 GatsbyImage 🔽 / 🔼 img 🔼</p>
+        <p> 🦈: {data.file.name}  🔽 GatsbyImage {data.allFile.edges.next.name}   🔽 / 🔼 img 🔼</p>
+        <p></p>
         <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
       </div>
     )
@@ -37,6 +38,16 @@ query MyQuery($id: String!) {
         )
     }
 
+  }
+  allFile(filter: {id: {eq: $id}}) {
+    edges {
+      previous {
+        name
+      }
+      next {
+        name
+      }
+    }
   }
 }
 `;
