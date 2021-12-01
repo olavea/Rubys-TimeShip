@@ -1,9 +1,9 @@
 import { graphql } from "gatsby";
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
-export default function SinglePizzaPage({data}) {
+export default function SinglePizzaPage({data}, previous) {
   console.log(data)
 //  console.log(data)
     return (
@@ -18,25 +18,21 @@ export default function SinglePizzaPage({data}) {
           alt= {data.file.name}
         />
         <p> 🦈: {data.file.name}  🔽 GatsbyImage 🔽 / 🔼 img 🔼</p>
+        <p>{previous}</p>
         <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
       </div>
     )
 };
-//          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+
 export const query = graphql`
-query MyQuery($id: String!) {
-  file(id: {eq: $id}) {
+query MyQuery {
+  file(id: {eq: "92948aab-a5da-592d-bbed-e854c818e6ed"}) {
     id
     name
     publicURL
     childImageSharp {
-      gatsbyImageData(
-          width: 1333,
-          placeholder: BLURRED
-          formats: [AUTO, WEBP, AVIF]
-        )
+      gatsbyImageData(width: 1333, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
     }
-
   }
 }
 `;

@@ -9,8 +9,19 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        // Ahoy a path
+
         path: `${__dirname}/content`,
+        // B. is for babySharks
+        name: `images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
     // {

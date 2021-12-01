@@ -13,27 +13,35 @@ exports.createPages = async ({ graphql, actions }) => {
     const { data } = await graphql(`{
         bakingSupplies: allFile {
           edges {
+            previous {
+              name
+            }
             node {
               id
+              name
+            }
+            next {
               name
             }
           }
         }
     }`)
     console.log(data.bakingSupplies.edges);
-    data.bakingSupplies.edges.forEach(windowFullOfBabySharkCookies => {
+    data.bakingSupplies.edges.forEach(ahoyCookie => {
       actions.createPage({
 //              A. 🦊 «Ahoy! A path?!» Shouts Fox and embarks.
 // A windowFullOfBabySharkCookies
 //              A. 🦊 «Ahoy! A windowFullOfBabySharkCookies ?!» Barks Fox and embarks.
-        path: `${windowFullOfBabySharkCookies.node.name}`,
+        path: `${ahoyCookie.node.name}`,
 // //              B. 🐰 Bunny sings badly and bakes all the sharks.
 // //              B. is for bakingSong, sung badly by 🐰 Bunny who bakes bad babySharks.
         component: bakingSong,
 // //              C. 🐯 is the context: { fox: 'is hungry for kitten' }
         context: {
           fox: 'is hungry for kitten',
-          id: windowFullOfBabySharkCookies.node.id,  //babySharkBatch.localFile.id,
+          id: ahoyCookie.node.id,  //babySharkBatch.localFile.id,
+          previous: ahoyCookie.previous.name,
+          next: ahoyCookie.next.name,
         },
 //              D. 🎩 They defer the good cookies and maybe get bitten
 //              Where are the nodes?
