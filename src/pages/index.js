@@ -28,12 +28,41 @@ const IndexPage = () => {
 
   const isDisabled = status === "pending";
   function popUpOutseta(){
-    console.log('pop Up Outseta login joker 🃏 ')
+    console.log('pop Up from your box 🃏 joker 🃏 ')
   }
   return (
     <main>
-    <button type="button" href="href=https://timeship.outseta.com/auth?widgetMode=register#o-anonymous" onClick={popUpOutseta}>bleh</button>
-    <a href="href=https://timeship.outseta.com/auth?widgetMode=register#o-anonymous">bleh</a>
+    <div>
+      <button
+        type="button"
+        href="href=https://timeship.outseta.com/auth?widgetMode=register#o-anonymous"
+        onClick={popUpOutseta}
+      >sign-up</button>
+      <br />
+      <br />
+      <button
+        type="button"
+        href="https://timeship.outseta.com/auth?widgetMode=login#o-anonymous"
+        onClick={popUpOutseta}
+      >login</button>
+      <br />
+      <br />
+      <button
+        type="button"
+        href="https://timeship.outseta.com/profile#o-authenticated"
+        onClick={popUpOutseta}
+      >Profile</button>
+      <br />
+      <br />
+      <button
+        href="/#o-logout-link"
+        type="button"
+        onClick={popUpOutseta}
+    >log out</button>
+    <br />
+    <br />
+
+    </div>
       <header>
         <h1>Ruby's TimeShip</h1>
         <p>
