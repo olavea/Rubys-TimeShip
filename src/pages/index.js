@@ -27,46 +27,29 @@ const IndexPage = () => {
   };
 
   const isDisabled = status === "pending";
-  function popUpOutseta(){
-    console.log('pop Up from your box 🃏 joker 🃏 ')
-  }
+  // function popUpOutseta(){
+  //   console.log('pop Up from your box 🃏 joker 🃏 ')
+  // }
   return (
     <main>
     <div>
-      <button
-        type="button"
-        href="href=https://timeship.outseta.com/auth?widgetMode=register#o-anonymous"
-        onClick={popUpOutseta}
-      >sign-up</button>
+    <a href="href=https://timeship.outseta.com/auth?widgetMode=register#o-anonymous">Pop up from your box 🃏 sign-up joker 🃏 </a>
       <br />
       <br />
-      <button
-        type="button"
-        href="https://timeship.outseta.com/auth?widgetMode=login#o-anonymous"
-        onClick={popUpOutseta}
-      >login</button>
+    <a href="https://timeship.outseta.com/auth?widgetMode=login#o-anonymous">Pop up from your box 🃏 login joker 🃏 </a>
       <br />
       <br />
-      <button
-        type="button"
-        href="https://timeship.outseta.com/profile#o-authenticated"
-        onClick={popUpOutseta}
-      >Profile</button>
+    <a href="https://timeship.outseta.com/profile#o-authenticated">Pop up from your box 🃏 profile joker 🃏 </a>
       <br />
       <br />
-      <button
-        href="/#o-logout-link"
-        type="button"
-        onClick={popUpOutseta}
-    >log out</button>
+    <a href="/#o-logout-link">Pop up from your box 🃏 log out joker 🃏 </a>
     <br />
     <br />
-
     </div>
       <header>
         <h1>Ruby's TimeShip</h1>
         <p>
-          Your mission: Locate The Pirate Princess Lillian at the age of 11, so
+          Your mission: Stop your enemies from locating Lillian The Pirate Princess before you. So
           you can bring her back to 1554 and save Ruby's sister, Princess
           Lizabeth from prison.
         </p>

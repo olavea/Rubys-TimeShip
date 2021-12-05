@@ -1,4 +1,4 @@
-// gatsby-ssr.js
+// gatsby-ssr.js console.log('pop Up from your box 🃏 joker 🃏 ')
 import React from "react";
 const OutsetaScriptComponent = () => {
   return (
@@ -6,7 +6,7 @@ const OutsetaScriptComponent = () => {
       key="outseta-script"
       id="outseta-script"
       src="https://cdn.outseta.com/outseta.min.js"
-      data-options="o_options"
+      // data-options="o_options"
     />
   );
 };
@@ -29,7 +29,7 @@ const OusetaConfigComponent = () => {
 
 
 const onRenderBody = ({ setHeadComponents }) => {
-  return setHeadComponents([OutsetaScriptComponent(), OusetaConfigComponent()]);
+return setHeadComponents([OutsetaScriptComponent(), /*OusetaConfigComponent()*/]);
 };
 export { onRenderBody };
 
