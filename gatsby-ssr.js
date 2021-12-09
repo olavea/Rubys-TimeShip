@@ -1,5 +1,6 @@
 // gatsby-ssr.js
 import React from "react";
+import Layout from "./src/components/Layout";
 
 const OusetaScriptComponent = () => {
   return (
@@ -36,4 +37,8 @@ const onRenderBody = ({ setHeadComponents }) => {
   return setHeadComponents([OusetaConfigComponent(), OusetaScriptComponent()]);
 };
 
-export { onRenderBody };
+
+export function wrapPageElement({ element, props }) {
+  return <Layout {...props}>{onRenderBody, element}</Layout>;
+}
+
