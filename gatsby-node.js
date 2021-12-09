@@ -1,29 +1,31 @@
 // gatsby-node.js
+
 //              0. ↪️ Captain createPages hook ↩️
 exports.createPages = async ({ graphql, actions }) => {
 //              1. bakingSong = Lilly the Bunny require the bakingSong from granny Shark's gingerbread Recipe
   const bakingSong = require.resolve('./src/templates/Recipe.js')
 
   console.log('Madness? MADNESS?! This. Is. PAAAageees! 💪😺👢');
-//              2. bakingSupplies: image files in folders
+//              2. bakingSupplies: files in folders
   const { data } = await graphql(`{
-      bakingSupplies: allFile(sort: {fields: name, order: DESC}) {
+      bakingSupplies: allMarkdownRemark(sort: {fields: frontmatter___path, order: DESC}) {
         edges {
           node {
-            id
-            name
+            frontmatter {
+              path
+            }
           }
         }
       }
   }`)
-//              3. Loop over the image nodes and for each create a page
+//              3. Loop over the file nodes and for each create a page
 //              console.log(data.bakingSupplies.edges);
   data.bakingSupplies.edges.forEach((ahoyCookie, index) => {
              console.log(ahoyCookie.node);
     actions.createPage({
 //              A. «Ahoy! Cookie?!»
 //              Cap'n Fox shouts and embarks. 🦊
-      path: `${ahoyCookie.node.name}`,
+      path: `${ahoyCookie.node.frontmatter.path}`,
 //              B. Bunny sings badly
 //              and bakes baby sharks. 🐰
       component: bakingSong,
@@ -31,11 +33,11 @@ exports.createPages = async ({ graphql, actions }) => {
 //              Fox gets hungry for kitten. 🐯
       context: {
         fox: 'is hungry for kitten',
-        id: ahoyCookie.node.id,
+        id: ahoyCookie.node.frontmatter.path,
       },
 //              D. Don't Show Goodies to Fox
 //              and maybe get bitten. 🎩
-      defer: index + 1 > 4,
+      defer: index + 1 > 2,
 //              A. 🦊
 //              B. 🐰
 //              C. 🐯

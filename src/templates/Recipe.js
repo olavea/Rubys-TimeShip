@@ -5,6 +5,11 @@ import styled from "styled-components";
 
 //<p> 🦈: {data.file.name}  🔽 GatsbyImage 🔽 / 🔼 img 🔼</p>
 //          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+// <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
+//       <img
+// src= {data.file.publicURL}
+// alt= {data.file.name}
+// />
 
 const PizzaGrid = styled.div`
   display: grid;
@@ -16,32 +21,29 @@ const PizzaGrid = styled.div`
 export default function SinglePizzaPage({data}) {
   return (
     <PizzaGrid>
-      <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
+
       <div>
-      <h2 className="mark">🦈: {data.file.name}</h2>
-      <img
-        src= {data.file.publicURL}
-        alt= {data.file.name}
-      />
+        <h2 className="mark">🦈: {data.markdownRemark.frontmatter.title}</h2>
+        <div      dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </div>
     </PizzaGrid>
   )
 };
 
 export const query = graphql`
-query MyQuery($id: String!) {
-  file(id: {eq: $id}) {
-    id
-    name
-    publicURL
-    childImageSharp {
-      gatsbyImageData(
-          width: 1333,
-          placeholder: BLURRED
-          formats: [AUTO, WEBP, AVIF]
-        )
+query MyQuery($path: String!) {
+  markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        city
+        country
+        endDate(formatString: "MMMM DD, YYYY")
+        path
+        startDate(formatString: "MMMM DD, YYYY")
+        tags
+        title
+        url
+      }
     }
-
-  }
 }
 `;

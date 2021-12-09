@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 // line 14
 // <p>{pizza.toppings.map((topping) => topping.name).join(', ')}</p>
-
+//         <GatsbyImage image={pizza.childImageSharp.gatsbyImageData} alt= {pizza.name} />
 function SinglePizza({ pizza }) {
   return (
     <div>
@@ -11,7 +11,7 @@ function SinglePizza({ pizza }) {
         <h2>
           <span className="mark">{pizza.name}</span>
         </h2>
-        <GatsbyImage image={pizza.childImageSharp.gatsbyImageData} alt= {pizza.name} />
+
       </Link>
     </div>
   );
