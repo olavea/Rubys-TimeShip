@@ -11,13 +11,14 @@ function SinglePizza({ pizza }) {
         <h2>
           <span className="mark">{pizza.name}</span>
         </h2>
-
+        <GatsbyImage image={pizza.childImageSharp.gatsbyImageData} alt= {pizza.name} />
       </Link>
     </div>
   );
 }
 
 export default function PizzaList({ pizzaTreasure }) {
+  console.log(pizzaTreasure)
   return (
     <div>
       {pizzaTreasure.map((pizza) => (

@@ -14,36 +14,29 @@ import styled from "styled-components";
 const PizzaGrid = styled.div`
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
 `;
 
 export default function SinglePizzaPage({data}) {
   return (
     <PizzaGrid>
-
       <div>
-        <h2 className="mark">🦈: {data.markdownRemark.frontmatter.title}</h2>
-        <div      dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
+        <h2 className="mark">🦈: {data.file.name}</h2>
       </div>
     </PizzaGrid>
   )
 };
 
 export const query = graphql`
-query MyQuery($path: String!) {
-  markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        city
-        country
-        endDate(formatString: "MMMM DD, YYYY")
-        path
-        startDate(formatString: "MMMM DD, YYYY")
-        tags
-        title
-        url
+  query MyQuery($id: String!) {
+    file(id: {eq: $id}) {
+      name
+      id
+      childImageSharp {
+        gatsbyImageData(width: 1333, placeholder: BLURRED, formats: AUTO)
       }
     }
-}
+  }
 `;
