@@ -85,7 +85,7 @@ const LogoStyles = styled.div`
     }
     &.k {
       --rotate: -12deg;
-      --scale: 1.2;
+      --scale: 1.9;
       --translateX: 0.06em;
     }
     &.apos {
@@ -95,6 +95,12 @@ const LogoStyles = styled.div`
       --rotate: 12deg;
       --scale: 0.9;
       --translateY: -0.14em;
+    }
+    &.f {
+      --rotate: 2deg;
+      --scale: 1.4;
+      --translateX: 0.05em;
+      --translateY: -0.19em;
     }
   }
 `;
@@ -116,8 +122,8 @@ export default function Logo() {
             <span className="letter k">s</span>
             <span className="letter i">t</span>
             <span className="letter i">u</span>
-            <span className="letter i">f</span>
-            <span className="letter i">f</span>
+            <span className="letter f">f</span>
+            <span className="letter s">f</span>
 
           </span>
           <span className="slices">stuff</span>
