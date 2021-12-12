@@ -22,20 +22,23 @@ export default function SinglePizzaPage({data}) {
   return (
     <PizzaGrid>
       <div>
-        <p>pzz</p>
+
+        <h2 className="mark">🦈: {data.goodie.frontmatter.title}   </h2>
       </div>
     </PizzaGrid>
   )
 };
 
 export const query = graphql`
-  query MyQuery($id: String!) {
-    file(id: {eq: $id}) {
-      name
-      id
-      childImageSharp {
-        gatsbyImageData(width: 1333, placeholder: BLURRED, formats: AUTO)
-      }
+  query MarkdownQuery($id: String!) {
+    goodie: markdownRemark(id: {eq: $id}) {
+            html
+        frontmatter {
+        tags
+        title
+        city
+        }
+
     }
   }
 `;

@@ -73,7 +73,7 @@ const LogoStyles = styled.div`
       --translateY: -0.05em;
     }
     &.i {
-      --scale: 0.9;
+      --scale: 1.1;
       --translateY: -0.1em;
       --translateX: 0.1em;
     }
@@ -110,14 +110,16 @@ export default function Logo() {
             <span className="letter l">i</span>
             <span className="letter c">l</span>
             <span className="letter i">y</span>
-            <span className="letter apos">'</span>
-            <span className="letter s">s</span>
+            <span className="letter apos">  </span>
+            <span className="letter s">&</span>
             <br />
-            <span className="letter k">s</span>
-            <span className="letter i">t</span>
-            <span className="letter i">u</span>
-            <span className="letter i">f</span>
-            <span className="letter i">f</span>
+            <span className="letter apos">☠️</span>
+            <span className="letter k">O</span>
+            <span className="letter c">l</span>
+            <span className="letter i">a</span>
+
+
+
 
           </span>
           <span className="slices">stuff</span>
