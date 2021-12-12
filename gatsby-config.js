@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
+        name: `images`,
         path: `${__dirname}/content`,
       },
     },
@@ -27,12 +27,14 @@ module.exports = {
     // },
     `gatsby-plugin-image`,
     `@raae/gatsby-plugin-donations`,
+    // `@raae/gatsby-plugin-let-it-snow`,
     {
       resolve: "@raae/gatsby-plugin-let-it-snow",
       options: {
         duration: 10,
-        // intensity: "blizzard",
-        colors: ["#fff000"],
+        intensity: "blizzard",
+        // LightPink #FFB6C1
+        colors: ["#FFB6C1"],
       },
     },
     {
