@@ -15,16 +15,16 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/content`,
+        path: `${__dirname}/content/hookBook`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: path.join(__dirname, `src`, `images`),
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/content/skill-building`,
+      },
+    },
     `gatsby-plugin-image`,
     `@raae/gatsby-plugin-donations`,
     // `@raae/gatsby-plugin-let-it-snow`,
