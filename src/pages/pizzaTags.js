@@ -5,25 +5,33 @@ import React from "react";
 import TagList from "../components/TagList";
 
 export default function PizzaTagsPage({data}) {
-//  console.log(data.pizzas.nodes)
-  const pizzaTreasure = data.pizzas.nodes;
+//   console.log(data.pizzas.nodes)
+
+//   export const query = graphql`
+//   query TagQuery($toppingRegex: [String]) {
+//     pizzas: allMarkdownRemark(
+//       filter: {
+//         frontmatter: {
+//           tags: {
+//             in: $toppingRegex}}}) {
+//       nodes {
+//         id
+//         frontmatter {
+//           tags
+//           title
+//         }
+//       }
+//     }
+//   }
+// `;
+// <TagList pizzaTreasure={pizzaTreasure} />
+//   const pizzaTreasure = data.pizzas.nodes;
   return (
     <>
-      <TagList pizzaTreasure={pizzaTreasure} />
+      <div>
+
+        <p>tags</p>
+      </div>
     </>
   );
 }
-
-export const query = graphql`
-  query TagQuery {
-    pizzas: allMarkdownRemark {
-      nodes {
-        id
-        frontmatter {
-          tags
-          title
-        }
-      }
-    }
-  }
-`;

@@ -1,3 +1,4 @@
+// components / TagList.js
 import React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -7,7 +8,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 function SinglePizza({ pizza }) {
   return (
     <div>
-      <Link to={`tags/${pizza.frontmatter.tags}`}>
+      <Link to={`topping/${pizza.frontmatter.tags}`}>
         <h2>
           <span className="mark">{pizza.frontmatter.tags}</span>
         </h2>
@@ -21,7 +22,7 @@ export default function TagList({ pizzaTreasure }) {
   console.log(pizzaTreasure)
   return (
     <div>
-      {pizzaTreasure.map((pizza) => (
+      {pizzaTreasure.frontmatter.tags.map((pizza) => (
         <SinglePizza key={pizza.id} pizza={pizza} />
       ))}
     </div>

@@ -15,7 +15,10 @@ export default function PizzasPage({data}) {
 
 export const query = graphql`
   query PizzaQuery {
-    pizzas:   allFile(sort: {fields: name, order: ASC}) {
+    pizzas:   allFile(
+      filter: {sourceInstanceName: {eq: "images"}}
+      sort: {fields: name, order: ASC}
+    ) {
       nodes {
         name
         id
