@@ -2,12 +2,14 @@
 import { graphql } from "gatsby";
 import React from "react";
 import PizzaList from "../components/PizzaList";
+import ToppingsFilter from "../components/ToppingsFilter";
 
 export default function PizzasPage({data}) {
-  console.log(data.pizzas)
+  //console.log(data.pizzas)
   const pizzaTreasure = data.pizzas.nodes;
   return (
     <>
+      <ToppingsFilter />
       <PizzaList pizzaTreasure={pizzaTreasure} />
     </>
   );
@@ -15,12 +17,21 @@ export default function PizzasPage({data}) {
 
 export const query = graphql`
   query PizzaQuery {
-    pizzas:   allFile(sort: {fields: name, order: ASC}) {
+    pizzas: allSanityPizza {
       nodes {
         name
         id
-        childImageSharp {
-          gatsbyImageData(width: 1333, placeholder: BLURRED, formats: AUTO)
+        slug {
+          current
+        }
+        toppings {
+          id
+          name
+        }
+        image {
+          asset {
+            gatsbyImageData(width: 1333, placeholder: BLURRED, formats: AUTO)
+          }
         }
       }
     }
