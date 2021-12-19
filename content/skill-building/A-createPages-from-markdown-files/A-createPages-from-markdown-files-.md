@@ -5,10 +5,8 @@ startDate: 2022-04-10
 endDate: 2022-04-12
 city: Frankfurt
 country: Germany
-tags:
-  - royal_icing
-  - seigmenn
-  - seigdamer
+tags: royal_icing
+
 
 description: Lorem Ipsum some conference text that is a lot longer than the other one so we can see how it looks.
 path: /A-createPages-from-markdown-files

@@ -3,35 +3,37 @@ import { graphql } from "gatsby";
 import React from "react";
 
 import TagList from "../components/TagList";
+import ToppingsFilter from "../components/ToppingsFilter";
+//s<ToppingsFilter activeTopping={pageContext.topping} />
 
-export default function PizzaTagsPage({data}) {
-//   console.log(data.pizzas.nodes)
-
-//   export const query = graphql`
-//   query TagQuery($toppingRegex: [String]) {
-//     pizzas: allMarkdownRemark(
-//       filter: {
-//         frontmatter: {
-//           tags: {
-//             in: $toppingRegex}}}) {
-//       nodes {
-//         id
-//         frontmatter {
-//           tags
-//           title
-//         }
-//       }
-//     }
-//   }
-// `;
-// <TagList pizzaTreasure={pizzaTreasure} />
-//   const pizzaTreasure = data.pizzas.nodes;
+export default function PizzaTagsPage({ data, pageContext }) {
+//   console.log(data)
+   const bakingTreasure = data.bakingMarkdown.nodes;
   return (
     <>
       <div>
 
+        <TagList bakingTreasure={bakingTreasure} />
         <p>tags</p>
       </div>
     </>
   );
 }
+
+export const query = graphql`
+  query TagQuery($topping: [String]) {
+    bakingMarkdown: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          tags: {
+            in: $topping}}}) {
+      nodes {
+        id
+        toppings: frontmatter {
+          tags
+          title
+        }
+      }
+    }
+  }
+`;

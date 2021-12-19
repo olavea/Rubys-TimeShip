@@ -1,3 +1,8 @@
+require('dotenv').config({
+  path: `.env.dev`,
+});
+
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://timeship1.gatsbyjs.io/",
@@ -41,6 +46,16 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      // «This is the name of the plugin you are adding» Says Wes Bos
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'fr5nacyp',
+        dataset: 'production',
+        watchMode: true,
+        token: process.env.SANITY_TOKEN,
       },
     },
   ],
