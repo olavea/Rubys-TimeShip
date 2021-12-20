@@ -40,6 +40,7 @@ const LogoStyles = styled.div`
     font-size: 3.2em;
     letter-spacing: 0.2em;
     transform: translateY(-0.15em);
+    color: var(--pink);
   }
   .slicks {
     transform: scale(1.4);
@@ -62,8 +63,8 @@ const LogoStyles = styled.div`
     line-height: 1;
     transition: transform 0.3s;
     &.S {
-      --rotate: 12deg;
-      --scale: 0.9;
+      --rotate: 19deg;
+      --scale: 1.7;
       --translateY: -0.14em;
     }
     &.l {
@@ -83,24 +84,38 @@ const LogoStyles = styled.div`
       --translateX: 0.1em;
       --translateY: 0.23em;
     }
+    &.d {
+      --rotate: 3deg;
+      --scale: 0.3;
+      --translateX: 0.1em;
+      --translateY: 0.23em;
+    }
     &.k {
-      --rotate: -12deg;
-      --scale: 1.9;
+      --rotate: -19deg;
+      --scale: 1.6;
       --translateX: 0.06em;
     }
     &.apos {
       --translateX: 0.1em;
     }
-    &.s {
-      --rotate: 12deg;
+    &.v {
+      --rotate: 18deg;
       --scale: 0.9;
-      --translateY: -0.14em;
+      --translateY: -0.67em;
+      --translateX: 0.13em;
     }
+    &.e {
+      --rotate: -53deg;
+      --scale: 0.4;
+      --translateY: -0.9em;
+      --translateX: 1.2em;
+    }
+
     &.f {
-      --rotate: 2deg;
-      --scale: 1.4;
-      --translateX: 0.05em;
-      --translateY: -0.19em;
+      --rotate: -33deg;
+      --scale: 0.9;
+      --translateX: 0.30em;
+      --translateY: -0.30em;
     }
   }
 `;
@@ -109,24 +124,23 @@ export default function Logo() {
   return (
     <LogoStyles className="logo">
       <div className="inner">
-        <span className="est">EST 1554</span>
+        <span className="est">build</span>
         <h1>
           <span className="slicks">
             <span className="letter S">L</span>
             <span className="letter l">i</span>
             <span className="letter c">l</span>
-            <span className="letter i">y</span>
-            <span className="letter apos">'</span>
-            <span className="letter s">s</span>
+            <span className="letter i">l</span>
+            <span className="letter k">y</span>
             <br />
-            <span className="letter k">s</span>
-            <span className="letter i">t</span>
-            <span className="letter i">u</span>
-            <span className="letter f">f</span>
-            <span className="letter s">f</span>
-
+            <span className="letter k">o</span>
+            <span className="letter f">L</span>
+            <span className="letter i">a</span>
+            <span className="letter apos">⛵</span>
+            <span className="letter v">v</span>
+            <span className="letter e">ea</span>
           </span>
-          <span className="slices">stuff</span>
+          <span className="slices">skill</span>
         </h1>
       </div>
     </LogoStyles>

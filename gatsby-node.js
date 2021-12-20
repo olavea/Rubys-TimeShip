@@ -123,33 +123,45 @@ async function turnToolsIntoPages({ graphql, actions }) {
 //              5. Pass tag data to pizzaTags.js
 }
 
+//              1. Cap'n Granny Sharksby createPages hook ↩️
 async function turnToppingsIntoPages({ graphql, actions, }) {
+//              2. bakingSong = Lilly the Bunny require the bakingSong for Cap'n granny Shark's Topping Recipe
   const bakingToppingSong = require.resolve('./src/pages/pizzas.js')
 //              3. bakingSupplies: toppings in Sanity
   const { data } = await graphql(`{
-    bakingToppingSupplies: allSanityPizza {
+    bakingToppingSupplies: allSanityTopping(sort: {fields: _createdAt, order: DESC}) {
       nodes {
-        toppings {
-          name
-        }
-        slug {
-          current
-        }
+        name
         id
       }
     }
   }`)
 //              4. turn toppings into pages with
 //              Cap'n Granny Sharksby's createPages hook
-  data.bakingToppingSupplies.nodes.forEach((ahoyCookie) => {
-    console.log(ahoyCookie);
+  data.bakingToppingSupplies.nodes.forEach((ahoyCookie, index) => {
+    //console.log(ahoyCookie);
     actions.createPage({
 
-      path: `/topping/${ahoyCookie.id}`,
+      path: `/topping/${ahoyCookie.name}`,
       component: bakingToppingSong,
+      context: {
+        fox: 'gets hungry for lunch-kitten',
+        topping: ahoyCookie.name,
+        toppingRegex: `/${ahoyCookie.name}/i`,
+      },
+      defer: index + 1 > 4,
+//              How does Catsby help Lilly make an index of all the toppings?
+//              What is the way Lilly makes index travel from start to defer?
+//              D. 🤖 Data, go back into our 🤖 Data Catsby 🐯
+//              E. 🎩 Every node must be Sorted `order: DESC`
+//              F. 🍓 Fields Forever `fields: _createdAt,`
+//              E. 🎩 forEach index
+//              R. 🐰 DSG index + 1 > 4
+
       ownerNodeId: ahoyCookie.id,
     })
   })
+//              5. Pass tag data to pizzaTags.js
 }
 
 //              1. Captain Granny Sharksby createPages hook ↩️
