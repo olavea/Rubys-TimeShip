@@ -55,10 +55,12 @@ function countPizzasInToppings(pizzas) {
   );
   return sortedToppings;
 }
-
+//              1. bakingToppingsIntoPages with Cap'n Catsby and Lilly Owlsby
 export default function ToppingsFilter({ activeTopping }) {
-  // Get a list of all the toppings
-  // Get a list of all the Pizzas with their toppings
+
+
+  // How do I  Get a list of all the Pizzas with their toppings
+//              3. bakingSupplies: toppings-data-🌲 in Sanity
   const { pizzas } = useStaticQuery(graphql`
     query {
       pizzas: allSanityPizza {
@@ -75,11 +77,14 @@ export default function ToppingsFilter({ activeTopping }) {
       }
     }
   `);
-  // Count how many pizzas are in each topping
+//              2. Counting Song = Lilly Owlsby use the Counting Song 🦢 from Wes Bos to
+  // Count how many pizzas are in each topping with countingSong
   const toppingsWithCountsTreasure = countPizzasInToppings(pizzas.nodes);
   //console.log(toppingsWithCounts);
   // Loop over the list of toppings and display the topping and the count of pizzas in that topping
   // Link it up.. ...  . . .
+//              4. Loop over the list of toppings treasure and and display the topping and the count of pizzas in that topping
+//              A. «Ahoy topping?!»
   return (
     <ToppingsStyles>
       <Link to="/pizzas">
@@ -88,7 +93,7 @@ export default function ToppingsFilter({ activeTopping }) {
       </Link>
       {toppingsWithCountsTreasure.map((topping) => (
         <Link
-          to={`/topping/${topping.name}`}
+          to={`/topping/${topping.name}`} // A. «Ahoy topping?!»
           key={topping.id}
           className={topping.name === activeTopping ? 'active' : ''}
         >

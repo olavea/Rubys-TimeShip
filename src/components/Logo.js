@@ -68,15 +68,10 @@ const LogoStyles = styled.div`
       --translateY: -0.14em;
     }
     &.l {
-      --rotate: 2deg;
-      --scale: 1.4;
+      --rotate: -15deg;
+      --scale: 1.0;
       --translateX: 0.05em;
       --translateY: -0.05em;
-    }
-    &.i {
-      --scale: 0.9;
-      --translateY: -0.1em;
-      --translateX: 0.1em;
     }
     &.c {
       --rotate: 3deg;
@@ -90,19 +85,22 @@ const LogoStyles = styled.div`
       --translateX: 0.1em;
       --translateY: 0.23em;
     }
-    &.k {
-      --rotate: -19deg;
-      --scale: 1.6;
-      --translateX: 0.06em;
-    }
-    &.apos {
-      --translateX: 0.1em;
-    }
     &.v {
       --rotate: 18deg;
       --scale: 0.9;
       --translateY: -0.67em;
       --translateX: 0.13em;
+    }
+    &.b {
+      --rotate: 19deg;
+      --scale: 0.7;
+      --translateY: 0.1em;
+    }
+    &.a {
+      --rotate: 18deg;
+      --scale: 0.9;
+      --translateY: 0.27em;
+      --translateX: -0.13em;
     }
     &.e {
       --rotate: -53deg;
@@ -111,12 +109,26 @@ const LogoStyles = styled.div`
       --translateX: 1.2em;
     }
 
+    &.k {
+      --rotate: -19deg;
+      --scale: 1.6;
+      --translateX: -0.06em;
+    }
     &.f {
       --rotate: -33deg;
       --scale: 0.9;
-      --translateX: 0.30em;
+      --translateX: 0.10em;
       --translateY: -0.30em;
     }
+    &.i {
+      --scale: 0.9;
+      --translateY: -0.1em;
+      --translateX: -0.1em;
+    }
+    &.apos {
+      --translateX: -0.01em;
+    }
+
   }
 `;
 
@@ -124,21 +136,22 @@ export default function Logo() {
   return (
     <LogoStyles className="logo">
       <div className="inner">
-        <span className="est">build</span>
+        <span className="est">Raae-Vea</span>
         <h1>
           <span className="slicks">
             <span className="letter S">L</span>
             <span className="letter l">i</span>
-            <span className="letter c">l</span>
-            <span className="letter i">l</span>
-            <span className="letter k">y</span>
+            <span className="letter c">ll</span>
+
+            <span className="letter b">i</span>
+            <span className="letter a">a</span>
+            <span className="letter k">n</span>
             <br />
             <span className="letter k">o</span>
             <span className="letter f">L</span>
             <span className="letter i">a</span>
             <span className="letter apos">⛵</span>
-            <span className="letter v">v</span>
-            <span className="letter e">ea</span>
+
           </span>
           <span className="slices">skill</span>
         </h1>
