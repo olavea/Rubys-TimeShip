@@ -9,7 +9,7 @@ export default function PizzasPage({data}) {
   const pizzaTreasure = data.pizzas.nodes;
   return (
     <>
-      <ToppingsFilter />
+      <ToppingsFilter /> //              B. Bunny sings badly
       <PizzaList pizzaTreasure={pizzaTreasure} />
     </>
   );
