@@ -1,5 +1,6 @@
 // gatsby-node.js
 //              1. bakingToppingsIntoPages with Cap'n Catsby and Lilly Owlsby
+//              Cap'n Granny Sharksby's createPages hook
 async function bakingToppingsIntoPages({ graphql, actions, }) {
 //              2. bakingSong = Lilly the Bunny require the bakingSong 🦢 for Cap'n granny Shark's Topping Recipe
     const bakingToppingSong = require.resolve('./src/pages/pizzas.js')
@@ -14,7 +15,7 @@ async function bakingToppingsIntoPages({ graphql, actions, }) {
       }
     }`)
 //              4. Loop over the toppings and turn them into pages with
-//              Cap'n Granny Sharksby's createPages hook
+
     data.bakingToppingSupplies.nodes.forEach((ahoyCookie, index) => {
       //console.log(ahoyCookie);
       actions.createPage({
@@ -43,11 +44,13 @@ async function bakingToppingsIntoPages({ graphql, actions, }) {
     })
   //              5. Pass tag data to pizzaTags.js
   }
-//              1. Baking Pages with Captain Granny Sharksby
+//              1. Baking Pages with Captain Granny Sharksby's hook
 async function bakeImagesIntoGoodies({ graphql, actions }) {
-//              2. bakingSong = Lilly the Bunny require the bakingSong from granny Shark's gingerbread Recipe
+//              console.log('Captain Granny Sharksbys hook');
+//              2. bakingSong = Lilly the Bunny require the bakingSong from granny Shark's gingerbread Recipe, 🦢
   const bakingSong = require.resolve('./src/templates/Recipe.js')
-//              3. bakingSupplies: image files in folders
+//              3. bakingSupplies: image files in folders, drawn
+//              Look for _ _ _ in http://localhost:8000/uniBeaver-1👻
   const { data } = await graphql(`{
     bakingSupplies: allFile(
       filter: {sourceInstanceName: {eq: "images"}}
@@ -59,8 +62,10 @@ async function bakeImagesIntoGoodies({ graphql, actions }) {
       }
     }
   }`)
+//  console.log(data.bakingSupplies.nodes);
 //              4. Loop over the image nodes and for each create a page
   data.bakingSupplies.nodes.forEach((ahoyCookie, index) => {
+//              console.log(ahoyCookie);
 //              A. 🦊
 //              B. 🐰
 //              C. 🐯
@@ -71,9 +76,11 @@ async function bakeImagesIntoGoodies({ graphql, actions }) {
       path: `${ahoyCookie.name}`,
 //              B. Bunny sings badly
 //              and bakes baby sharks. 🐰
+//              catsby develop Look for _ _ _ in localhost👻
       component: bakingSong,
 //              C. Catsby looks tasty
 //              Fox gets hungry for kitten. 🐯
+//              Look for _ _ _ in localhost👻
       context: {
         catsby: 'looks tasty',
         fox: 'gets hungry for kitten',
@@ -81,6 +88,7 @@ async function bakeImagesIntoGoodies({ graphql, actions }) {
       },
 //              D. Don't Show Goodies to Fox
 //              and maybe get bitten. 🎩
+//              catsby build and look for _ _ _ in terminal 💀
       defer: index + 1 > 2,
     })
   });
