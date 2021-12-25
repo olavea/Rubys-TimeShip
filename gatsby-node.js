@@ -1,27 +1,32 @@
 // gatsby-node.js
-//              1. bakingToppingsIntoPages with Cap'n Catsby and Lilly Owlsby
-//              Cap'n Granny Sharksby's createPages hook
+//                 Ruby Catsby and Lilly Owlsby
+//              1. Baking pages
+//                 with Cap'n Granny Sharksby's
+//                 createPages hook
 async function bakingToppingsIntoPages({ graphql, actions, }) {
-//              2. bakingSong = Lilly the Bunny require the bakingSong 🦢 for Cap'n granny Shark's Topping Recipe
+//                 console.log('Captain Granny Sharksbys hook');
+//              2. bakingSong = Lilly the Bunny sings like a 🦢
+//                 the bakingSong by Cap'n Granny Sharksby 🦢
     const bakingToppingSong = require.resolve('./src/pages/pizzas.js')
-//              3. bakingSupplies: toppings data 🌲 in Sanity
+//              Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
+//              3. bakingSupplies: toppings data 🌲 in Sanity and _ _ _ drawn
     const { data } = await graphql(`{
-      bakingToppingSupplies: allSanityTopping(sort: {fields: _createdAt, order: DESC}) {
+      supplies: allSanityTopping(sort: {fields: _createdAt, order: DESC}) {
         nodes {
           name
           id
-
         }
       }
     }`)
-//              4. Loop over the toppings and turn them into pages with
-
-    data.bakingToppingSupplies.nodes.forEach((ahoyCookie, index) => {
-      //console.log(ahoyCookie);
+//                 console.log(data.supplies.nodes);
+//              4. Loop over the toppings and
+//                 turn them into pages with createPage
+    data.supplies.nodes.forEach((ahoyCookie, index) => {
+//      console.log(index);
       actions.createPage({
 //              A. «Ahoy Goodie?!»
         path: `/topping/${ahoyCookie.name}`,
-
+//              B.
         component: bakingToppingSong,
 //              C. Catsby looks tasty
         context: {

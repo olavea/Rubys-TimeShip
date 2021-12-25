@@ -117,8 +117,8 @@ const LogoStyles = styled.div`
     &.f {
       --rotate: -33deg;
       --scale: 0.9;
-      --translateX: 0.10em;
-      --translateY: -0.30em;
+      --translateX: -0.20em;
+      --translateY: -0.10em;
     }
     &.i {
       --scale: 0.9;
@@ -126,7 +126,7 @@ const LogoStyles = styled.div`
       --translateX: -0.1em;
     }
     &.apos {
-      --translateX: -0.01em;
+      --translateX: 0.30em;
     }
 
   }
@@ -136,7 +136,7 @@ export default function Logo() {
   return (
     <LogoStyles className="logo">
       <div className="inner">
-        <span className="est">Raae-Vea</span>
+        <span className="est">Ola Vea &</span>
         <h1>
           <span className="slicks">
             <span className="letter S">L</span>
@@ -147,9 +147,9 @@ export default function Logo() {
             <span className="letter a">a</span>
             <span className="letter k">n</span>
             <br />
-            <span className="letter k">o</span>
-            <span className="letter f">L</span>
-            <span className="letter i">a</span>
+
+            <span className="letter f">🏴‍☠️</span>
+
             <span className="letter apos">⛵</span>
 
           </span>
