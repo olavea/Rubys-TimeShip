@@ -4,7 +4,7 @@
 //                 with Cap'n Granny Sharksby's
 //                 createPages hook
 async function bakingToppingsIntoPages({ graphql, actions, }) {
-//                 console.log('Captain Granny Sharksbys hook');
+                 console.log('Captain Granny Sharksbys createPages hook');
 //              2. bakingSong = Lilly the Bunny sings like a 🦢
 //                 the bakingSong by Cap'n Granny Sharksby 🦢
     const bakingToppingSong = require.resolve('./src/pages/pizzas.js')
@@ -18,11 +18,10 @@ async function bakingToppingsIntoPages({ graphql, actions, }) {
         }
       }
     }`)
-//                 console.log(data.supplies.nodes);
 //              4. Loop over the toppings and
 //                 turn them into pages with createPage
     data.supplies.nodes.forEach((ahoyCookie, index) => {
-//      console.log(index);
+                console.log('Defer index:', index);
       actions.createPage({
 //              A. «Ahoy Goodie?!»
         path: `/topping/${ahoyCookie.name}`,
@@ -36,13 +35,15 @@ async function bakingToppingsIntoPages({ graphql, actions, }) {
           toppingRegex: `/${ahoyCookie.name}/i`, // reggae
         },
         defer: index + 1 > 4,
-  //              How does Catsby help Lilly make an index of all the toppings?
-  //              What is the way Lilly makes index travel from start to defer?
-  //              D. 🤖 Data, go back into our 🤖 Data Catsby 🐯
-  //              E. 🎩 Every node must be Sorted `order: DESC`
-  //              F. 🍓 Fields Forever `fields: _createdAt,`
-  //              E. 🎩 forEach index
-  //              R. 🐰 DSG index + 1 > 4
+//              How does Catsby help Lilly make an index of all the toppings?
+//              What is the way Lilly makes index travel from start to defer?
+//              D. 🤖 Data, go back into our 🤖 Data Catsby 🐯
+//              E. 🎩 Every node must be Sorted `order: DESC`
+//              F. 🍓 Fields Forever `fields: _createdAt,`
+//              E. 🎩 forEach index
+//              R. 🐰 DSG index + 1 > 4
+//              props.pageContext.defer:
+//              props.pageContext.ownerNodeId
 
         ownerNodeId: ahoyCookie.id,
       })
