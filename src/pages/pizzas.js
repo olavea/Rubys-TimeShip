@@ -4,12 +4,13 @@ import React from "react";
 import PizzaList from "../components/PizzaList";
 import ToppingsFilter from "../components/ToppingsFilter";
 
-export default function PizzasPage({data}) {
+export default function PizzasPage({data, pageContext }) {
   //console.log(data.pizzas)
   const pizzaTreasure = data.pizzas.nodes;
   return (
     <>
-      <ToppingsFilter /> //              B. Bunny sings badly
+
+      <ToppingsFilter activeTopping={pageContext.catsby} />
       <PizzaList pizzaTreasure={pizzaTreasure} />
     </>
   );
