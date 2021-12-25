@@ -148,12 +148,9 @@ export default function Logo() {
             <span className="letter k">n</span>
             <br />
 
-            <span className="letter f">🏴‍☠️</span>
-
-            <span className="letter apos">⛵</span>
 
           </span>
-          <span className="slices">skill</span>
+
         </h1>
       </div>
     </LogoStyles>
