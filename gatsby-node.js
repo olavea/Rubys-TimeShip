@@ -115,7 +115,7 @@ async function turnToolsIntoPages({ graphql, actions }) {
 //              1. Baking pages
 //                 with Cap'n Granny Sharksby's
 //                 createPages hook
-async function bakingToppingsIntoPages({ graphql, actions, }) {
+async function bakingToppingsIntoPages({ graphql, actions }) {
 //                 console.log('Captain Granny Sharksbys createPages hook');
 //              2. bakingSong = Lilly the Bunny sings like a 🦢
 //                 the bakingSong by Cap'n Granny Sharksby 🦢
@@ -162,6 +162,51 @@ async function bakingToppingsIntoPages({ graphql, actions, }) {
     })
   //              5. Pass tag data to pizzaTags.js
   }
+async function bakingPhotosIntoPages({ graphql, actions}) {
+  const bakingSong = require.resolve('./src/templates/RecipeSong.js')
+  const { data } = await graphql(`{
+    supplies: allSanityPizza(sort: {fields: _createdAt, order: ASC}) {
+      nodes {
+        name
+        id
+        slug {
+          current
+        }
+      }
+    }
+  }`)
+//              4. Loop over the toppings and
+//                 turn them into pages with createPage
+  data.supplies.nodes.forEach((ahoyCookie, index) => {
+//                 console.log('Defer index:', index, ahoyCookie);
+    actions.createPage({
+//              A. «Ahoy Goodie?!»
+      path: `${ahoyCookie.slug.current}`,
+//              B.
+      component: bakingSong,
+//              C. Catsby looks tasty
+      context: {
+//          fox: 'Catsby looks tasty, I get hungry for lunch-kitten',
+        catsby: ahoyCookie.id,
+//          catsby: 'looks tasty', pælme ut den ene, bare ha en nøkkel
+        toppingRegex: `/${ahoyCookie.name}/i`, // reggae
+      },
+       defer: index + 1 > 3,
+// //              How does Catsby help Lilly make an index of all the toppings?
+// //              What is the way Lilly makes index travel from start to defer?
+// //              D. 🤖 Data tree in your GraphiQL garden
+// //              E. 🎩 Every node you sort
+// //              F. is for Fields, 🍓 `fields: ....,`
+// //              E. is for Each, forEach .... index
+// //              R. Rrr! defer: index + 1 > 3
+// //              props.pageContext.defer:
+// //              props.pageContext.ownerNodeId on Sunday
+
+       ownerNodeId: ahoyCookie.id,
+    })
+  })
+}
+
 //              1. Baking Pages with Captain Granny Sharksby's hook
 async function bakeImagesIntoGoodies({ graphql, actions }) {
 //              console.log('Captain Granny Sharksbys hook');
@@ -278,6 +323,7 @@ exports.createPages = async (params) => {
     // turnToolsIntoPages(params),
 
     bakingToppingsIntoPages(params),
+    bakingPhotosIntoPages(params),
 
     bakeImagesIntoGoodies(params),
     turnNamesIntoTags(params),
