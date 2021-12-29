@@ -20,13 +20,12 @@ const PizzaGrid = styled.div`
 
 `;
 
-export default function SinglePizzaPage({data}) {
+export default function SingleImagoPage({data}) {
   return (
     <PizzaGrid>
       <div>
-        <p>hook</p>
-        <h2 className="mark">🦈: {data.file.name}</h2>
-        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt= {data.file.name} />
+        <h2 className="mark"> {data.supplies.name}</h2>
+        <GatsbyImage image={data.supplies.childImageSharp.gatsbyImageData} alt= {data.supplies.name} />
       </div>
     </PizzaGrid>
   )
@@ -34,7 +33,7 @@ export default function SinglePizzaPage({data}) {
 
 export const query = graphql`
   query MyQuery($id: String!) {
-    file(
+    supplies: file(
       id: {eq: $id}
 
     ) {

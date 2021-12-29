@@ -3,12 +3,12 @@ import { graphql } from "gatsby";
 import React from "react";
 
 import TagList from "../components/TagList";
-import ToppingsFilter from "../components/ToppingsFilter";
-//s<ToppingsFilter activeTopping={pageContext.topping} />
+// import ToppingsFilter from "../components/ToppingsFilter";
+// <ToppingsFilter activeTopping={pageContext.topping} />
 
 export default function PizzaTagsPage({ data, pageContext }) {
 //   console.log(data)
-   const bakingTreasure = data.bakingMarkdown.nodes;
+   const bakingTreasure = data.supplies.nodes;
   return (
     <>
       <div>
@@ -22,7 +22,7 @@ export default function PizzaTagsPage({ data, pageContext }) {
 
 export const query = graphql`
   query TagQuery($topping: [String]) {
-    bakingMarkdown: allMarkdownRemark(
+    supplies: allMarkdownRemark(
       filter: {
         frontmatter: {
           tags: {

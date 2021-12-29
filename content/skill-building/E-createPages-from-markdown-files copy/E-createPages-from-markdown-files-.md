@@ -1,5 +1,5 @@
 ---
-title: A. «Ahoy! Cookie?!» Cap'n Fox shouts and embarks. 🦊
+title: E. «Ahoy! Cookie?!» Cap'n Fox shouts and embarks. 🦊
 
 url: https://www.conferencebuddy.io/
 startDate: 2022-04-10
@@ -10,11 +10,10 @@ tags: royal_icing
 
 
 description: Lorem Ipsum some conference text that is a lot longer than the other one so we can see how it looks.
-path: /A-createPages-from-markdown-files
+path: /E-createPages-from-markdown-files
 ---
 
-# bleh bleh bleh
-bleh bleh bleh
+
 
 I added my first blog post in markdown, this one.
 
