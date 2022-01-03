@@ -10,16 +10,24 @@ export default function PizzasPage({data, pageContext }) {
   return (
     <>
 
-      <ToppingsFilter activeTopping={pageContext.catsby} />
+      <ToppingsFilter activeTool={pageContext.catsby} />
       <PizzaList pizzaTreasure={pizzaTreasure} />
     </>
   );
 }
 
 export const query = graphql`
-  query PizzaQuery($toppingRegex: String) {
+  query PizzaQuery($toolRegex: String) {
     pizzas: allSanityPizza(
-      filter: { toppings: { elemMatch: { name: { regex: $toppingRegex}}}}
+      filter: {
+        toppings: {
+          elemMatch: {
+            name: {
+              regex: $toolRegex
+            }
+          }
+        }
+      }
     ) {
       nodes {
         name

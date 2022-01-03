@@ -5,7 +5,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 // <p>{pizza.toppings.map((topping) => topping.name).join(', ')}</p>
 //         <GatsbyImage image={pizza.childImageSharp.gatsbyImageData} alt= {pizza.name} />
 function SinglePizza({ pizza }) {
-  console.log(pizza.slug.current)
+//  console.log(pizza.slug.current)
   return (
     <div>
       <Link to={`/${pizza.slug.current}`}>

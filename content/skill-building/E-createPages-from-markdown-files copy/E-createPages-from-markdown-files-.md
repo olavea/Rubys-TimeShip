@@ -2,11 +2,10 @@
 title: E. «Ahoy! Cookie?!» Cap'n Fox shouts and embarks. 🦊
 
 url: https://www.conferencebuddy.io/
-startDate: 2022-04-10
-endDate: 2022-04-12
+date: 2022-04-10
 city: Frankfurt
 country: Germany
-tags: royal_icing
+tags: ["animals", "Chicago", "zoos", "royal_icing"]
 
 
 description: Lorem Ipsum some conference text that is a lot longer than the other one so we can see how it looks.

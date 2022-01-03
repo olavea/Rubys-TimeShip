@@ -1,152 +1,154 @@
-// gatsby-node.js
+//                                                gatsby-node.js
 //                 Ruby Catsby and Lilly Owlsby
-//              1. Baking pages
+//                 Baking pages
 //                 with Cap'n Granny Sharksby's
 //                 createPages hook
 async function bakeMarkdownIntoGoodies({ graphql, actions }) {
-//                   console.log('Captain Granny Sharksbys createPages hook');
-//              2. bakingSong = Lilly the Bunny sings like a 🦢
+//                 console.log('Captain Granny Sharksbys createPages hook'); 💀
+//              1. bakingSong = Lilly the Bunny sings like a 🦢
 //                 the bakingSong by Cap'n Granny Sharksby 🦢
-  const bakingMarkdownSong = require.resolve('./src/templates/RecipeMarkdown.js')
-//              Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
-//              3. supplies: data from Markdown files 🌲 in  and _ _ _ drawn
+  const bakingSong = require.resolve('./src/templates/RecipeMarkdown.js')
+//                 Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
+//              2. supplies: data from Markdown files 🌲 in  and _ _ _ drawn
   const { data } = await graphql(`{
     supplies: allMarkdownRemark(sort: {
       order: ASC,
-      fields: frontmatter___title}) {
+      fields: frontmatter___title
+    }) {
       nodes {
         id
-        toppings: frontmatter {
+        strawberry: frontmatter {
           path
           title
         }
       }
     }
   }`)
-//              4. Loop over the markdown nodes and for each create a page
+//              3. Loop over the markdown nodes and for each create a page
 //                 turn them into pages with createPage
-  data.supplies.nodes.forEach((ahoyCookie, index) => {
+  data.supplies.nodes.forEach((ahoyGoodie, index) => {
 //                 console.log('Defer index:', index);
-//              A. 🦊
-//              B. 🐰
-//              C. 🐯
-//              D. 🎩 DSG
+//              A. – B. – C. – DSG 🎩
       actions.createPage({
 //              A. «Ahoy! Goodie?!»
-//              Cap'n Fox shouts and embarks. 🦊
-        path: `${ahoyCookie.toppings.path}`,
+//                 Cap'n Fox shouts and embarks. 🦊
+        path: `${ahoyGoodie.strawberry.path}`,
 //              B. Owlsby sings badly
-//              and bakes baby sharks.
-        component: bakingMarkdownSong,
+//                 and bakes baby sharks. 🦈
+        component: bakingSong,
 //              C. Catsby looks tasty
-//              Fox gets hungry for kitten. 🐯
+//                 Fox gets hungry for kitten. 🐯
         context: {
-          catsby: ahoyCookie.id,
+          catsby: ahoyGoodie.id,
           fox: 'Catsby looks tasty I getz hungry for kitten',
         },
-//              D. 🎩 DSG
 //              D. Don't Show Goodies to Fox
-//              and maybe get bitten. 🎩
+//              and maybe get bitten. DSG–🎩
 //              catsby build and look for _ _ _ in terminal 💀
         defer: index + 1 > 2,
-//              D. 🌲 Data tree 🤖🌲, go back into our 🤖 Data Catsby 🐯
-//              E. 🎩 Every node (gifts) must be Sorted `order: ASC`
-//              F. 🍓 Fields Forever `fields: ,`
-//              E. 🎩 forEach index
-//              R. 🐰 DSG index + 1 > 4
-// start at bottom
+//              D. Data tree 🤖🌲
+//              E. Every node you must sort 💰
+//              F. Fields Forever `fields: ,` 🍓
+//              E. forEach index
+//              R. RRR! defer: index + 1 > 2 🎩
 
-        //              How does Catsby help Lilly make an index of all the toppings?
-//              What is the way Lilly makes index travel from start to defer?
-//              D. 🤖 Data, go back into our 🤖 Data Catsby GraphiQL 🐯
-//              E. 🎩 Every node must be Sorted `order: ASC`
-//              F. 🍓 Fields Forever `fields: _createdAt,`
-//              E. 🎩 forEach index
-//              R. 🐰 DSG index + 1 > 4
-//              props.pageContext.defer:
+//              How does Catsby help Lilly make an index of all the toppings?
+//              What is the way Lilly makes index travel from
+//              D. Data tree 🤖🌲
+//              R. RRR! defer: index + 1 > 2 🎩
     })
   });
 }
-//              1. Captain Granny Sharksby createPages hook ↩️
-async function turnToolsIntoPages({ graphql, actions }) {
-//              2. bakingSong = Lilly the Bunny require the bakingSong from granny Shark's gingerbread Recipe
-  const bakingToolSong = require.resolve('./src/pages/pizzaTags.js')
-// //           3. bakingSupplies: tags in markdown files
+//                 We don't use this yet
+//                 Captain Granny Sharksby createPages hook ↩️
+async function turnTagzIntoPages({ graphql, actions }) {
+//                 console.log('createPages hook from Captain Sharksby ↩️ 💀');
+//              1. bakingSong = Lilly the Bunny require the bakingSong from granny Shark's gingerbread Recipe
+  const bakingSong = require.resolve('./src/pages/pizzaTags.js')
+//                 Look for _ _ _ in http://localhost:8000/tag/eminem 👻
+//              2. supplies: tags in markdown files
   const { data } = await graphql(`{
-    bakingMarkdown: allMarkdownRemark(sort: {
-      order: ASC,
-      fields: frontmatter___title}) {
-      nodes {
-        id
-        toppings: frontmatter {
-          tags
+    postsRemark: allMarkdownRemark(
+      sort: {order: DESC, fields: frontmatter___date}
+      limit: 10
+    ) {
+      edges {
+        node {
+          frontmatter {
+            url
+            tags
+          }
         }
       }
     }
+    tagsGroup: allMarkdownRemark(limit: 20) {
+      group(field: frontmatter___tags) {
+        totalCount
+        fieldValue
+      }
+    }
   }`)
-//              4. turn toppings into pages with
-//              Cap'n Granny Sharksby's createPages hook
-  data.bakingMarkdown.nodes.forEach((ahoyCookie, index) => {
-//              A. 🦊
-//              B. 🐰
-//              C. 🐯
-//              D. 🎩 DSG
-      actions.createPage({
+//              3. turn toppings into pages with
+//                 createPage method from Captain Sharksby
+  data.tagsGroup.group.forEach((ahoyGoodie, index) => {
+    console.log('Defer index:', ahoyGoodie);
+    actions.createPage({
 //              A. «Ahoy! Cookie?!»
-//              Cap'n Fox shouts and embarks. 🦊
-              path: `/pizzaTags/topping/${ahoyCookie.toppings.tags}`,
+//                 Cap'n Fox shouts and embarks. 🦊
+      path: `/tag/${ahoyGoodie.fieldValue}`,
 //              B. Bunny sings badly
-//              and bakes baby sharks. 🐰
-              component: bakingToolSong,
+//                 and bakes baby sharks. 🐰
+      component: bakingSong,
 //              C. Catsby looks tasty
 //              Fox gets hungry for kitten. 🐯
-              context: {
-                topping: ahoyCookie.toppings.tags                  ,
-                //toppingRegex: `/${ahoyCookie}/`,
-      //              TODO Regex for Topping
-      //          toppingRegex: `/${ahoyCookie.frontmatter.tags}/i`,
-              },
-              defer: index + 1 > 2
-      })
-  });
+//       context: {
+//         catsby: ahoyGoodie.toppings.tags                  ,
+//         //toppingRegex: `/${ahoyCookie}/`,
+// //              TODO Regex for Topping
+// //          toppingRegex: `/${ahoyCookie.frontmatter.tags}/i`,
+//       },
+      defer: index + 1 > 2
+    })
+ });
 //              5. Pass tag data to pizzaTags.js
 }
 //                 Ruby Catsby and Lilly Owlsby
-//              1. Baking pages
+//                 Baking pages
 //                 with Cap'n Granny Sharksby's
 //                 createPages hook
-async function bakingToppingsIntoPages({ graphql, actions }) {
+async function turnToolsIntoPages({ graphql, actions }) {
 //                 console.log('Captain Granny Sharksbys createPages hook');
-//              2. bakingSong = Lilly the Bunny sings like a 🦢
-//                 the bakingSong by Cap'n Granny Sharksby 🦢
-    const bakingToppingSong = require.resolve('./src/pages/pizzas.js')
+//              1. bakingSong = Lilly the Owlsby sings like a 🦢
+  const bakingSong = require.resolve('./src/pages/pizzas.js')
 //                 Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
-//              3. supplies: toppings data 🌲 in Sanity and _ _ _ drawn
-    const { data } = await graphql(`{
-      supplies: allSanityTopping(sort: {fields: _createdAt, order: DESC}) {
-        nodes {
-          name
-          id
-        }
+//              2. supplies: toppings data 🌲 in Sanity and _ _ _ drawn
+  const { data } = await graphql(`{
+    supplies: allSanityTopping(sort: {
+      fields: _createdAt,
+      order: DESC
+    }) {
+      nodes {
+        name
+        id
       }
-    }`)
-//              4. Loop over the toppings and
-//                 turn them into pages with createPage
-    data.supplies.nodes.forEach((ahoyCookie, index) => {
+    }
+  }`)
+//              3. Loop over the topping nodes and
+//                 for each create a page with the createPage method
+  data.supplies.nodes.forEach((ahoyGoodie, index) => {
 //                 console.log('Defer index:', index);
-      actions.createPage({
+    actions.createPage({
 //              A. «Ahoy Goodie?!»
-        path: `/topping/${ahoyCookie.name}`,
-//              B.
-        component: bakingToppingSong,
-//              C. Catsby looks tasty
-        context: {
-//          fox: 'Catsby looks tasty, I get hungry for lunch-kitten',
-          catsby: ahoyCookie.name,
-//          catsby: 'looks tasty', pælme ut den ene, bare ha en nøkkel
-          toppingRegex: `/${ahoyCookie.name}/i`, // reggae
-        },
-        defer: index + 1 > 3,
+      path: `/tool/${ahoyGoodie.name}`,
+//              B. Sing
+      component: bakingSong,
+//              C. «Catsby looks goodie
+//                 I getz hungry for kitten.»
+      context: {
+        catsby: ahoyGoodie.name,
+        toolRegex: `/${ahoyGoodie.name}/i`, // reggae 🎵
+      },
+      defer: index + 1 > 3,
 //              How does Catsby help Lilly make an index of all the toppings?
 //              What is the way Lilly makes index travel from start to defer?
 //              D. 🤖 Data tree in your GraphiQL garden
@@ -157,11 +159,12 @@ async function bakingToppingsIntoPages({ graphql, actions }) {
 //              props.pageContext.defer:
 //              props.pageContext.ownerNodeId on Sunday
 
-        ownerNodeId: ahoyCookie.id,
-      })
+      ownerNodeId: ahoyGoodie.id,
     })
+  })
   //              5. Pass tag data to pizzaTags.js
-  }
+}
+
 async function bakingPhotosIntoPages({ graphql, actions}) {
   const bakingSong = require.resolve('./src/templates/RecipeSong.js')
   const { data } = await graphql(`{
@@ -278,7 +281,7 @@ async function turnNamesIntoTags({ graphql, actions }) {
     //              4. turn toppings into pages with
   //              Cap'n Granny Sharksby's createPages hook
     data.supplies.nodes.forEach((ahoyCookie, index) => {
-      console.log('Defer index:', index, ahoyCookie);
+//      console.log('Defer index:', index, ahoyCookie);
       //              A. 🦊
   //              B. 🐰
   //              C. 🐯
@@ -320,9 +323,9 @@ exports.createPages = async (params) => {
   // wait for all promises to be resolved before finishing this function
   await Promise.all([
     bakeMarkdownIntoGoodies(params),
-    // turnToolsIntoPages(params),
+    turnTagzIntoPages(params),
 
-    bakingToppingsIntoPages(params),
+    turnToolsIntoPages(params),
     bakingPhotosIntoPages(params),
 
     bakeImagesIntoGoodies(params),
