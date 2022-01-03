@@ -2,11 +2,13 @@
 
 Our forum and HQ is the [discussion tabs](https://github.com/queen-raae/bootcamp-first-function/discussions). Make sure to check out [the shedule](https://github.com/queen-raae/bootcamp-first-function/discussions/3) and [introduce yourself](https://github.com/queen-raae/bootcamp-first-function/discussions/categories/introductions).
 
-## 🚀 The Gatsby Timeship
+## OlaCast:
+### –Skill Builder Sunday for dev-dads and dev-daughters
 
-The code in the main branch are your starter files.
+Can tags be the backbone of navigation in  webapp?
 
-It's a simple form connected to a bare bones time-travel function.
+
+🚀 Lillian's Gatsby Timeship webapp
 
 ## ✨ Quick start
 
