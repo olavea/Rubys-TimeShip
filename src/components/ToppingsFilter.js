@@ -56,7 +56,7 @@ function countPizzasInToppings(pizzas) {
   return sortedToppings;
 }
 //              1. bakingToppingsIntoPages with Cap'n Catsby and Lilly Owlsby
-export default function ToppingsFilter({ activeTopping }) {
+export default function ToppingsFilter({ activeTool }) {
 
 
   // How do I  Get a list of all the Pizzas with their toppings
@@ -79,7 +79,7 @@ export default function ToppingsFilter({ activeTopping }) {
   `);
 //              2. Counting Song = Lilly Owlsby use the Counting Song 🦢 from Wes Bos to
   // Count how many pizzas are in each topping with countingSong
-  const toppingsWithCountsTreasure = countPizzasInToppings(pizzas.nodes);
+  const toolsWithCountsTreasure = countPizzasInToppings(pizzas.nodes);
   //console.log(toppingsWithCounts);
   // Loop over the list of toppings and display the topping and the count of pizzas in that topping
   // Link it up.. ...  . . .
@@ -91,11 +91,11 @@ export default function ToppingsFilter({ activeTopping }) {
         <span className="name">All</span>
         <span className="count">{pizzas.nodes.length}</span>
       </Link>
-      {toppingsWithCountsTreasure.map((topping) => (
+      {toolsWithCountsTreasure.map((topping) => (
         <Link
-          to={`/topping/${topping.name}`} // A. «Ahoy topping?!»
+          to={`/tool/${topping.name}`} // A. «Ahoy topping?!»
           key={topping.id}
-          className={topping.name === activeTopping ? 'active' : ''}
+          className={topping.name === activeTool ? 'active' : ''}
         >
           <span className="name">{topping.name}</span>
           <span className="count">{topping.count}</span>

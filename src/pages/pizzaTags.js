@@ -5,15 +5,15 @@ import React from "react";
 import TagList from "../components/TagList";
 // import ToppingsFilter from "../components/ToppingsFilter";
 // <ToppingsFilter activeTopping={pageContext.topping} />
-
+//         <TagList bakingTreasure={bakingTreasure} />
 export default function PizzaTagsPage({ data, pageContext }) {
 //   console.log(data)
-   const bakingTreasure = data.supplies.nodes;
+//   const bakingTreasure = data.supplies.nodes;
   return (
     <>
       <div>
 
-        <TagList bakingTreasure={bakingTreasure} />
+
         <p>tags</p>
       </div>
     </>
@@ -21,12 +21,12 @@ export default function PizzaTagsPage({ data, pageContext }) {
 }
 
 export const query = graphql`
-  query TagQuery($topping: [String]) {
+  query TagQuery($catsby: [String]) {
     supplies: allMarkdownRemark(
       filter: {
         frontmatter: {
           tags: {
-            in: $topping}}}) {
+            in: $catsby}}}) {
       nodes {
         id
         toppings: frontmatter {
