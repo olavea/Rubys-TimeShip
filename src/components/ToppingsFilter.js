@@ -78,7 +78,9 @@ export default function ToppingsFilter({ activeTool }) {
     }
   `);
 //              2. Counting Song = Lilly Owlsby use the Counting Song 🦢 from Wes Bos to
-  // Count how many pizzas are in each topping with countingSong
+
+// Count how many pizzas are in each topping with countingSong
+  //console.log(pizzas);
   const toolsWithCountsTreasure = countPizzasInToppings(pizzas.nodes);
   //console.log(toppingsWithCounts);
   // Loop over the list of toppings and display the topping and the count of pizzas in that topping
