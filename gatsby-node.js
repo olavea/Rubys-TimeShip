@@ -27,7 +27,7 @@ async function bakeMarkdownIntoGoodies({ graphql, actions }) {
 //              3. Loop over the markdown nodes and for each create a page
 //                 turn them into pages with createPage
   data.supplies.nodes.forEach((ahoyGoodie, index) => {
-//                 console.log('Defer index:', index);
+//                 console.log('Defer index:', index, ahoyGoodie);
 //              A. – B. – C. – DSG 🎩
       actions.createPage({
 //              A. «Ahoy! Goodie?!»
@@ -91,7 +91,7 @@ async function turnTagzIntoPages({ graphql, actions }) {
 //              3. turn toppings into pages with
 //                 createPage method from Captain Sharksby
   data.tagsGroup.group.forEach((ahoyGoodie, index) => {
-    console.log('Defer index:', ahoyGoodie);
+//    console.log('Defer index:', ahoyGoodie);
     actions.createPage({
 //              A. «Ahoy! Cookie?!»
 //                 Cap'n Fox shouts and embarks. 🦊
@@ -112,16 +112,15 @@ async function turnTagzIntoPages({ graphql, actions }) {
  });
 //              5. Pass tag data to pizzaTags.js
 }
-//                 Ruby Catsby and Lilly Owlsby
-//                 Baking pages
+//                 Troya Catsby and Lilly Owlsby Baking pages
 //                 with Cap'n Granny Sharksby's
 //                 createPages hook
 async function turnToolsIntoPages({ graphql, actions }) {
-//                 console.log('Captain Granny Sharksbys createPages hook');
 //              1. bakingSong = Lilly the Owlsby sings like a 🦢
+//                 console.log('Captain Granny Sharksbys createPages hook');
   const bakingSong = require.resolve('./src/pages/pizzas.js')
-//                 Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
 //              2. supplies: toppings data 🌲 in Sanity and _ _ _ drawn
+//                 Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
   const { data } = await graphql(`{
     supplies: allSanityTopping(sort: {
       fields: _createdAt,
@@ -133,7 +132,7 @@ async function turnToolsIntoPages({ graphql, actions }) {
       }
     }
   }`)
-//              3. Loop over the topping nodes and
+//              3. Loop over the tools nodes and
 //                 for each create a page with the createPage method
   data.supplies.nodes.forEach((ahoyGoodie, index) => {
 //                 console.log('Defer index:', index);
@@ -143,12 +142,14 @@ async function turnToolsIntoPages({ graphql, actions }) {
 //              B. Sing
       component: bakingSong,
 //              C. «Catsby looks goodie
-//                 I getz hungry for kitten.»
+//                 I getz hungry for kitten.»             // reggae 🎵
       context: {
         catsby: ahoyGoodie.name,
-        toolRegex: `/${ahoyGoodie.name}/i`, // reggae 🎵
+        toolRegex: `/${ahoyGoodie.name}/i`,
       },
-      defer: index + 1 > 3,
+//              D. Don't Show Goodies to Fox
+//              and maybe get bitten. 🎩
+      defer: index + 1 > 14,
 //              How does Catsby help Lilly make an index of all the toppings?
 //              What is the way Lilly makes index travel from start to defer?
 //              D. 🤖 Data tree in your GraphiQL garden
@@ -209,7 +210,6 @@ async function bakingPhotosIntoPages({ graphql, actions}) {
     })
   })
 }
-
 //              1. Baking Pages with Captain Granny Sharksby's hook
 async function bakeImagesIntoGoodies({ graphql, actions }) {
 //              console.log('Captain Granny Sharksbys hook');
@@ -259,7 +259,6 @@ async function bakeImagesIntoGoodies({ graphql, actions }) {
     })
   });
 };
-
 //              1. Captain Granny Sharksby createPages hook ↩️
 async function turnNamesIntoTags({ graphql, actions }) {
 //  console.log('Captain Granny Sharksbys hook');
@@ -307,19 +306,9 @@ async function turnNamesIntoTags({ graphql, actions }) {
     });
   //              5. Pass tag data to pizzaTags.js
   }
-
 //              0. export Baking Pages with Captain Granny Sharksby's createPages hook ↩️
 exports.createPages = async (params) => {
-  // create pages dynamically from any data source like for example:
-  // markdown in local files
-//                  RecipeMarkdown.js
-//                  pizzaTags.js Don't hook up markdown and tags yet
-  // sanity.io
-//                  missing
-//                  pizzas.js
-  // images in local files
-//                  Recipe.js
-//                  image-tags.js
+  // create pages dynamically from any data source like for example see below:
   // wait for all promises to be resolved before finishing this function
   await Promise.all([
     bakeMarkdownIntoGoodies(params),
@@ -331,5 +320,13 @@ exports.createPages = async (params) => {
     bakeImagesIntoGoodies(params),
     turnNamesIntoTags(params),
   ])
-//              friends and family and customers and skill builders
+// markdown in local files
+//                  RecipeMarkdown.js
+//                  pizzaTags.js Don't hook up markdown and tags yet
+// sanity.io
+//                  pizzas.js    is tools
+//                  RecipeSong.js   is photos
+// images in local files
+//                  Recipe.js
+//                  image-tags.js
 }
