@@ -19,6 +19,7 @@ const PizzaGrid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
 `;
+// TODO remove childImageSharp
 
 export default function SingleImagoPage({data}) {
   return (

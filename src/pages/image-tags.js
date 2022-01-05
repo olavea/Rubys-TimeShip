@@ -25,7 +25,7 @@ export default function ImageTagPage({ data, pageContext }) {
     </PizzaGrid>
   )
 }
-
+// TODO remove childImageSharp
 export const query = graphql`
   query ImageTagQuery($id: String)   {
     supplies: file(id: {eq: $id}) {
