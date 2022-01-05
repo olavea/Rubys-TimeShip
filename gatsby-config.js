@@ -72,7 +72,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-react-helmet`,
+//    `gatsby-plugin-react-helmet`,
     `@raae/gatsby-plugin-donations`,
     // `@raae/gatsby-plugin-let-it-snow`,
     {
