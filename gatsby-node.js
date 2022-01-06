@@ -3,6 +3,63 @@
 //                 Baking pages
 //                 with Cap'n Granny Sharksby's
 //                 createPages hook
+async function bakePodcastsIntoPages({ graphql,actions }) {
+//                 console.log('💀 Captain Granny Sharksbys createPages hook 💀');
+//              1.
+  const bakingSong = require.resolve('./src/templates/bake-podcast-song.js')
+//                 Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
+//              2.
+  const { data } = await graphql(`{
+    supplies: allMarkdownRemark(sort: {
+      order: ASC,
+      fields: frontmatter___title
+    }) {
+      nodes {
+        id
+        strawberry: frontmatter {
+          path
+          title
+        }
+      }
+    }
+  }
+  `)
+//              3.
+  data.supplies.nodes.forEach((ahoyGoodie, index) => {
+//                 console.log('Defer index:', index, ahoyGoodie);
+//              A. – B. – C. – DSG 🎩
+    actions.createPage({
+//              A. «Ahoy! Goodie?!»
+//                 Cap'n Fox shouts and embarks. 🦊
+      path: `/olacast/${ahoyGoodie.strawberry.path}`,
+//              B. Owlsby sings badly
+//                 and bakes baby sharks. 🦈
+      component: bakingSong,
+//              C. Catsby looks tasty
+//                 Fox gets hungry for kitten. 🐯
+      context: {
+        catsbySlug: ahoyGoodie.strawberry.path,
+        fox: 'Catsby looks tasty I getz hungry for kitten',
+      },
+//              D. Don't Show Goodies to Fox
+//              and maybe get bitten. DSG–🎩
+//              catsby build and look for _ _ _ in terminal 💀
+      defer: index + 1 > 2,
+//              D. Data tree 🤖🌲
+//              E. Every node you must sort 💰
+//              F. Fields Forever `fields: ,` 🍓
+//              E. forEach index
+//              R. RRR! defer: index + 1 > 2 🎩
+
+//              How does Catsby help Lilly make an index of all the toppings?
+//              What is the way Lilly makes index travel from
+//              D. Data tree 🤖🌲
+//              R. RRR! defer: index + 1 > 2 🎩
+  })
+});
+
+}
+//3.
 async function bakeMarkdownIntoGoodies({ graphql, actions }) {
 //                 console.log('Captain Granny Sharksbys createPages hook'); 💀
 //              1. bakingSong = Lilly the Bunny sings like a 🦢
@@ -59,58 +116,68 @@ async function bakeMarkdownIntoGoodies({ graphql, actions }) {
     })
   });
 }
-//                 We don't use this yet
 //                 Captain Granny Sharksby createPages hook ↩️
-async function turnTagzIntoPages({ graphql, actions }) {
+async function bakePeopleIntoPages({ graphql, actions }) {
 //                 console.log('createPages hook from Captain Sharksby ↩️ 💀');
 //              1. bakingSong = Lilly the Bunny require the bakingSong from granny Shark's gingerbread Recipe
-  const bakingSong = require.resolve('./src/pages/pizzaTags.js')
+  const bakingSong = require.resolve('./src/pages/bake-podcasts-song.js')
 //                 Look for _ _ _ in http://localhost:8000/tag/eminem 👻
 //              2. supplies: tags in markdown files
   const { data } = await graphql(`{
-    postsRemark: allMarkdownRemark(
-      sort: {order: DESC, fields: frontmatter___date}
-      limit: 10
-    ) {
-      edges {
-        node {
-          frontmatter {
-            url
-            tags
-          }
+    pirates: allSanityPerson {
+      totalCount
+      nodes {
+        name
+        id
+        slug {
+          current
         }
-      }
-    }
-    tagsGroup: allMarkdownRemark(limit: 20) {
-      group(field: frontmatter___tags) {
-        totalCount
-        fieldValue
       }
     }
   }`)
 //              3. turn toppings into pages with
 //                 createPage method from Captain Sharksby
-  data.tagsGroup.group.forEach((ahoyGoodie, index) => {
+  data.pirates.nodes.forEach((ahoyGoodie) => {
 //    console.log('Defer index:', ahoyGoodie);
     actions.createPage({
 //              A. «Ahoy! Cookie?!»
 //                 Cap'n Fox shouts and embarks. 🦊
-      path: `/tag/${ahoyGoodie.fieldValue}`,
+      path: `/pirate/${ahoyGoodie.slug.current}`,
 //              B. Bunny sings badly
 //                 and bakes baby sharks. 🐰
       component: bakingSong,
 //              C. Catsby looks tasty
 //              Fox gets hungry for kitten. 🐯
-//       context: {
-//         catsby: ahoyGoodie.toppings.tags                  ,
-//         //toppingRegex: `/${ahoyCookie}/`,
-// //              TODO Regex for Topping
-// //          toppingRegex: `/${ahoyCookie.frontmatter.tags}/i`,
-//       },
-      defer: index + 1 > 2
+      context: {
+        catsby: ahoyGoodie.slug.current,
+        //name: `/${ahoyCookie}/`,
+//              TODO Regex for Topping
+//          toppingRegex: `/${ahoyCookie.frontmatter.tags}/i`,
+      },
+//      defer: index + 1 > 2,
+      ownerNodeId: ahoyGoodie.id,
     })
- });
-//              5. Pass tag data to pizzaTags.js
+  });
+// // 3. Figure out how many pages there are based on how many slicemasters there are, and how many per page!
+// const pageSize = parseInt(process.env.GATSBY_PAGE_SIZE);
+// const pageCount = Math.ceil(data.slicemasters.totalCount / pageSize);
+// console.log(
+//   `There are ${data.slicemasters.totalCount} total people. And we have ${pageCount} pages with ${pageSize} per page`
+// );
+// // 4. Loop from 1 to n and create the pages for them
+// Array.from({ length: pageCount }).forEach((_, i) => {
+//   console.log(`Creating page ${i}`);
+//   actions.createPage({
+//     path: `/slicemasters/${i + 1}`,
+//     component: path.resolve('./src/pages/slicemasters.js'),
+//     // This data is pass to the template when we create it
+//     context: {
+//       skip: i * pageSize,
+//       currentPage: i + 1,
+//       pageSize,
+//     },
+//   });
+// });
 }
 //                 Troya Catsby and Lilly Owlsby Baking pages
 //                 with Cap'n Granny Sharksby's
@@ -312,8 +379,9 @@ exports.createPages = async (params) => {
   // wait for all promises to be resolved before finishing this function
   await Promise.all([
     bakeMarkdownIntoGoodies(params),
-    turnTagzIntoPages(params),
+    bakePodcastsIntoPages(params),
 
+    bakePeopleIntoPages(params),
     turnToolsIntoPages(params),
     bakingPhotosIntoPages(params),
 

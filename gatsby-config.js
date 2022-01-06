@@ -6,6 +6,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     siteUrl: "https://timeship1.gatsbyjs.io/",
+    url: "https://www.olavea.com/",
     title: `TimeShip1`,
     description: "Lillian and Friends Building Skill",
   },
@@ -18,24 +19,18 @@ module.exports = {
 //  or gatsby-transformer-sharp in SSR or DSG pages. The best workaround is to use an image CDN such as Cloudinary or imgix to host your images. This will give you faster builds and rendering too.
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    // In your gatsby-config.js
 
     // {
     //   resolve: `gatsby-transformer-remark`,
     //   options: {
     //     plugins: [
     //       {
-    //         resolve: `gatsby-remark-prismjs`,
-    //       },
-    //       {
-    //         resolve: `gatsby-remark-images`,
-    //         options: {
-    //           maxWidth: 800,
-    //           linkImagesToOriginal: false,
-    //         },
-    //       },
-    //       {
     //         resolve: `@raae/gatsby-remark-oembed`,
     //         options: {
+    //           // usePrefix defaults to false
+    //           // usePrefix: true is the same as ["oembed"]
+    //           usePrefix: ["oembed", "video"],
     //           providers: {
     //             // Important to exclude providers
     //             // that adds js to the page.
@@ -45,8 +40,31 @@ module.exports = {
     //               "Instagram",
     //               "Twitter",
     //               "Flickr",
-    //               "YouTube",
     //             ],
+    //           },
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: `@raae/gatsby-remark-oembed`,
+    //         options: {
+    //           providers: {
+    //             // Important to exclude providers
+    //             // that adds js to the page.
+    //             // If you do not need them.
+                // exclude: [
+                //   "Reddit",
+                //   "Instagram",
+                //   "Twitter",
+                //   "Flickr",
+                //   "YouTube",
+                // ],
     //           },
     //         },
     //       },
@@ -56,7 +74,6 @@ module.exports = {
     //     ],
     //   },
     // },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -96,7 +113,7 @@ module.exports = {
       options: {
         projectId: 'fr5nacyp',
         dataset: 'production',
-        watchMode: true,
+        watchMode: false,
         token: process.env.SANITY_TOKEN,
       },
     },
