@@ -1,7 +1,7 @@
 ---
 title: A. «Ahoy! Cookie?!» Cap'n Fox shouts and embarks. 🦊
 
-url: https://www.conferencebuddy.io/
+url: https://www.olavea.com/olacast/
 date: 2022-06-10
 city: Frankfurt
 country: Germany
@@ -13,7 +13,8 @@ path: /A-createPages-from-markdown-files
 ---
 
 # bleh bleh bleh
-bleh bleh bleh
+"bleh bleh bleh."Says 🧛‍♀️ 🏴‍☠️
+
 
 I added my first blog post in markdown, this one.
 

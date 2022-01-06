@@ -3,6 +3,63 @@
 //                 Baking pages
 //                 with Cap'n Granny Sharksby's
 //                 createPages hook
+async function bakePodcastsIntoPages({ graphql,actions }) {
+//                 console.log('💀 Captain Granny Sharksbys createPages hook 💀');
+//              1.
+  const bakingSong = require.resolve('./src/templates/bake-podcast-song.js')
+//                 Look for _ _ _ in http://localhost:8000/topping/Duct-Tape 👻
+//              2.
+  const { data } = await graphql(`{
+    supplies: allMarkdownRemark(sort: {
+      order: ASC,
+      fields: frontmatter___title
+    }) {
+      nodes {
+        id
+        strawberry: frontmatter {
+          path
+          title
+        }
+      }
+    }
+  }
+  `)
+//              3.
+  data.supplies.nodes.forEach((ahoyGoodie, index) => {
+//                 console.log('Defer index:', index, ahoyGoodie);
+//              A. – B. – C. – DSG 🎩
+    actions.createPage({
+//              A. «Ahoy! Goodie?!»
+//                 Cap'n Fox shouts and embarks. 🦊
+      path: `/olacast/${ahoyGoodie.strawberry.path}`,
+//              B. Owlsby sings badly
+//                 and bakes baby sharks. 🦈
+      component: bakingSong,
+//              C. Catsby looks tasty
+//                 Fox gets hungry for kitten. 🐯
+      context: {
+        catsbySlug: ahoyGoodie.strawberry.path,
+        fox: 'Catsby looks tasty I getz hungry for kitten',
+      },
+//              D. Don't Show Goodies to Fox
+//              and maybe get bitten. DSG–🎩
+//              catsby build and look for _ _ _ in terminal 💀
+      defer: index + 1 > 2,
+//              D. Data tree 🤖🌲
+//              E. Every node you must sort 💰
+//              F. Fields Forever `fields: ,` 🍓
+//              E. forEach index
+//              R. RRR! defer: index + 1 > 2 🎩
+
+//              How does Catsby help Lilly make an index of all the toppings?
+//              What is the way Lilly makes index travel from
+//              D. Data tree 🤖🌲
+//              R. RRR! defer: index + 1 > 2 🎩
+  })
+});
+
+}
+//3.
 async function bakeMarkdownIntoGoodies({ graphql, actions }) {
 //                 console.log('Captain Granny Sharksbys createPages hook'); 💀
 //              1. bakingSong = Lilly the Bunny sings like a 🦢
@@ -59,10 +116,9 @@ async function bakeMarkdownIntoGoodies({ graphql, actions }) {
     })
   });
 }
-//                 We don't use this yet
 //                 Captain Granny Sharksby createPages hook ↩️
-async function bakePodcastsIntoPages({ graphql, actions }) {
-                console.log('createPages hook from Captain Sharksby ↩️ 💀');
+async function bakePeopleIntoPages({ graphql, actions }) {
+//                 console.log('createPages hook from Captain Sharksby ↩️ 💀');
 //              1. bakingSong = Lilly the Bunny require the bakingSong from granny Shark's gingerbread Recipe
   const bakingSong = require.resolve('./src/pages/bake-podcasts-song.js')
 //                 Look for _ _ _ in http://localhost:8000/tag/eminem 👻
@@ -82,7 +138,7 @@ async function bakePodcastsIntoPages({ graphql, actions }) {
 //              3. turn toppings into pages with
 //                 createPage method from Captain Sharksby
   data.pirates.nodes.forEach((ahoyGoodie) => {
-    console.log('Defer index:', ahoyGoodie);
+//    console.log('Defer index:', ahoyGoodie);
     actions.createPage({
 //              A. «Ahoy! Cookie?!»
 //                 Cap'n Fox shouts and embarks. 🦊
@@ -325,6 +381,7 @@ exports.createPages = async (params) => {
     bakeMarkdownIntoGoodies(params),
     bakePodcastsIntoPages(params),
 
+    bakePeopleIntoPages(params),
     turnToolsIntoPages(params),
     bakingPhotosIntoPages(params),
 

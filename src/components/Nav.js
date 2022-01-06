@@ -68,7 +68,7 @@ export default function Nav() {
           <Link to="/slicemasters">💜 & Friends</Link>
         </li>
         <li>
-          <Link to="/order">💸 order</Link>
+          <Link to="/olacast"> 🎤🔧 OlaCast: skill- builders 🔧 🔧🎤</Link>
         </li>
       </ul>
     </NavStyles>
