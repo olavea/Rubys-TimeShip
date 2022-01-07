@@ -19,6 +19,8 @@
     "@raae/gatsby-plugin-let-it-snow": "^0.6.0",
     "@raae/gatsby-plugin-new-css": "0.0.1",
     "@raae/gatsby-remark-oembed": "^0.1.1",
+    "@sindresorhus/slugify": "^2.1.0",
+    "axios": "^0.24.0",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "4.0.2",
     "gatsby-image": "^3.11.0",

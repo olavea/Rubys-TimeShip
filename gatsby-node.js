@@ -1,4 +1,32 @@
 //                                                gatsby-node.js
+const { fetchEmbed } = require("./src/services/oembed");
+
+const YOUTUBE_IDS = ["4nWUMgiEpdc", "DaWn3zIpR2Y", "sbClENlhHUs", "UZImOvL9Q_g", "PkmxdC4-lII", "8akVGSk4FhQ", "zRUxnx7pv0E", "ix_0vrwQnWk", "dlRbFtih2X0", "dtltxhgjLb4"];
+
+exports.sourceNodes = async ({
+  actions: { createNode },
+  createContentDigest,
+  reporter
+}) => {
+  // Sourcing harcoded urls,
+  // this would typically come from a more dynamic source
+  for (const id of YOUTUBE_IDS) {
+    const embedData = await fetchEmbed(id, reporter);
+    if (!embedData) return;
+
+    createNode({
+      id: id,
+      ...embedData,
+      internal: {
+        type: "youTubeEmbed",
+        contentDigest: createContentDigest(id)
+      }
+    });
+  }
+};
+
+
+
 //                 Ruby Catsby and Lilly Owlsby
 //                 Baking pages
 //                 with Cap'n Granny Sharksby's
