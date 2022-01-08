@@ -8,7 +8,7 @@ exports.sourceNodes = async ({
   createContentDigest,
   reporter
 }) => {
-  // Sourcing harcoded urls,
+  // Sourcing harcoded urls, YOUTUBE_IDS.forEach(id => {....})?
   // this would typically come from a more dynamic source
   for (const id of YOUTUBE_IDS) {
     const embedData = await fetchEmbed(id, reporter);

@@ -2,7 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import slugify from "@sindresorhus/slugify";
 
-const Videos = () => {
+const Olacast = () => {
   const data = useStaticQuery(graphql`
     {
       allYouTubeEmbed {
@@ -17,6 +17,7 @@ const Videos = () => {
 
   return (
     <>
+        <h2 className="mark">OlaCast</h2>
         <ul>
         {data.allYouTubeEmbed.nodes.map((video) => {
             return (
@@ -30,4 +31,4 @@ const Videos = () => {
   );
 };
 
-export default Videos;
+export default Olacast;
