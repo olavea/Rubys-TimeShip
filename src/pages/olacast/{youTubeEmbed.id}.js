@@ -1,4 +1,4 @@
-// src/pages/yt/{youTubeEmbed}.js
+// src/pages/olacast/{youTubeEmbed.id}.js
 
 import React from "react";
 import { graphql } from "gatsby";
