@@ -1,45 +1,39 @@
-//                                                gatsby-node.js
-//              G. Get
 const { fetchEmbed } = require("./src/services/oembed");
 const YOUTUBE_IDS_RED_STRING = ["4nWUMgiEpdc", "DaWn3zIpR2Y", "sbClENlhHUs", "UZImOvL9Q_g", "PkmxdC4-lII", "8akVGSk4FhQ", "zRUxnx7pv0E", "ix_0vrwQnWk", "dlRbFtih2X0", "dtltxhgjLb4"];
 
-exports.sourceNodes = async ({
-  actions: { createNode },
-  createContentDigest,
-  reporter
-}) => {
-  //              L. Loop over YOUTUBE_IDS_RED_STRING
-  for (const idPinkyPinksbyPirateParrot of YOUTUBE_IDS_RED_STRING) {
-    const embedData = await fetchEmbed(idPinkyPinksbyPirateParrot, reporter);
-    if (!embedData) return;
-
-    createNode({
-//              G. Get data
-      ...embedData,
-//              I. id
-      id: idPinkyPinksbyPirateParrot,
-//              G. contentDiGest
-      internal: {
-        type: "youTubeEmbed",
-        contentDigest: createContentDigest(idPinkyPinksbyPirateParrot)
-      }
-    });
-  }
-};
 
 
+// 2. Loop over each one
+//  for (const idPinky of YOUTUBE_IDS_RED_STRING) {
+    // create a node for each video
+//  }
 
+//                                                gatsby-node.js
+//              G. Get
 
+// exports.sourceNodes = async ({
+//   actions: { createNode },
+//   createContentDigest,
+//   reporter
+// }) => {
+//   //              L. Loop over YOUTUBE_IDS_RED_STRING
+//   for (const idPinkyPinksbyPirateParrot of YOUTUBE_IDS_RED_STRING) {
+//     const embedData = await fetchEmbed(idPinkyPinksbyPirateParrot, reporter);
+//     if (!embedData) return;
 
-
-
-
-
-
-
-
-
-
+//     createNode({
+// //              G. Get data
+//       ...embedData,
+// //              I. id
+//       id: idPinkyPinksbyPirateParrot,
+// //              G. contentDiGest
+//       internal: {
+//         type: "youTubeEmbed",
+//         contentDigest: createContentDigest(idPinkyPinksbyPirateParrot)
+//       }
+//     });
+//   }
+// };
 //                 Ruby Catsby and Lilly Owlsby
 //                 Baking pages
 //                 with Cap'n Granny Sharksby's
@@ -346,7 +340,55 @@ async function turnNamesIntoTags({ graphql, actions }) {
         })
     });
   //              5. Pass tag data to pizzaTags.js
-  }
+}
+//                                                G.
+//                                                i.
+//                                                G.
+//                                                G.
+
+// Get data and gut gulls 🐦
+// go res fetch! Em🛌
+// u return data
+// try
+// get 🪓.get("📺🐝/oembed",
+// url: `https://youtu.🐝/${🦜}`,
+// logger.info(`🪓`);
+// logger.warn(`🪓`);
+// s async
+//                                                L. Loop over
+//                                                E.
+//                                                S.
+const axios = require("axios");
+async function fetchVideosAndTurnIntoNodes({actions: {createNode}, createNodeId, createContentDigest}) {
+//  console.log(' 📺 🐝 turn Videos Into Nodes 💰💰 ');
+// 1. Fetch a video
+  const res = await axios.get("https://www.youtube.com/oembed",
+    {params: {
+      url: `https://youtu.be/4nWUMgiEpdc`,
+      maxwidth: 800
+    }}
+  );
+//  console.log(res.);
+// 3. Create a node for that video
+  const embedVideo = await res
+    createNode({
+      embedVideo,
+      id: "4nWUMgiEpdc",
+      internal: {
+        type: "youTubeEmbed",
+        contentDigest: createContentDigest("4nWUMgiEpdc")
+      },
+    });
+
+
+
+
+}
+
+exports.sourceNodes = async (params) => {
+  // fetch a list of videos and source them into our gatsby API!
+  await await Promise.all([fetchVideosAndTurnIntoNodes(params)]);
+}
 //              0. export Baking Pages with Captain Granny Sharksby's createPages hook ↩️
 exports.createPages = async (params) => {
   // create pages dynamically from any data source like for example see below:
@@ -361,6 +403,8 @@ exports.createPages = async (params) => {
     bakeImagesIntoGoodies(params),
     turnNamesIntoTags(params),
   ])
+
+
 // markdown in local files
 //                  RecipeMarkdown.js
 //                  pizzaTags.js Don't hook up markdown and tags yet
