@@ -1,29 +1,42 @@
 //                                                gatsby-node.js
+//              G. Get
 const { fetchEmbed } = require("./src/services/oembed");
-
-const YOUTUBE_IDS = ["4nWUMgiEpdc", "DaWn3zIpR2Y", "sbClENlhHUs", "UZImOvL9Q_g", "PkmxdC4-lII", "8akVGSk4FhQ", "zRUxnx7pv0E", "ix_0vrwQnWk", "dlRbFtih2X0", "dtltxhgjLb4"];
+const YOUTUBE_IDS_RED_STRING = ["4nWUMgiEpdc", "DaWn3zIpR2Y", "sbClENlhHUs", "UZImOvL9Q_g", "PkmxdC4-lII", "8akVGSk4FhQ", "zRUxnx7pv0E", "ix_0vrwQnWk", "dlRbFtih2X0", "dtltxhgjLb4"];
 
 exports.sourceNodes = async ({
   actions: { createNode },
   createContentDigest,
   reporter
 }) => {
-  // Sourcing harcoded urls, YOUTUBE_IDS.forEach(id => {....})?
-  // this would typically come from a more dynamic source
-  for (const id of YOUTUBE_IDS) {
-    const embedData = await fetchEmbed(id, reporter);
+  //              L. Loop over YOUTUBE_IDS_RED_STRING
+  for (const idPinkyPinksbyPirateParrot of YOUTUBE_IDS_RED_STRING) {
+    const embedData = await fetchEmbed(idPinkyPinksbyPirateParrot, reporter);
     if (!embedData) return;
 
     createNode({
-      id: id,
+//              G. Get data
       ...embedData,
+//              I. id
+      id: idPinkyPinksbyPirateParrot,
+//              G. contentDiGest
       internal: {
         type: "youTubeEmbed",
-        contentDigest: createContentDigest(id)
+        contentDigest: createContentDigest(idPinkyPinksbyPirateParrot)
       }
     });
   }
 };
+
+
+
+
+
+
+
+
+
+
+
 
 
 
