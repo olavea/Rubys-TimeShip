@@ -359,26 +359,48 @@ async function turnNamesIntoTags({ graphql, actions }) {
 //                                                E.
 //                                                S.
 const axios = require("axios");
-async function fetchVideosAndTurnIntoNodes({actions: {createNode}, createNodeId, createContentDigest}) {
-//  console.log(' 📺 🐝 turn Videos Into Nodes 💰💰 ');
-// 1. Fetch a video
-  const res = await axios.get("https://www.youtube.com/oembed",
+async function fetchVideosAndTurnIntoNodes({ actions, createNodeId, createContentDigest, reporter }) {
+  console.log(' 📺 🐝 turn Video Into Node 💰');
+//              a.1. Fetch a video
+  const embedVideo = await axios.get("https://www.youtube.com/oembed",
     {params: {
       url: `https://youtu.be/4nWUMgiEpdc`,
       maxwidth: 800
     }}
   );
-//  console.log(res.);
-// 3. Create a node for that video
-  const embedVideo = await res
-    createNode({
-      embedVideo,
-      id: "4nWUMgiEpdc",
-      internal: {
-        type: "youTubeEmbed",
-        contentDigest: createContentDigest("4nWUMgiEpdc")
-      },
-    });
+  console.log(embedVideo);
+  if (!embedVideo) return;
+//  const embedVideo = await res
+  // // 3. Create one node
+  actions.createNode({
+    ...embedVideo,
+    id: "4nWUMgiEpdc",
+    internal: {
+
+      type: "youTubeEmbed",
+
+      contentDigest: createContentDigest("4nWUMgiEpdc")
+    },
+  });
+//              a. actions
+//              c. contentDigest
+//              t. type
+//              i. id "4nWUMgiEpdc"
+//              i. internal: {
+//              i. id: "4nWUMgiEpdc",
+//              o.
+//              n.
+//              s.
+
+
+
+//              i.
+//              i.
+//              t.
+//              c.
+//              i.
+//              i.
+//              i.
 
 
 
