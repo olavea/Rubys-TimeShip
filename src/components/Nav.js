@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import styled from "styled-components";
 import Logo from './Logo';
 
@@ -74,14 +74,3 @@ export default function Nav({data}) {
     </NavStyles>
   );
 }
-
-export const query = graphql`
-  {
-    allYouTubeEmbed {
-      nodes {
-        id
-
-      }
-    }
-  }
-`

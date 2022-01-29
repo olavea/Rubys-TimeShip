@@ -2,7 +2,7 @@
 import { graphql } from "gatsby";
 import React from "react";
 
-import TagList from "../components/TagList";
+// import TagList from "../components/TagList";
 // import ToppingsFilter from "../components/ToppingsFilter";
 // <ToppingsFilter activeTopping={pageContext.topping} />
 //         <TagList bakingTreasure={bakingTreasure} />

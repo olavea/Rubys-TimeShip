@@ -1,14 +1,14 @@
 const axios = require("axios");
 
-exports.fetchEmbed = async (idPinkyParrot, logger) => {
+exports.fetchEmbed = async (idPinkyPinksbyPiratyParrot, logger) => {
   try {
     const { data } = await axios.get("https://www.youtube.com/oembed", {
-      params: { url: `https://youtu.be/${idPinkyParrot}`, maxwidth: 800 }
+      params: { url: `https://youtu.be/${idPinkyPinksbyPiratyParrot}`, maxwidth: 800 }
     });
-    logger.info(`Fetched embed for ${idPinkyParrot}: ${data.title}`);
+    logger.info(`Fetched embed for ${idPinkyPinksbyPiratyParrot}: ${data.title}`);
     return data;
   } catch (error) {
-    logger.warn(`Error fetching embed for ${idPinkyParrot}: ${error.message}`);
+    logger.warn(`Error fetching embed for ${idPinkyPinksbyPiratyParrot}: ${error.message}`);
   }
 };
 

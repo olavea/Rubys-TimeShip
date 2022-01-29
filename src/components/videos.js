@@ -4,24 +4,27 @@ import slugify from "@sindresorhus/slugify";
 
 const Videos = () => {
   const data = useStaticQuery(graphql`
-    {
-      allYouTubeEmbed {
-        nodes {
-          id
+  {
+    youTubeEmbed: allOlaTubeOemBed {
+      nodes {
+        id
+        data {
           title
+          html
           thumbnail_url
         }
       }
     }
+  }
   `);
 
   return (
     <>
         <ul>
-        {data.allYouTubeEmbed.nodes.map((video) => {
+        {data.youTubeEmbed.nodes.map((video) => {
             return (
             <li key={video.id}>
-                <Link to={`/olacast/${slugify(video.id)}/`}>{video.title}</Link>
+                <Link to={`/olacast/${slugify(video.id)}/`}>{video.data.title}</Link>
             </li>
             );
         })}
