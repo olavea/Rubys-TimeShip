@@ -1,7 +1,6 @@
 // components / TagList.js
 import React from 'react';
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
 // line 14
 // <p>{pizza.toppings.map((topping) => topping.name).join(', ')}</p>
 //         <GatsbyImage image={pizza.childImageSharp.gatsbyImageData} alt= {pizza.name} />
