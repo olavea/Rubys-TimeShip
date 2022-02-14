@@ -431,6 +431,8 @@ async function turnNamesIntoTags({ graphql, actions }) {
 // if (!oembedVideo) return;
 
 const axios = require("axios");
+const { createFilePath } = require("gatsby-source-filesystem");
+const { graphql } = require("gatsby");
 const OLA_TUBE_ID = "UGq8cnNTbwI";
 const POW_TUBE_IDS_RED_STRING = ["UGq8cnNTbwI", "eRTJPIa39a4"];
 async function bakeOneNodeGetOneVideo({ actions, createContentDigest }) {
@@ -457,24 +459,71 @@ async function bakeOneNodeGetOneVideo({ actions, createContentDigest }) {
   }
 }
 
+async function slugifyMarkdownRemarkNode({ actions, node, getNode }) {
+  const { createNodeField } = actions;
+  if (node.internal.type === "MarkdownRemark") {
+    const slug = createFilePath({ node, getNode });
+    createNodeField({
+      name: "slug",
+      node,
+      value: slug,
+    });
+  }
+}
+async function bakeMarkdownIntoGingerbreadHouse({ graphql, actions }) {
+  console.log("💀 bakeMarkdownIntoGingerbreadHouse 💀");
+
+  // 1. supplies! from Data River
+  const { data } = await graphql(`
+    {
+      supplies: allMarkdownRemark {
+        nodes {
+          id
+        }
+      }
+    }
+  `);
+  console.log("💀💀", data.supplies.nodes);
+  // 2. bakingSong
+  const bakingSong = require.resolve("./src/templates/bakingSong.js");
+  //             3. Loop over the nodes and for each create a page
+  data.supplies.nodes.forEach((ahoyGingerSection) => {
+    console.log("💀💀💀", ahoyGingerSection.id);
+    actions.createPage({
+      //             A. Ahoy! Baking aroma!
+      path: ahoyGingerSection.id,
+      //             B. bakingSong
+      component: bakingSong,
+      //             C. catsby
+      context: {
+        catsby: ahoyGingerSection.id,
+      },
+    });
+  });
+}
+exports.onCreateNode = async (gatsbyUtils) => {
+  await Promise.all([slugifyMarkdownRemarkNode(gatsbyUtils)]);
+};
+
 exports.sourceNodes = async (params) => {
   // Bake one node and source it into our GraphQL-Gatsby data-river
   await Promise.all([bakeOneNodeGetOneVideo(params)]);
 };
 
 //              0. export Baking Pages with Captain Granny Sharksby's createPages hook ↩️
-exports.createPages = async (params) => {
+exports.createPages = async (gatsbyUtils) => {
   // create pages dynamically from any data source like for example see below:
   // wait for all promises to be resolved before finishing this function
   await Promise.all([
-    bakeMarkdownIntoGoodies(params),
-    turnTagzIntoPages(params),
+    // bakeMarkdownIntoGoodies(gatsbyUtils),
+    // turnTagzIntoPages(gatsbyUtils),
+    bakeMarkdownIntoGingerbreadHouse(gatsbyUtils),
 
-    turnToolsIntoPages(params),
-    bakingPhotosIntoPages(params),
+    //    turnToolsIntoPages(gatsbyUtils),
+    // bakingPhotosIntoPages(gatsbyUtils),
 
-    bakeImagesIntoGoodies(params),
-    turnNamesIntoTags(params),
+    // bakeImagesIntoGoodies(gatsbyUtils),
+    // turnNamesIntoTags(gatsbyUtils),
   ]);
 
   // markdown in local files

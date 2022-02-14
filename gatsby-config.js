@@ -16,46 +16,6 @@ module.exports = {
     //  Currently you cannot use StaticImage
     //  or gatsby-transformer-sharp in SSR or DSG pages. The best workaround is to use an image CDN such as Cloudinary or imgix to host your images. This will give you faster builds and rendering too.
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
-
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: `gatsby-remark-prismjs`,
-    //       },
-    //       {
-    //         resolve: `gatsby-remark-images`,
-    //         options: {
-    //           maxWidth: 800,
-    //           linkImagesToOriginal: false,
-    //         },
-    //       },
-    //       {
-    //         resolve: `@raae/gatsby-remark-oembed`,
-    //         options: {
-    //           providers: {
-    //             // Important to exclude providers
-    //             // that adds js to the page.
-    //             // If you do not need them.
-    //             exclude: [
-    //               "Reddit",
-    //               "Instagram",
-    //               "Twitter",
-    //               "Flickr",
-    //               "YouTube",
-    //             ],
-    //           },
-    //         },
-    //       },
-    //       {
-    //         resolve: `gatsby-remark-responsive-iframe`,
-    //       },
-    //     ],
-    //   },
-    // },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -113,6 +73,18 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content/`,
+      },
+      __key: "content",
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
     },
   ],
 };
