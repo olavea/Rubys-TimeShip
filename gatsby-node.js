@@ -433,8 +433,19 @@ async function turnNamesIntoTags({ graphql, actions }) {
 const axios = require("axios");
 const { createFilePath } = require("gatsby-source-filesystem");
 const { graphql } = require("gatsby");
-const OLA_TUBE_ID = "UGq8cnNTbwI";
-const POW_TUBE_IDS_RED_STRING = ["UGq8cnNTbwI", "eRTJPIa39a4"];
+const POW_PUG_TUBE_IDS = ["UGq8cnNTbwI", "eRTJPIa39a4"];
+const POW_TUBE_IDS_RED_STRING = [
+  "4nWUMgiEpdc",
+  "DaWn3zIpR2Y",
+  "sbClENlhHUs",
+  "UZImOvL9Q_g",
+  "PkmxdC4-lII",
+  "8akVGSk4FhQ",
+  "zRUxnx7pv0E",
+  "ix_0vrwQnWk",
+  "dlRbFtih2X0",
+  "dtltxhgjLb4",
+];
 async function bakeOneNodeGetOneVideo({ actions, createContentDigest }) {
   // George ✋
   //              G. Gus gets oembedVideo from Axios River, await
@@ -517,10 +528,10 @@ exports.createPages = async (gatsbyUtils) => {
   await Promise.all([
     // bakeMarkdownIntoGoodies(gatsbyUtils),
     // turnTagzIntoPages(gatsbyUtils),
-    bakeMarkdownIntoGingerbreadHouse(gatsbyUtils),
+    // bakeMarkdownIntoGingerbreadHouse(gatsbyUtils),
 
-    //    turnToolsIntoPages(gatsbyUtils),
-    // bakingPhotosIntoPages(gatsbyUtils),
+    turnToolsIntoPages(gatsbyUtils),
+    bakingPhotosIntoPages(gatsbyUtils),
 
     // bakeImagesIntoGoodies(gatsbyUtils),
     // turnNamesIntoTags(gatsbyUtils),

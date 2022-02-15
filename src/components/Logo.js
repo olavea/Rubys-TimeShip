@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import stripes from '../assets/images/stripes.svg';
+import React from "react";
+import styled from "styled-components";
+import stripes from "../assets/images/stripes.svg";
 
 const LogoStyles = styled.div`
   /* This value controls the entire size of the logo*/
@@ -69,7 +69,7 @@ const LogoStyles = styled.div`
     }
     &.l {
       --rotate: -15deg;
-      --scale: 1.0;
+      --scale: 1;
       --translateX: 0.05em;
       --translateY: -0.05em;
     }
@@ -117,8 +117,8 @@ const LogoStyles = styled.div`
     &.f {
       --rotate: -33deg;
       --scale: 0.9;
-      --translateX: -0.20em;
-      --translateY: -0.10em;
+      --translateX: -0.2em;
+      --translateY: -0.1em;
     }
     &.i {
       --scale: 0.9;
@@ -126,9 +126,8 @@ const LogoStyles = styled.div`
       --translateX: -0.1em;
     }
     &.apos {
-      --translateX: 0.30em;
+      --translateX: 0.3em;
     }
-
   }
 `;
 
@@ -146,11 +145,10 @@ export default function Logo() {
             <span className="letter b">i</span>
             <span className="letter a">a</span>
             <span className="letter k">n</span>
+            <span className="letter c">'</span>
+            <span className="letter c">s</span>
             <br />
-
-
           </span>
-
         </h1>
       </div>
     </LogoStyles>

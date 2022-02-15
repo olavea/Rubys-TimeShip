@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
-import Logo from './Logo';
+import Logo from "./Logo";
 
 const NavStyles = styled.nav`
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
   .logo {
     transform: translateY(-25%);
   }
@@ -42,33 +42,33 @@ const NavStyles = styled.nav`
     &:hover {
       color: var(--red);
     }
-&[aria-current='page'] {
+    &[aria-current="page"] {
       color: var(--red);
     }
   }
 `;
 
-
-export default function Nav({data}) {
+export default function Nav({ data }) {
   return (
     <NavStyles>
       <ul>
         <li>
-          <Link to="/">🎩 Home</Link>
+          <Link to="/">⛵ Ola</Link>
         </li>
         <li>
-          <Link to="/pizzas/">🖼️ Images </Link>
+          <Link to="/olacast/">📺 olaCast</Link>
         </li>
+
         <li>
           <Link to="/">
             <Logo />
           </Link>
         </li>
         <li>
-          <Link to="/pirates">💜 & Friends</Link>
+          <Link to="/pizzas/">🖼️ Images </Link>
         </li>
         <li>
-          <Link to="/olacast/">📺 olaCast</Link>
+          <Link to="/pirates">💜 & Friends</Link>
         </li>
       </ul>
     </NavStyles>
