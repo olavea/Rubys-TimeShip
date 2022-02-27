@@ -3,7 +3,6 @@ title: Ahoy Skill-Builder! I am Captain Ola Vea
 tagline: Lillian (7 🏴‍☠️👸) helped me turn my Dev-Skill-Builder-Sessions into a treasure hunt. So that every Dev-Skill-Builder-Session i do makes my work-life worthwhile. That's the treasure of work-worthwhileness I am hunting in my treasure hunt.
 sections:
   - title: FIRST TIME HERE?
-
     body: ./_section0.md
     cta:
       path: /signup

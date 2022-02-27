@@ -434,6 +434,7 @@ const axios = require("axios");
 const { createFilePath } = require("gatsby-source-filesystem");
 const { graphql } = require("gatsby");
 const POW_PUG_TUBE_IDS = ["UGq8cnNTbwI", "eRTJPIa39a4"];
+// added 15 and 16
 const POW_TUBE_IDS_RED_STRING = [
   "4nWUMgiEpdc",
   "DaWn3zIpR2Y",
@@ -445,6 +446,8 @@ const POW_TUBE_IDS_RED_STRING = [
   "ix_0vrwQnWk",
   "dlRbFtih2X0",
   "dtltxhgjLb4",
+  "LQ2DRJbG8FY",
+  "rPiQi_bOk8s",
 ];
 async function bakeOneNodeGetOneVideo({ actions, createContentDigest }) {
   // George ✋

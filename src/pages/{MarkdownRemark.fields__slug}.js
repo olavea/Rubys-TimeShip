@@ -1,3 +1,4 @@
+// pages / {MarkdownRemark.fields__slug}.js
 import React from "react";
 import { graphql, Link } from "gatsby";
 
