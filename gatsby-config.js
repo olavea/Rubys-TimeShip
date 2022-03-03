@@ -27,7 +27,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown`,
-        path: `${__dirname}/content/skill-building`,
+        path: `${__dirname}/content/skill-builder`,
       },
     },
     `gatsby-plugin-image`,
@@ -54,6 +54,7 @@ module.exports = {
       resolve: "gatsby-source-sanity",
       options: {
         projectId: "fr5nacyp",
+        // 8g8wlo67
         dataset: "production",
         watchMode: true,
         token: process.env.SANITY_TOKEN,
