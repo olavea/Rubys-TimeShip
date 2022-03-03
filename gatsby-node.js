@@ -1,3 +1,20 @@
+const { createFilePath } = require("gatsby-source-filesystem");
+
+async function slugifyMarkdownRemarkNode(gatsbyUtils) {
+  const { actions, node, getNode } = gatsbyUtils;
+  const { createNodeField } = actions;
+
+  if (node.internal.type === "MarkdownRemark") {
+    const slug = createFilePath({ node, getNode });
+
+    createNodeField({
+      name: "slug",
+      node,
+      value: slug,
+    });
+  }
+}
+
 const { fetchEmbed } = require("./src/services/oembed");
 const YOUTUBE_IDS_RED_STRING = [
   "4nWUMgiEpdc",
@@ -431,7 +448,7 @@ async function turnNamesIntoTags({ graphql, actions }) {
 // if (!oembedVideo) return;
 
 const axios = require("axios");
-const { createFilePath } = require("gatsby-source-filesystem");
+
 const { graphql } = require("gatsby");
 const POW_PUG_TUBE_IDS = ["UGq8cnNTbwI", "eRTJPIa39a4"];
 // added 15 and 16
@@ -473,17 +490,6 @@ async function bakeOneNodeGetOneVideo({ actions, createContentDigest }) {
   }
 }
 
-async function slugifyMarkdownRemarkNode({ actions, node, getNode }) {
-  const { createNodeField } = actions;
-  if (node.internal.type === "MarkdownRemark") {
-    const slug = createFilePath({ node, getNode });
-    createNodeField({
-      name: "slug",
-      node,
-      value: slug,
-    });
-  }
-}
 async function bakeMarkdownIntoGingerbreadHouse({ graphql, actions }) {
   console.log("💀 bakeMarkdownIntoGingerbreadHouse 💀");
 
@@ -515,6 +521,57 @@ async function bakeMarkdownIntoGingerbreadHouse({ graphql, actions }) {
     });
   });
 }
+
+// POW!-website/gatsby-node.js
+// I will delete all these comments and rename everything after my
+// livestream on Thursday Feb 24.
+// badly baked GingerBreadPages 🏠
+// Only bake pages for markdown pages 📄 and not sections. ㊙️ 📟
+// 0. Only index.md 📄
+async function bakeMarkdownNodesIntoPages({ graphql, actions }) {
+  // 1. filter ☕
+  //    supplies: not allMarkdownRemark.nodes 💰
+  const { data } = await graphql(`
+    {
+      supplies: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/index.md/" } }
+      ) {
+        nodes {
+          id
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  `);
+  console.log(data.supplies.nodes);
+
+  // 2. bakingsong 🎵 🙀
+  const bakingSong = require.resolve("./src/templates/pageTemplate.js");
+  // 3. aromaNode 🍰
+  // Loop over the supplies.nodes and forEach((aromaNode and bake a page
+  data.supplies.nodes.forEach((aromaNode) => {
+    console.log(aromaNode.fields.slug, "💀📄");
+
+    const aromaNodePath =
+      aromaNode.fields.slug === "/index/" ? "/" : aromaNode.fields.slug;
+
+    actions.createPage({
+      // A. aromaNodePath 🍰.🍓.🐛
+      path: aromaNodePath,
+
+      // B. bakingSong 🎵 🙀
+      component: bakingSong,
+
+      // C. catsbyId 😼🆔
+      context: {
+        catsbyId: aromaNode.id,
+      },
+    });
+  });
+}
+
 exports.onCreateNode = async (gatsbyUtils) => {
   await Promise.all([slugifyMarkdownRemarkNode(gatsbyUtils)]);
 };
@@ -533,11 +590,12 @@ exports.createPages = async (gatsbyUtils) => {
     // turnTagzIntoPages(gatsbyUtils),
     // bakeMarkdownIntoGingerbreadHouse(gatsbyUtils),
 
-    turnToolsIntoPages(gatsbyUtils),
-    bakingPhotosIntoPages(gatsbyUtils),
+    // turnToolsIntoPages(gatsbyUtils),
+    // bakingPhotosIntoPages(gatsbyUtils),
 
     // bakeImagesIntoGoodies(gatsbyUtils),
     // turnNamesIntoTags(gatsbyUtils),
+    bakeMarkdownNodesIntoPages(gatsbyUtils),
   ]);
 
   // markdown in local files
@@ -549,4 +607,15 @@ exports.createPages = async (gatsbyUtils) => {
   // images in local files
   //                  Recipe.js
   //                  image-tags.js
+  // POW!-style markdown
 };
+
+// 1.2.3 – A.B.C. – Gingerbread house
+
+// 1. Supplies: allMarkdownRemark.node
+// 2. Bakingsong = bakingSong.js
+// 3. Loop over the supply node and create a page
+
+// A. Ahoy! Aroma path!
+// B. BakingSong is a component
+// C. Catsby node.id is context
