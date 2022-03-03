@@ -3,7 +3,6 @@ title: Ahoy Skill-Builder! I am Captain Ola Vea
 tagline: Lillian (7 🏴‍☠️👸) is helping me _ _ _ _ _ doing dev-tasks on POW!
 sections:
   - title: OO?
-    body: ./_section0.md
     cta:
       path: /supportPOW
       label: Yes I will become a POW pirate supporter!
