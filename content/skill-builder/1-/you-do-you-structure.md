@@ -1,13 +1,14 @@
 ---
 title: 1. After starting his crocodile-Count-Down-Timer
 ---
+(Introduction)
+
+do 3 sess
+
+
 Ola starts today's Skill-Builder-Session by pointing at his dev-self in the mirror, saying with his Captain-in-a-storm-in-the-North-Sea-voice:
 
-«SELF! Structure today's Skill-Builder-Session to fit YOUR dev-brain or your Half-Assed-Structure sets-up your Skill-Builder-Ship to become Half-Assed & your work-life will become less worthwhile and your family
-will be robbed of the happy moments your badass-you could have given them if you quit with your half-assery already.»
-
-
- having a less worthwhiler life! Or the opposite will be true.
+«SELF! Structure today's Skill-Builder-Session to fit YOUR dev-brain or your Half-Assed-Structure sets-up your Skill-Builder-Ship to become Half-Assed.»
 
 1. TODO:
 Make up your mind, if «yes» say «Yo-HO! Yo-Ho! Let's GO!»
@@ -81,47 +82,39 @@ What's the point with Celebration?
 How do you Celebrate?
 
 
-Sawdust:
-Find a place you can be alone with a mirror. Point at your dev-self in the mirror and say with your Captain voice: «SELF! Structure your Skill-Builder-Session & your life will be worthwhiler and your family will benefit from you having a worthwhiler life! Or the opposite will be true.»
-«»
-«»
 
 
-1. «Yo-HO! Yo-Ho! Let's GO!»
+1. Start a count-down timer with X minutes
 
 1. TODO:
-Make up your mind, if «yes» say «Yo-HO! Yo-Ho! Let's GO!»
-Start a count-down timer with X minutes. Ola uses 96 minutes, but you do you.
-Go to 2. and start your next Skill-Builder-Session by structuring it to fit YOUR dev-brain.
+Make up your mind «yes» or «no» to start structuring today's Skill-Builder-Session, if «yes» start a count-down timer with X minutes. Ola uses 96 minutes, but you do you.
 
-2. Crocodile-Count
+2. Reps, reps, reps: Crocodile-Count your reps
 
 2. TODO:
 Find an old notebook, grab a pen and draw 8 dots. Like this: ..... ...
 Or print out this work-sheet.
 Later you add a «I» to one dot turning it into a «!» for each time today's task is done.
 
-3. Taskerbell-Task
+3. Your Taskerbell-Task is Tiny
 
 3. TODO:
-Why not take a tiny bit of a dev-task you've already finished at work? Much, much tinier than you think, maybe.
+Why not take a tiny tidbit of a dev-task you've already finished at work? Tinier than you think, maybe.
 Write your tiny Taskerbell-Task in that old notebook you found.
-Or write here: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-Start doing your dev-task, but go slow.
-Don't read on, it's time to act! If you delay your Skill-Builder-Ship will decay.
-Don't read on, it's time to act!
-Breath in deeply with your nose and let the air go out of your mouth by it self.
+Or print out this work-sheet and write here: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+Start doing your dev-task, but go slow. Do that dev-task again and again.
+
 
 A. How Did YOU Automate
 in your skull that tiny Taskerbell-Task?
 
 A. TODO:
-Write notes in that old notebook you found. You know, just write down stuff that pops into your brain. For each word you write down you «make space» for another word in your brain. If you keep writing down words while you code one of those words might be a golden nugget, showing you the path you need to take to Automate in your skull tist tiny Taskerbell-Task.
+Write notes in that old notebook you found. You know, just write down stuff that pops into your brain. For each word you write down you «make space» for another word in your brain. If you keep writing down words one of those words might be a golden nugget, showing you the path you need to take to Automate in your skull tist tiny Taskerbell-Task.
 
 B. Who's your accountability-Buddy, Buddy?
 
 B. TODO:
-Write names in that old notebook you found. You know, just write down names that pops into your brain. For each name you write down you «make space» for another name in your brain. If you keep writing down names while you code one of those words might be a golden nugget, showing you who you need to make your accountability-Buddy
+Write names in that old notebook you found. You know, just write down names that pops into your brain. For each name you write down you «make space» for another name in your brain. If you keep writing down names one of those words might be a golden nugget, showing you who you need to make your accountability-Buddy
 
 C. When do you Celebrate?
 
