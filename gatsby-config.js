@@ -57,6 +57,7 @@ module.exports = {
         // fr5nacyp
         dataset: "production",
         watchMode: true,
+        // Remember to change Environment variables in https://app.netlify.com/sites/frosty-boyd-ac6bff/settings/deploys
         token: process.env.SANITY_TOKEN,
       },
     },
