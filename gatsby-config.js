@@ -53,8 +53,8 @@ module.exports = {
       // «This is the name of the plugin you are adding» Says Wes Bos
       resolve: "gatsby-source-sanity",
       options: {
-        projectId: "fr5nacyp",
-        // 8g8wlo67
+        projectId: "8g8wlo67",
+        // fr5nacyp
         dataset: "production",
         watchMode: true,
         token: process.env.SANITY_TOKEN,
