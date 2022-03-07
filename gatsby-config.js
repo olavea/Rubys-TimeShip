@@ -43,12 +43,12 @@ module.exports = {
         colors: ["#FFB6C1"],
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-styled-components`,
+    //   options: {
+    //     // Add any options here
+    //   },
+    // },
     {
       // «This is the name of the plugin you are adding» Says Wes Bos
       resolve: "gatsby-source-sanity",
