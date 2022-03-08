@@ -2,17 +2,11 @@
 
 Your gift is a shiny new ....
 
-
-![Habby-B-Day-POW! 1-kopi](https://user-images.githubusercontent.com/7642493/157261796-f0dfbe94-ef30-4eb9-bc95-c227c13dea14.png)
-
-
-
-
 ## Crew Mate!
 Captain Ola has been recruiting in stealth mode for 47 days.
 
-![Habby-B-Day-POW!-2-kopi](https://user-images.githubusercontent.com/7642493/157296480-8cf1af9b-59e4-485b-999d-79f9a2ceff1e.png)
 
+![Habby-B-Day-POW! 1-kopi](https://user-images.githubusercontent.com/7642493/157261796-f0dfbe94-ef30-4eb9-bc95-c227c13dea14.png)
 
 Every morning Captain Ola has been building in public, coding on the new POW! website. BUT after lunch ....
 
@@ -20,15 +14,16 @@ Every morning Captain Ola has been building in public, coding on the new POW! we
 
 Captain Ola wrote a Top 10 List.
 
-![Habby-B-Day-POW!-3-kopi](https://user-images.githubusercontent.com/7642493/157296817-45ee3d2c-4226-496b-aa0b-cac5bc51388a.png)
-
+![Habby-B-Day-POW!-2-kopi](https://user-images.githubusercontent.com/7642493/157296480-8cf1af9b-59e4-485b-999d-79f9a2ceff1e.png)
 
 **Secondly**, Captain Ola started interviewing from the top of his Top 10 List. Number 1: Ola's old friend from summer camp deep in the backwoods of upstate New York, back in 1993. A soft spoken Dev with rock solid UX skills.
 
-![Habby-B-Day-POW!-4-kopi](https://user-images.githubusercontent.com/7642493/157297096-fc75f8dd-a580-4e5a-a9f3-6eb7ed75dbcd.png)
-
+![Habby-B-Day-POW!-3-kopi](https://user-images.githubusercontent.com/7642493/157296817-45ee3d2c-4226-496b-aa0b-cac5bc51388a.png)
 
 Half way into that first interview Captain Ola just **KNEW** "Jed Wood **IS** the man I want in my crew on this Life-Long Treasure Hunt of building POW! into a useful tool for devs who also happen to menstruate."
+
+![Habby-B-Day-POW!-4-kopi](https://user-images.githubusercontent.com/7642493/157297096-fc75f8dd-a580-4e5a-a9f3-6eb7ed75dbcd.png)
+
 
 **Thirdly**, after 3 interviews Jed Wood finally said "yes" to join our POW! crew.
 
