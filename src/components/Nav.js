@@ -1,70 +1,48 @@
 import React from "react";
-import { Link } from "gatsby";
-// import styled from "styled-components";
-// import Logo from "./Logo";
+import { Link, navigate } from "gatsby";
+import { getUser, isLoggedIn, logout } from "../services/auth";
 
-// const NavStyles = styled.nav`
-//   margin-bottom: 3rem;
-//   .logo {
-//     transform: translateY(-25%);
-//   }
-//   ul {
-//     margin: 0;
-//     padding: 0;
-//     text-align: center;
-//     list-style: none;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr auto 1fr 1fr;
-//     grid-gap: 2rem;
-//     align-items: center;
-//     margin-top: -6rem;
-//   }
-//   li {
-//     --rotate: -2deg;
-//     transform: rotate(var(--rotate));
-//     order: 1;
-//     &:nth-child(1) {
-//       --rotate: 1deg;
-//     }
-//     &:nth-child(2) {
-//       --rotate: -2.5deg;
-//     }
-//     &:nth-child(4) {
-//       --rotate: 2.5deg;
-//     }
-//     &:hover {
-//       --rotate: 3deg;
-//     }
-//   }
-//   a {
-//     font-size: 2rem;
-//     text-decoration: none;
-//     &:hover {
-//       color: var(--red);
-//     }
-//     &[aria-current="page"] {
-//       color: var(--red);
-//     }
-//   }
-// `;
-
-export default function Nav({ data }) {
+export default function Nav() {
+  let greetingMessage = "";
+  if (isLoggedIn()) {
+    greetingMessage = `Hello ${getUser().name}`;
+  } else {
+    greetingMessage = "You are not logged in";
+  }
   return (
-    <>
-      <ul>
-        <li>
-          <Link to="/">⛵ Ola</Link>
-        </li>
-        <li>
-          <Link to="/olacast/">📺 olaCast</Link>
-        </li>
-        <li>
-          <Link to="/pizzas/">🖼️ Images </Link>
-        </li>
-        <li>
-          <Link to="/pirates">💜 & Friends</Link>
-        </li>
-      </ul>
-    </>
+    <div
+      style={{
+        display: "flex",
+        flex: "1",
+        justifyContent: "space-between",
+        borderBottom: "1px solid #d1c1e0",
+      }}
+    >
+      <span>{greetingMessage}</span>
+      <nav>
+        <Link to="/">⛵ Ola</Link>
+        {` `}
+        <Link to="/olacast/">📺 olaCast</Link>
+        {` `}
+        <Link to="/pizzas/">🖼️ Images </Link>
+        {` `}
+        <Link to="/pirates">💜 & Friends</Link>
+        {` `}
+
+        <Link to="/app/profile">Profile</Link>
+        {` `}
+        {isLoggedIn() ? (
+          <a
+            href="/"
+            onClick={(event) => {
+              event.preventDefault();
+              logout(() => navigate(`/app/login`));
+            }}
+          >
+            Logout
+          </a>
+        ) : null}
+      </nav>
+    </div>
   );
 }

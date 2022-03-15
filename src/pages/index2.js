@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "gatsby";
+import { getUser, isLoggedIn } from "../services/auth";
 
 const IndexPage = () => {
   const [status, setStatus] = useState("initial");
@@ -31,12 +33,20 @@ const IndexPage = () => {
   return (
     <main>
       <section>
-        <a href="https://queen.outseta.com/auth?widgetMode=login#o-anonymous">
-        ⚓ Log in ⚓
-        </a>
-        <a href="https://queen.outseta.com/auth?widgetMode=register#o-anonymous">
-          🃏 Sign up 🃏
-        </a>
+        <h1>Hello {isLoggedIn() ? getUser().name : "world"}!</h1>
+        <p>
+          {isLoggedIn() ? (
+            <>
+              You are logged in, so check your{" "}
+              <Link to="/app/profile">profile</Link>
+            </>
+          ) : (
+            <>
+              You should <Link to="/app/login">log in</Link> to see restricted
+              content
+            </>
+          )}
+        </p>
       </section>
       <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
         <fieldset>
@@ -53,12 +63,11 @@ const IndexPage = () => {
 
       <form onSubmit={handleSubmit}>
         <fieldset disabled={isDisabled}>
+          <p>
+            <button>Take a TimeShip trip</button>
+          </p>
 
-        <p>
-          <button>Take a TimeShip trip</button>
-        </p>
-
-        <p>
+          <p>
             <label htmlFor="year">Year: </label>
             <br />
             <input required type="number" id="year" name="year" />
@@ -69,7 +78,6 @@ const IndexPage = () => {
             <br />
             <input required type="text" id="city" name="city" />
           </p>
-
         </fieldset>
 
         <p>
@@ -91,7 +99,6 @@ const IndexPage = () => {
           Lizabeth from prison.
         </p>
       </header>
-
     </main>
   );
 };

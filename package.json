@@ -15,11 +15,14 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.5.0",
+    "@mui/material": "^5.5.0",
     "@raae/gatsby-plugin-donations": "^1.0.0-next.1",
     "@raae/gatsby-plugin-let-it-snow": "^0.6.0",
     "@raae/gatsby-plugin-new-css": "0.0.1",
     "@raae/gatsby-plugin-starter": "^1.5.0",
     "@raae/gatsby-remark-oembed": "^0.1.1",
+    "@raae/gatsby-theme-mui": "^0.1.1",
     "@sindresorhus/slugify": "^2.1.0",
     "axios": "^0.24.0",
     "gatsby": "4.0.2",
@@ -35,7 +38,9 @@
     "gatsby-source-sanity": "^7.3.2",
     "gatsby-transformer-remark": "^5.4.0",
     "gatsby-transformer-sharp": "^4.2.0",
+    "i": "^0.3.7",
     "normalize.css": "^8.0.1",
+    "npm": "^8.5.3",
     "prismjs": "^1.25.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
