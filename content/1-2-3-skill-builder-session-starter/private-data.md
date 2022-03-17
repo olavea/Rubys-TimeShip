@@ -1,1 +1,1 @@
-Do you practice a dev-task and a week later it's deleted from your dev-brain?
+Have you ever practiced a Gatsby-task and a week later it's deleted from your dev-brain? You sit down to do that Gatsby-task again and you remember DOING it, but when you start it's soon clear you don't remember HOW to do it.
