@@ -4,11 +4,29 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://timeship1.gatsbyjs.io/",
+    // siteUrl: "https://timeship1.gatsbyjs.io/",
     title: `TimeShip1`,
+    tagline: `tagline`,
     description: "Lillian and Friends Building Skill",
+    url: `https://www.olavea.com/`,
+    lang: `en`,
+    // social: {
+    //   image: `/raae.png`,
+    //   alt: "Queen Raae holding a laptop in front of her gallery wall",
+    //   twitter: {
+    //     site: "@raae",
+    //     card: "summary_large_image",
+    //   },
+    // },
   },
   plugins: [
+    {
+      resolve: "local-source-emails",
+      options: {
+        basePath: "/emails",
+      },
+    },
+
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-netlify",
     "@raae/gatsby-plugin-new-css",
@@ -88,5 +106,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {},
     },
+    `@raae/gatsby-theme-mui`,
   ],
 };
