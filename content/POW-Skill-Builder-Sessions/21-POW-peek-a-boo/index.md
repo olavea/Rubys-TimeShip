@@ -1,0 +1,1 @@
+Queen Raae is on her way to Athens and The mission is get Theseus' sword and a sandals.
