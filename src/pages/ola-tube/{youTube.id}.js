@@ -3,15 +3,25 @@ import React from "react";
 import { graphql } from "gatsby";
 import VideoLayout from "../../components/video-layout-youtube";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { Box, Container, Typography } from "@mui/material";
 
-//              E. EmbedOneVideoPage
 export default function EmbedOneVideoPage({ data }) {
   return (
     <>
-      <GatsbyImage
-        image={data.youTubeEmbed.thumbnail.childImageSharp.gatsbyImageData}
-        alt="pizza.name"
-      />
+      <div className="container">
+        <main>
+          <Box sx={{ pt: 12 }}>
+            <Container maxWidth="content">
+              <GatsbyImage
+                image={
+                  data.youTubeEmbed.thumbnail.childImageSharp.gatsbyImageData
+                }
+                alt="pizza.name"
+              />
+            </Container>
+          </Box>
+        </main>
+      </div>
       <VideoLayout {...data.youTubeEmbed.oEmbed} />;
     </>
   );
