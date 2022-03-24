@@ -61,6 +61,13 @@ module.exports = {
     },
     // These plugins below are not in pow-site as of March 24 2022
 
+    {
+      resolve: `@raae/gatsby-source-youtube-oembed`,
+      options: {
+        youTubeIds: [`Mer3S6J5FUA`],
+      },
+    },
+
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-netlify",
     // "@raae/gatsby-plugin-new-css",
