@@ -12,7 +12,7 @@ cta:
 sections:
   - element: header
     content: main, cta
-  - body: ./_about.md
+  - body: ./about.md
     image: ../raae.png
     imageAlt: Ola Vea with Queen Raae and Lillian The Pirate Princess.
   - content: cta
