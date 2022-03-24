@@ -9,5 +9,4 @@ sections:
       label: Yes I will become a Skill-Builder!
 ---
 
-bleh bleh bleh
 And weekly we spread that treasure of work-worthwhileness to Queen Benedicte @raae and our friends and dev-neighbours on the seven seas of the web.
