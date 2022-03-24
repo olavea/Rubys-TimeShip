@@ -4,70 +4,32 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://timeship1.gatsbyjs.io/",
-    title: `TimeShip1`,
-    description: "Lillian and Friends Building Skill",
+    siteUrl: "https://www.olavea.com",
+    title: `Lillian and Ola`,
+    description: "POW! backstage by Lillian and Ola and Skill-Builder pirates",
   },
   plugins: [
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-netlify",
-    "@raae/gatsby-plugin-new-css",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
     `gatsby-plugin-sharp`,
+
     //  Currently you cannot use StaticImage
     //  or gatsby-transformer-sharp in SSR or DSG pages. The best workaround is to use an image CDN such as Cloudinary or imgix to host your images. This will give you faster builds and rendering too.
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: `${__dirname}/content/book1`,
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown`,
-        path: `${__dirname}/content/skill-builder`,
-      },
-    },
-    `gatsby-plugin-image`,
-    //    `gatsby-plugin-react-helmet`,
-    `@raae/gatsby-plugin-donations`,
-    // `@raae/gatsby-plugin-let-it-snow`,
-    {
-      resolve: "@raae/gatsby-plugin-let-it-snow",
-      options: {
-        duration: 10,
-        intensity: "blizzard",
-        // LightPink #FFB6C1
-        colors: ["#FFB6C1"],
-      },
-    },
-    // {
-    //   resolve: `gatsby-plugin-styled-components`,
-    //   options: {
-    //     // Add any options here
-    //   },
-    // },
-    {
-      // «This is the name of the plugin you are adding» Says Wes Bos
-      resolve: "gatsby-source-sanity",
-      options: {
-        projectId: "8g8wlo67",
-        // fr5nacyp
-        dataset: "production",
-        watchMode: true,
-        // 😺  Remember to change Environment variables in https://app.netlify.com/sites/frosty-boyd-ac6bff/settings/deploys
-        token: process.env.SANITY_TOKEN,
-      },
-    },
-    {
-      resolve: `local-source-youtube`,
-      options: {
-        youTubeIds: [`4nWUMgiEpdc`],
-      },
-    },
-    `@raae/gatsby-plugin-starter`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -75,6 +37,12 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `local-source-youtube`,
+      options: {
+        youTubeIds: [`4nWUMgiEpdc`],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -88,5 +56,53 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {},
     },
+    {
+      resolve: `@raae/gatsby-theme-mui`,
+    },
+    // These plugins below are not in pow-site as of March 24 2022
+
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-netlify",
+    // "@raae/gatsby-plugin-new-css",
+
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/content/book1`,
+    //   },
+    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/content/skill-builder`,
+      },
+    },
+
+    `@raae/gatsby-plugin-donations`,
+    // `@raae/gatsby-plugin-let-it-snow`,
+    {
+      resolve: "@raae/gatsby-plugin-let-it-snow",
+      options: {
+        duration: 10,
+        intensity: "blizzard",
+        // LightPink #FFB6C1
+        colors: ["#FFB6C1"],
+      },
+    },
+    {
+      // «This is the name of the plugin you are adding» Says Wes Bos
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "8g8wlo67",
+        // fr5nacyp
+        dataset: "production",
+        watchMode: true,
+        // 😺  Remember to change Environment variables in https://app.netlify.com/sites/frosty-boyd-ac6bff/settings/deploys
+        token: process.env.SANITY_TOKEN,
+      },
+    },
+    `@raae/gatsby-plugin-starter`,
   ],
 };
