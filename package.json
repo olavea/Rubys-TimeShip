@@ -19,6 +19,7 @@
     "@raae/gatsby-plugin-let-it-snow": "^0.6.0",
     "@raae/gatsby-plugin-starter": "^1.5.0",
     "@raae/gatsby-remark-oembed": "^0.1.1",
+    "@raae/gatsby-source-youtube-oembed": "^0.2.0",
     "@raae/gatsby-theme-mui": "^0.1.1",
     "@sindresorhus/slugify": "^2.1.0",
     "axios": "^0.24.0",
