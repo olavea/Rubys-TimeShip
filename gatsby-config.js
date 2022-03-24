@@ -45,6 +45,13 @@ module.exports = {
       },
     },
     {
+      resolve: `@raae/gatsby-source-youtube-oembed`,
+      options: {
+        youTubeIds: [`4nWUMgiEpdc`],
+      },
+    },
+
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
