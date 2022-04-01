@@ -34,15 +34,8 @@ export const query = graphql`
       id
       oEmbed {
         html
+        url
         title
-      }
-      fields {
-        thumbnailFileId
-      }
-      thumbnail {
-        childImageSharp {
-          gatsbyImageData
-        }
       }
     }
   }

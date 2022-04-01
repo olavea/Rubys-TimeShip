@@ -11,7 +11,7 @@ import Videos from "./videos";
 // </Link>
 // </header>
 
-const VideoLayout = ({ title, html }) => {
+const VideoLayout = ({ title, url, html }) => {
   return (
     <>
       <div className="container">
@@ -23,6 +23,8 @@ const VideoLayout = ({ title, html }) => {
               </Typography>
               <br />
               <br />
+
+              <button href={url}>Play</button>
               <div
                 className="video-container"
                 dangerouslySetInnerHTML={{ __html: html }}
