@@ -1,6 +1,8 @@
 ---
 title: Gatsby Image CDN
 sections:
+  - title: Again && Again
+    body: ./_bintro.md
   - title: Before diving deep down into IMAGE CDN
     body: ./_intro.md
   - title: What is it like?
@@ -35,12 +37,3 @@ sections:
   - title: Ahoy Shipmate! You DID it!
     subtitle: Now do it again!
 ---
-
-**Again && Again**
-
-(image 1)
-
-A print-out-PDF
-- for a dev-rel at a CMS or
-- for a Gatsby-dev
-PART 1 OF 3
