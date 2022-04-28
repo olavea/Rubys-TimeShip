@@ -1,6 +1,7 @@
 
-![3 x first YouTube Clip](./screengrab-youtube.jpg)
+
 ![image 1](./geoff.jpg)
+
 
 A print-out-PDF
 - for a dev-rel at a CMS or
