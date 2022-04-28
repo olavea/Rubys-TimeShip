@@ -1,3 +1,5 @@
+![g2](./g2.jpg)
+
 ```js
 
         interfaces: [`Node`, `RemoteFile`],
