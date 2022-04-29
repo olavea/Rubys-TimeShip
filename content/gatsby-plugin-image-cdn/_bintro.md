@@ -1,6 +1,6 @@
 
 
-![image 1](./geoff.jpg)
+
 
 
 A print-out-PDF

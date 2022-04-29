@@ -12,6 +12,7 @@ import { Prose } from "../components/prose";
 import { SiteHeader } from "../components/site-header";
 import { NewsletterForm } from "../components/newsletter-form";
 // import { SiteFooter } from "../components/site-footer";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function PageTemplate({ data = {} }) {
   const { frontmatter, html } = data.markdownRemark || {};
@@ -48,9 +49,14 @@ export default function PageTemplate({ data = {} }) {
 
           {(sections || []).map((section) => {
             const { title, subtitle, body } = section || {};
+            const { image, imageAlt } = section || {};
+
             const { html } = body?.childMarkdownRemark || {};
             const { path, label } = section.cta || {};
             const { form } = section || {};
+            const gatsbyImage = getImage(
+              image?.childImageSharp?.gatsbyImageData
+            );
             return (
               <Box component="section" sx={{ py: 6 }}>
                 <Container maxWidth="content">
@@ -76,6 +82,11 @@ export default function PageTemplate({ data = {} }) {
                     </Button>
                   )}
                   {form === "newsletter" && <NewsletterForm sx={{ mt: 5 }} />}
+                  {gatsbyImage && (
+                    <Box sx={{ mx: -2, "&:not(:first-child)": { mt: 5 } }}>
+                      <GatsbyImage alt={imageAlt} image={gatsbyImage} />
+                    </Box>
+                  )}
                 </Container>
               </Box>
             );
@@ -100,6 +111,12 @@ export const query = graphql`
             childMarkdownRemark {
               html
             }
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 1333)
+              }
+            }
+            imageAlt
           }
           cta {
             path
