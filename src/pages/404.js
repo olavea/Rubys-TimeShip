@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
+import { SiteHeader } from "../components/site-header";
 
 const NotFoundPage = () => {
   return (
     <main>
-      <header>
-        <h1>Page not found</h1>
-      </header>
+      <SiteHeader tagline="404 ">
+        <h1> Page not found</h1>
+      </SiteHeader>
       <p>
         Sorry{" "}
         <span role="img" aria-label="Pensive emoji">
