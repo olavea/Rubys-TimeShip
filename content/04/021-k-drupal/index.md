@@ -2,6 +2,8 @@ gatsby-source-drupal
 
 
 21 k downloads april 1.
+
+17 k august 9.
 [feat(gatsby-source-drupal): Image CDN support
 #35265](https://github.com/gatsbyjs/gatsby/pull/35265/files)
 ```js

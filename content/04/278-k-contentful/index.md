@@ -1,5 +1,7 @@
 gatsby-source-contentful@^7.8.0
 278.1 k downloads april 1.
+274.8 k downloads april 29.
+262 k down aug 9.
 
 https://www.gatsbyjs.com/plugins/gatsby-source-contentful/?=gatsby-source-contentful
 

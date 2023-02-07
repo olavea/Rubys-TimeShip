@@ -1,6 +1,7 @@
 gatsby-source-shopify
 
-33.8 k downloads april 1.
+31 k downloads april 1.
+26.2 k downloads april 29.
 
 No PR or issue
 

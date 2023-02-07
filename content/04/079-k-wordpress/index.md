@@ -1,5 +1,7 @@
 gatsby-source-wordpress
 79 k downloads april 1.
+64 k downloads april 29.
+47 k down aug 9.
 
 [feat(gatsby-source-wordpress): enable image-cdn
 #34832](https://github.com/gatsbyjs/gatsby/pull/34832/files)

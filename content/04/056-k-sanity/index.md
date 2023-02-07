@@ -1,5 +1,8 @@
 gatsby-source-sanity@^7.4.0
 56.8 k downloads april 1.
+61.7 k downloads april 29.
+54 k downloads aug 9.
+
 
 https://gatsby.dev/img
 
