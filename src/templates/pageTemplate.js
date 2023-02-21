@@ -54,14 +54,12 @@ export default function PageTemplate({ data = {}, ...props }) {
 
           {(sections || []).map((section) => {
             const { title, subtitle, body } = section || {};
-            const { image, imageAlt } = section || {};
+
             const { videos } = section || {};
             const { html } = body?.childMarkdownRemark || {};
             const { path, label } = section.cta || {};
             const { form } = section || {};
-            const gatsbyImage = getImage(
-              image?.childImageSharp?.gatsbyImageData
-            );
+
             return (
               <Box component="section" sx={{ py: 6 }}>
                 <Container maxWidth="content">
@@ -87,60 +85,6 @@ export default function PageTemplate({ data = {}, ...props }) {
                     </Button>
                   )}
                   {form === "newsletter" && <NewsletterForm sx={{ mt: 5 }} />}
-                  {videos && (
-                    <ImageList
-                      cols={2}
-                      sx={{
-                        m: 0,
-                        mx: -2,
-                        "&:not(:first-child)": {
-                          mt: 5,
-                        },
-                      }}
-                      gap={10}
-                    >
-                      {videos.map((video, index, { length }) => {
-                        const { action, childYouTube } = video;
-                        const { title, url } = childYouTube.oEmbed || {};
-                        const { gatsbyImage } = childYouTube.thumbnail || {};
-                        return (
-                          <ImageListItem
-                            key={url}
-                            cols={
-                              index === length - 1 && index % 2 === 0 ? 2 : 1
-                            }
-                            sx={{ overflow: "hidden" }}
-                          >
-                            <GatsbyImage image={gatsbyImage} alt={title} />
-                            <Button
-                              sx={{
-                                textTransform: "none",
-                                position: "absolute",
-                                bottom: 0,
-                                right: 0,
-                                borderRadius: 0,
-                                borderTopLeftRadius: (theme) =>
-                                  theme.shape.borderRadius,
-                              }}
-                              size="small"
-                              variant="contained"
-                              aria-label={`Play ${title}`}
-                              href={url}
-                              endIcon={<PlayIcon />}
-                            >
-                              {action || "Watch on YouTube"}
-                            </Button>
-                          </ImageListItem>
-                        );
-                      })}
-                    </ImageList>
-                  )}
-
-                  {gatsbyImage && (
-                    <Box sx={{ mx: -2, "&:not(:first-child)": { mt: 5 } }}>
-                      <GatsbyImage alt={imageAlt} image={gatsbyImage} />
-                    </Box>
-                  )}
                 </Container>
               </Box>
             );
@@ -167,32 +111,9 @@ export const query = graphql`
               html
             }
           }
-          image {
-            childImageSharp {
-              gatsbyImageData(width: 500)
-            }
-          }
-          imageAlt
           cta {
             path
             label
-          }
-          videos {
-            childYouTube {
-              oEmbed {
-                title
-                url
-              }
-              thumbnail {
-                gatsbyImage(
-                  width: 480
-                  height: 270
-                  fit: COVER
-                  cropFocus: CENTER
-                )
-              }
-            }
-            action
           }
         }
       }
