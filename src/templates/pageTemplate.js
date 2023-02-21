@@ -5,15 +5,19 @@ import {
   Button,
   Container,
   Typography,
+  ImageList,
+  ImageListItem,
   Link as MuiLink,
 } from "@mui/material";
+import { PlayArrowRounded as PlayIcon } from "@mui/icons-material";
 
 import { Prose } from "../components/prose";
 import { SiteHeader } from "../components/site-header";
 import { NewsletterForm } from "../components/newsletter-form";
-// import { SiteFooter } from "../components/site-footer";
+import { SiteFooter } from "../components/site-footer";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-export default function PageTemplate({ data = {} }) {
+export default function PageTemplate({ data = {}, ...props }) {
   const { frontmatter, html } = data.markdownRemark || {};
   const { title, sections } = frontmatter || {};
 
@@ -44,13 +48,18 @@ export default function PageTemplate({ data = {} }) {
             </Container>
           </Box>
 
-          <Prose html={html} />
+          <Container maxWidth="content">
+            <Prose html={html} />
+          </Container>
 
           {(sections || []).map((section) => {
             const { title, subtitle, body } = section || {};
+
+            const { videos } = section || {};
             const { html } = body?.childMarkdownRemark || {};
             const { path, label } = section.cta || {};
             const { form } = section || {};
+
             return (
               <Box component="section" sx={{ py: 6 }}>
                 <Container maxWidth="content">
@@ -81,6 +90,7 @@ export default function PageTemplate({ data = {} }) {
             );
           })}
         </main>
+        <SiteFooter sx={{ pt: 12, pb: 4 }} />
       </div>
     </>
   );
