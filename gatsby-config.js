@@ -9,6 +9,20 @@ module.exports = {
     description: "POW! backstage by Lillian and Ola and Skill-Builder pirates",
   },
   plugins: [
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        // resourceType: `image`,
+        // type: `twitter`,
+        // maxResults: 22,
+        // tags: true,
+        // context: true,
+        // prefix: `demo/animals`
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {

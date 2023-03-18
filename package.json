@@ -33,6 +33,7 @@
     "gatsby-remark-images": "^6.4.0",
     "gatsby-remark-prismjs": "^6.4.0",
     "gatsby-remark-responsive-iframe": "^5.4.0",
+    "gatsby-source-cloudinary": "^0.4.0",
     "gatsby-source-filesystem": "^4.2.0",
     "gatsby-source-sanity": "^7.3.2",
     "gatsby-transformer-remark": "^5.4.0",
