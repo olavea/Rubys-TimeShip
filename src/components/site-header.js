@@ -10,9 +10,9 @@ export const SiteHeader = ({ children }) => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Button component={Link} to="/" sx={{ ml: -1.5 }}>
-            <Logo height="2.5rem" /> -Skill-builders
+            <Logo height="2.5rem" /> Public-builders
           </Button>
-          Ola and Lillian(7 🏴‍☠️)
+          Ola and Lillian(8 🏴‍☠️👸)
           {children}
         </Toolbar>
       </Container>
