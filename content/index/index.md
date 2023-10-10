@@ -11,4 +11,6 @@ sections:
 
 !(blog/2023/10/10)[./blog/2023/10/10]
 
+!(blog/2023/10/10)[https://www.olavea.com/blog/2023/10/10]
+
 And bi-weekly we spread that treasure of build-in-public to Queen @raae and our friends and dev-neighbours on the seven seas of the web.
