@@ -5,8 +5,8 @@ sections:
   - title: FIRST TIME HERE?
     body: ./_section0.md
     cta:
-      path: /signup
-      label: Yes I will become a Skill-Builder!
+      path: /blog/2023/10/10
+      label: blog/2023/10/10
 ---
 
 !(blog/2023/10/10)[./blog/2023/10/10]
