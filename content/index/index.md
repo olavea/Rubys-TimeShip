@@ -9,4 +9,6 @@ sections:
       label: Yes I will become a Skill-Builder!
 ---
 
-And weekly we spread that treasure of work-worthwhileness to Queen Benedicte @raae and our friends and dev-neighbours on the seven seas of the web.
+!(blog/2023/10/10)[./blog/2023/10/10]
+
+And bi-weekly we spread that treasure of build-in-public to Queen @raae and our friends and dev-neighbours on the seven seas of the web.
