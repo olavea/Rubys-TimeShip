@@ -35,13 +35,9 @@ Please upgrade Node.js to a supported version: ">=18.14.1"
 
  brew install node@18.14.3
 
-Not
-node -v
+nvm use 18.14.1
 
-brew unlink node
-
-brew install node@18
-
+npm run dev
 ```
 
 (https://github.com/withastro/astro/tree/main/examples/basics)[https://github.com/withastro/astro/tree/main/examples/basics]
