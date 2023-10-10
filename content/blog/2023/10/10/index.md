@@ -1,5 +1,5 @@
 ---
-title: Taking a Trip With Astro
+title: Taking a First Trip With Astro
 author: "@OlaHolstVea"
 date: 2023-10-10
 ---
