@@ -1,17 +1,23 @@
 ---
-title: What is the Tech Stack of Unleash?
+title: JavaScript
 author: "@OlaHolstVea"
-date: 2023-09-22
+date: 2023-10-22
 ---
 
+## JavaScript
 
-What is the Tech Stack of Unleash?
-
-Check out this clip from our Data in the Wild Podcast where CTO [@ivarconr](https://twitter.com/ivarconr) tells you:
+JavaScript [@ivarconr](https://twitter.com/ivarconr) tells you:
 
 [https://youtube.com/clip/📺](https://youtube.com/clip/UgkxIwSqTSbq2YCiHPeQ49EDfxI_yQ0AzTRc?si=1YwjCsxSxMkdTM49)
 
-Unleash, The Open-Source Feature Toggle Service
-https://github.com/uleash
+JavaScript
 
-Data in the Wild, a podcast brought to you by Xata 🦋 The serverless database built for modern development 🦋
+
+## Day 22 of #100daysofjavascript
+
+Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
+[@wesbos](https://twitter.com/wesbos)
+ for more JavaScript
+Price: $0
+
+Because #javascript will never die 💪🥳🏴‍☠️

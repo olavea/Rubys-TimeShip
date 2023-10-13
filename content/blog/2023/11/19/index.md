@@ -1,16 +1,16 @@
 ---
-title: Dementors are SCARY ...
+title: JS
 author: "@OlaHolstVea"
 date: 2023-11-19
 ---
 
 #
 
-## Day  of #100daysofjavascript
+## Day XX of #100daysofjavascript
 
-Check out [https://beginnerjavascript.com](https://beginnerjavascript.com) by
+Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
 [@wesbos](https://twitter.com/wesbos)
  for more JavaScript
-$ 0
+Price: $0
 
 Because #javascript will never die 💪🥳🏴‍☠️

@@ -1,7 +1,7 @@
 ---
-title: JavaScript
+title: Harry Potter 4
 author: "@OlaHolstVea"
-date: 2023-10-21
+date: 2023-09-20
 ---
 
 # Harry Potter 4
@@ -16,12 +16,14 @@ By [@jk_rowling](https://twitter.com/jk_rowling) illustrated by [Jim Kay](https:
 
 ![HarryPotter4](https://pbs.twimg.com/media/F6XnSWfW8AAETc9?format=webp&name=small)
 
+## Day 2X of #100daysofjavascript
 
-## Day 21 of #100daysofjavascript
+![Lillian's Lemonade stand](https://pbs.twimg.com/media/F5kO8k1WkAAF44c?format=webp&name=900x900)
+
 
 Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
 [@wesbos](https://twitter.com/wesbos)
  for more JavaScript
-$ 0
+Price: $ 0
 
 Because #javascript will never die 💪🥳🏴‍☠️
