@@ -1,16 +1,21 @@
 ---
-title: Hacktoberfest
+title: JavaScript
 author: "@OlaHolstVea"
-date: 2023-09-29
+date: 2023-10-29
 ---
 
 ##
+JavaScript
+Next step is to write up the other JavaScript
 
-I am ready to go now my github account got "Maintain" access, to the repos.
+### JavaScript
 
-- I added the “hacktoberfest” topic to our GitHub repositories to opt-in to Hacktoberfest and indicate we’re looking for contributions.
-- I applied the “hacktoberfest” label to one issue we want contributors to help with on our GitHub repo
 
-Next step is to write up the other issues we'd like help with.
+## Day 29 of #100daysofjavascript
 
-### How to add “hacktoberfest” topic and label
+Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
+[@wesbos](https://twitter.com/wesbos)
+ for more JavaScript
+Price: $0
+
+Because #javascript will never die 💪🥳🏴‍☠️
