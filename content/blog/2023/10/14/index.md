@@ -1,42 +1,23 @@
 ---
-title: Your Side-Project Should be More Fun
+title: DON'T set an Attribute that is non standard
 author: "@OlaHolstVea"
 date: 2023-10-14
 ---
 
-# Because Fun is Better than Boring
+# Be a lady or a gent and DON'T set an Attribute that is non standard
 
-Let's say Fun is your number 1 goal for your side-project. Fun means you gotta do EVERYTHING you can do to make it Fun. Or it'll become boring, you wait and see. These three go together:
+you shouldn't try `setAttribute` . Because your non Standard Attribute is BAD news for a future HTML Standard Attribute with the same name.
 
-- Fun
-- Un-opinionated programming in your use-cases you share
-- Not Big. Tiny
+Then you would end up having to travel back in time and trick yourself into not setting that is non standard Attribute. Or you'll have legacy code that is clashing with the standards which will lead to bugs.
 
-Read downwards. FUN.
-
-Your side-project is just like Lillian's Lemonade stand on Sunday. So let's start with the hardest part of FUN: Tiny.
-
-## Big Become Boring
-
-Making your side-project Tiny is harder than it looks. You have to remove EVERYTHING except the bare necessities.
-
-So let's start removing one bite at the time. I Lillian started with time.
-
-## Save Time Selling Lemonade
-
-- Make less lemonade, sell less lemonade
-- Move to a better location than last year
-- Lower the lemonade price from last year
-- Give an even lower price for buying 2 cups of lemonade
-- Give an even lower price for buying 3 cups of lemonade
-- Give an even lower price for buying 4 cups of lemonade
-- Give an even lower price for buying 5 cups of lemonade
-
-![Lillian Makes less Lemonade for her stand](https://pbs.twimg.com/media/F5luuH7XgAAI6gb?format=webp&name=900x900)
+![DOM](https://pbs.twimg.com/media/F8YjGUuXsAAUYis?format=jpg&name=large)
 
 
 
-## Day 33 of #100daysofjavascript
+
+
+
+## Day 24 of #100daysofjavascript
 
 Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
 [@wesbos](https://twitter.com/wesbos)
@@ -44,3 +25,17 @@ Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
 Price: $0
 
 Because #javascript will never die 💪🥳🏴‍☠️
+
+
+P.S.
+Lillian Makes Lemonade for her stand
+
+![Lillian Makes less Lemonade for her stand](https://pbs.twimg.com/media/F5luuH7XgAAI6gb?format=webp&name=900x900)
+
+
+
+
+typos
+
+This is a big problem when
+This was a big problem when
