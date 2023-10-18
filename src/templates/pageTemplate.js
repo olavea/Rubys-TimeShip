@@ -1,12 +1,15 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import {
-  Box,
   Button,
+  Box,
   Container,
   Typography,
   Link as MuiLink,
+  ImageList,
+  ImageListItem,
 } from "@mui/material";
+import { PlayArrowRounded as PlayIcon } from "@mui/icons-material";
 
 import { Prose } from "../components/prose";
 import { SiteHeader } from "../components/site-header";
@@ -39,18 +42,19 @@ export default function PageTemplate({ data = {} }) {
           <Box sx={{ pt: 12 }} component="header">
             <Container maxWidth="content">
               <Typography variant="overline" component="h1">
-                <h1>{title}</h1>
+                {title}
               </Typography>
             </Container>
           </Box>
-
-          <Prose html={html} />
+          <Container maxWidth="content">
+            <Prose html={html} />
+          </Container>
 
           {(sections || []).map((section) => {
             const { title, subtitle, body } = section || {};
-            const { html } = body?.childMarkdownRemark || {};
             const { path, label } = section.cta || {};
             const { form } = section || {};
+            const { html } = body?.childMarkdownRemark || {};
             return (
               <Box component="section" sx={{ py: 6 }}>
                 <Container maxWidth="content">
