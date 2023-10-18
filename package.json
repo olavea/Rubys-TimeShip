@@ -28,7 +28,7 @@
     "gatsby": "4.0.2",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-gatsby-cloud": "4.0.0",
-    "gatsby-plugin-image": "^2.25.0",
+    "gatsby-plugin-image": "^2.2.0",
     "gatsby-plugin-manifest": "^4.10.2",
     "gatsby-plugin-react-helmet": "^5.4.0",
     "gatsby-plugin-sharp": "^4.2.0",
@@ -45,7 +45,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@netlify/plugin-gatsby": "^3.7.2",
+    "@netlify/plugin-gatsby": "^2.1.4",
     "gatsby-plugin-netlify": "^4.0.0-next.0"
   }
 }
