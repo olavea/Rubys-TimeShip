@@ -9,8 +9,8 @@ import Footer from "./Footer";
 
 // import stripes from "../assets/images/stripes.svg";
 
-// const SiteBorderStyles = styled.div`
-//   max-width: 1000px;
+const SiteBorderStyles = styled.div`
+   max-width: 100%;
 //   margin: 12rem auto 4rem auto;
 //   margin-top: clamp(2rem, 10vw, 12rem);
 //   background: white url(${stripes});
@@ -22,8 +22,8 @@ import Footer from "./Footer";
 //   @media (max-width: 1100px) {
 //     margin-left: 1.5rem;
 //     margin-right: 1.5rem;
-//   }
-// `;
+}
+`;
 
 // const ContentStyles = styled.div`
 //   background: white;
