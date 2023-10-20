@@ -1,6 +1,7 @@
 import React from "react";
-// import styled from "styled-components";
+//import styled from "styled-components";
 //import "normalize.css";
+import "./layout.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
@@ -9,8 +10,7 @@ import Footer from "./Footer";
 
 // import stripes from "../assets/images/stripes.svg";
 
-const SiteBorderStyles = styled.div`
-   max-width: 100%;
+//const SiteBorderStyles = img { max-width: 100%; }
 //   margin: 12rem auto 4rem auto;
 //   margin-top: clamp(2rem, 10vw, 12rem);
 //   background: white url(${stripes});
@@ -22,8 +22,8 @@ const SiteBorderStyles = styled.div`
 //   @media (max-width: 1100px) {
 //     margin-left: 1.5rem;
 //     margin-right: 1.5rem;
-}
-`;
+// }
+//`;
 
 // const ContentStyles = styled.div`
 //   background: white;

@@ -9,6 +9,7 @@ import {
   ImageList,
   ImageListItem,
 } from "@mui/material";
+import { sizing, maxWidth } from "@mui/system";
 import { PlayArrowRounded as PlayIcon } from "@mui/icons-material";
 
 import { Prose } from "../components/prose";
@@ -46,7 +47,7 @@ export default function PageTemplate({ data = {} }) {
               </Typography>
             </Container>
           </Box>
-          <Container maxWidth="content">
+          <Container maxWidth="sm">
             <Prose html={html} />
           </Container>
 
@@ -60,7 +61,7 @@ export default function PageTemplate({ data = {} }) {
                 <Container maxWidth="content">
                   {title && (
                     <Typography component="h2" variant="h1" gutterbottom>
-                      {title}
+                      <h1>{title}</h1>
                     </Typography>
                   )}
                   {subtitle && (
@@ -68,7 +69,9 @@ export default function PageTemplate({ data = {} }) {
                       {subtitle}
                     </Typography>
                   )}
-                  {html && <Prose html={html} />}
+                  <Box sx={{ maxWidth: "sm" }}>
+                    {html && <Prose html={html} />}
+                  </Box>
                   {path && label && (
                     <Button
                       variant="contained"
