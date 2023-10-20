@@ -4,28 +4,50 @@ author: "@OlaHolstVea"
 date: 2023-10-20
 ---
 
-# JavaScript
-JavaScript
+# Adding a layout.css File
+CSS = 💪
+I tried out adding a layout.css file with
+img { max-width: 100%}
+To get rid of my Big Bad image
 
-[https://www.youtube.com/watch?v=bfp636srvLU](https://www.youtube.com/watch?v=bfp636srvLU)
+My Big Bad image
 
-
-JavaScript
-
-![Ivar Conradi Østhus ](https://pbs.twimg.com/media/F6ePsKAXkAALEU4?format=webp&name=small)
-
-JavaScript
-
-![sketchNote](https://pbs.twimg.com/media/F6eLlmQXEAATRZu?format=webp&name=medium)
-
-[https://www.getunleash.io/](https://www.getunleash.io/)
+![my Big Bad image](https://pbs.twimg.com/media/F84qW8hXYAAC8-P?format=jpg&name=4096x4096)
 
 
-## Day 30 of #100daysofjavascript
+I tried out adding a layout.css file with
 
-Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
-[@wesbos](https://twitter.com/wesbos)
- for more JavaScript
-Price: $0
+```css
+img { max-width: 100%}
+```
+And importing it into my Layout.js
 
-Because #javascript will never die 💪🥳🏴‍☠️
+```js
+import "./layout.css";
+```
+
+
+![layout.css file](https://pbs.twimg.com/media/F84qaYEWUAA_7_p?format=png&name=small)
+
+My 100% image
+
+![My 100% image](https://pbs.twimg.com/media/F84qbjaXIAAwCxV?format=jpg&name=large)
+
+P.S
+
+And importing Layout into my gatsby-ssr.js and gatsby-browser.js, like this:
+
+
+```js
+import React from 'react';
+import Layout from './src/components/Layout';
+
+export function wrapPageElement({ element, props }) {
+  return <Layout {...props}>{element}</Layout>;
+}
+```
+
+
+
+## Day 30 💪🥳🏴‍☠️ of #100daysofjavascript
+
