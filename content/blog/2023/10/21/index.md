@@ -1,27 +1,43 @@
 ---
-title: JavaScript
+title: Event Handling in JavaScript
 author: "@OlaHolstVea"
 date: 2023-10-21
 ---
 
-# Harry Potter 4
+# Event Handling in JavaScript
 
+1 Go get `butts``
+2 Listen for `.addEventListener("click",`
+3 Do the `handleFart` function
 
-I gave the Pirate Princess THIS big beauty this morning .
+```js
+const butts = document.querySelector(".butthead");
 
+function handleFart() {
+  console.log("It wasnt ME!");
+}
 
-![HarryPotter4](https://pbs.twimg.com/media/F6XnSWgXkAAcZjH?format=webp&name=small)
+butts.addEventListener("click", handleFart);
 
-By [@jk_rowling](https://twitter.com/jk_rowling) illustrated by [Jim Kay](https://creepyscrawlers.com/)
-
-![HarryPotter4](https://pbs.twimg.com/media/F6XnSWfW8AAETc9?format=webp&name=small)
+```
 
 
 ## Day 31 of #100daysofjavascript
 
-Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
-[@wesbos](https://twitter.com/wesbos)
- for more JavaScript
+Check out where I learned this from [@wesbos](https://twitter.com/wesbos)
+
+[https://wesbos.com/javascript/05-events/event-listener](https://wesbos.com/javascript/05-events/event-listener)
+
 Price: $0
 
-Because #javascript will never die 💪🥳🏴‍☠️
+and
+
+[Beginner JavaScript](https://beginnerjavascript.com/)
+
+Price: $69.50
+
+Hey hey, my my
+#javascript will never die
+  - Neil Young
+
+💪🥳🏴‍☠️
