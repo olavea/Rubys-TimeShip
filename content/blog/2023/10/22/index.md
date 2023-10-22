@@ -1,17 +1,42 @@
 ---
-title: JavaScript
+title: I Attach a Handler For Each Button in JavaScript
 author: "@OlaHolstVea"
 date: 2023-10-22
 ---
 
-## JavaScript
+## I Loop Over Every Button and Attach a Handler For Each Button With JavaScript
 
-JavaScript [@ivarconr](https://twitter.com/ivarconr) tells you:
+![I Loop Over Every Button and Attach a Handler For Each Button With JavaScript](https://pbs.twimg.com/media/F9CPUHfWgAAHZs-?format=jpg&name=large)
 
-[https://youtube.com/clip/📺](https://youtube.com/clip/UgkxIwSqTSbq2YCiHPeQ49EDfxI_yQ0AzTRc?si=1YwjCsxSxMkdTM49)
+```js
+const buyButtons = document.querySelectorAll(".button.buy");
 
-JavaScript
+// Loop over every buyButton and attach a handler for each button
 
+function handleBuyButtonClick(event) {
+  console.log("You break it, you buy it")
+}
+buyButtons.forEach(function(buyButton) {
+  buyButton.addEventListener("click", handleBuyButtonClick);
+})
+
+```
+
+## I Stop This Event From Bubbling Up
+
+```js
+const buyButtons = document.querySelectorAll(".button.buy");
+
+function handleBuyButtonClick(event) {
+  const button = event.target;
+  // Stop this event from bubbling up
+  event.stopPropagation();
+}
+buyButtons.forEach(function(buyButton) {
+  buyButton.addEventListener("click", handleBuyButtonClick);
+})
+
+```
 
 ## Day 22 of #100daysofjavascript
 
