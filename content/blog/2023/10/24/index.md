@@ -1,26 +1,60 @@
 ---
-title: What is the Tech Stack of Unleash?
+title: I Stopped My Event From Bubbling Up in JavaScript
 author: "@OlaHolstVea"
-date: 2023-10-26
+date: 2023-09-25
 ---
 
-## JavaScript
+# Stop Your Event From Bubbling Up in JavaScript
 
-JavaScript [Captain Ola](https://twitter.com/OlaHolstVea).
+Today I stopped my event from bubbling up in JavaScript using `.stopPropagtion`. `.stopPropagtion` is a method and I put it inside my event handler function like this
 
+```js
+function ⏸️(event) {
+    event.stopPropagtion
+}
 
-JavaScript Says [Queen Raae](https://twitter.com/raae).
+```
 
-JavaScript
+## `.stopPropagtion` is Great to Stop Your Event From Bubbling up
 
-JavaScript
+Here is a little more of the context.
 
+!( a sketchnote of `.stopPropagtion` to Stop Your Event From Bubbling up)[https://pbs.twimg.com/media/F9MnHpOWkAAoHIg?format=jpg&name=large]
 
-## Day 24 of #100daysofjavascript
+```js
 
-Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
+const buyButtons = document.querySelectorAll('button.buy')
+
+function handleBuyButtonClick(event) {
+    const button = event.target
+        //  Stop Event From Bubbling up
+    event.stopPropagtion
+}
+```
+
+I just wanted my `buyButton.addEventListener` to fire when you click on one of my buttons and none of the other suff to fire.
+
+```js
+
+const buyButtons = document.querySelectorAll('button.buy')
+
+function handleBuyButtonClick(event) {
+    const button = event.target;
+    //  Stop Event From Bubbling up
+    event.stopPropagation;
+}
+
+buyButtons.forEach(function(buyButton) {
+    buyButton.addEventListener('click', handleBuyButtonClick)
+})
+```
+
+## Day 33 of #100daysofjavascript
+
+Check out [https://wesbos.com/javascript/05-events/targets-bubbling-propagation-and-capture#propagation](https://wesbos.com/javascript/05-events/targets-bubbling-propagation-and-capture#propagation) by
 [@wesbos](https://twitter.com/wesbos)
- for more JavaScript
+ for and explaination on how `.stopPropagtion` works. I just use the method.
+
 Price: $0
 
-Because #javascript will never die 💪🥳🏴‍☠️
+I did it to practice, because #javascript will never die 💪🥳🏴‍☠️
