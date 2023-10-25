@@ -66,7 +66,7 @@ signupForm.addEventListener('submit', funtion(event)) {
 
 
 
-I check whether it contains the name Ola. I don't need my own email
+I check whether it contains the name Ola. I don't need my own email.
 
 
 ```js
@@ -85,6 +85,8 @@ signupForm.addEventListener('submit', funtion(event)) {
 Now if you refresh the page and enter your on email in the form and hit submit, the page will refresh and the form will submit.
 
 However if you change the name in your email to Ola, you will see an alert and the form will not submit.
+
+![I set up validation in Form Events in JavaScript with if (email.includes("ola")) {....}](https://pbs.twimg.com/media/F9SV_v-WcAAdpq3?format=jpg&name=large)
 
 ## Day 33 of #100daysofjavascript
 
