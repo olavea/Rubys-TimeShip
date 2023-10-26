@@ -10,7 +10,7 @@ export const SiteHeader = ({ children }) => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Button component={Link} to="/" sx={{ ml: -1.5 }}>
-            <Logo height="2.5rem" /> Public-builders
+            <Logo height="2.5rem" /> Piraty Ola Way
           </Button>
           Ola and Lillian(8 🏴‍☠️👸)
           {children}

@@ -1,7 +1,7 @@
 ---
 title: I set up validation in Form Events in JavaScript
 author: "@OlaHolstVea"
-date: 2023-09-25
+date: 2023-10-25
 ---
 
 # I set up validation in Form Events in JavaScript
@@ -12,7 +12,7 @@ date: 2023-09-25
 
 ## Form Events
 
-I put the email input value in a variable and add `email` and `value`` to it
+I put the email input value in a variable and add `email` and `value` to it
 
 ```js
     const email = event.currentTarget.email.value;
