@@ -1,5 +1,5 @@
 ---
-title: Usin a Link is for a Button Gives BAD Accesibility in JavaScript
+title: Using a Link is for a Button Gives BAD Accesibility in JavaScript
 author: "@OlaHolstVea"
 date: 2023-10-26
 ---
@@ -48,7 +48,7 @@ Links are used to change the page.
 
 Check out [https://wesbos.com/javascript/05-events/accessibility-gotchas-and-keyboard-codes#difference-between-buttons-and-links](https://wesbos.com/javascript/05-events/accessibility-gotchas-and-keyboard-codes#difference-between-buttons-and-links) by
 [@wesbos](https://twitter.com/wesbos)
- for and explaination on how `if (email.includes("ola")) {....}` works. I just use it.
+ for an explaination on how `if (email.includes("ola")) {....}` works. I just use it.
 
 Price: $0
 
