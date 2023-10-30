@@ -21,7 +21,8 @@ Today I practiced PEDMAS in JavaScript
 **S** Subtraction
 
 
-![]()
+![Today I practiced PEDMAS in JavaScript. Parentheses, Exponents, Division, Multiplication, Addition and Subtraction.
+](https://pbs.twimg.com/media/F9sRs1JXsAAL5qP?format=jpg&name=large)
 
 
 JavaScript
