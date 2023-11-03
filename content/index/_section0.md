@@ -1,1 +1,2 @@
-If this is your first time here, you wouldn't go wrong by starting with this intro blog-post about build-in-public
+
+yo

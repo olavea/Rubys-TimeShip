@@ -5,9 +5,26 @@ date: 2023-11-01
 ---
 
 
-## Will Plan out how to Our Building In Public of MixPod
+## Will Plan out how We're Building In Public of MixPod
 
-This Saturday we Will Plan out how to Build MixPod In Public. This is the link to our plan: (link coming soon)
+This Saturday at 11 Central European Time (CET) we will plan out how to Build MixPod In Public. This is the link to our plan: (we use TL Draw by .... link coming soon)
+
+
+## What is MixPod
+
+Make a playlist of podcast episodes for your friend
+
+![Make a playlist of podcast episodes for your friend. And a drawing of little miss MixPod.](https://pbs.twimg.com/media/F9xue3ZXEAAkL-r?format=jpg&name=large)
+
+## Why We Build MixPod In Public
+
+Queen Raae: Have fun and spread joy around web development and the power of the web
+
+Captain Ola: Help devs to use a handful tools in the right way
+
+## How Do We Build MixPod In Public
+- Fun
+- Depth
 
 ## Pirate Princess MixPod
 
