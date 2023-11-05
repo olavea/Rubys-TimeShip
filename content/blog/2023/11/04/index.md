@@ -33,7 +33,7 @@ Captain of the Chat [AK](https://twitter.com/ja_gatka)
 
 
 
-![A Treasure Map of an island with a path and a red cross that marks the spot of the Treasure](./ma.jpeg)
+![A Treasure Map of an island with a path and a red cross that marks the spot of the Treasure](https://github.com/olavea/Rubys-TimeShip/blob/main/content/blog/2023/11/04/ma.jpeg)
 
 ## Features
 
@@ -58,7 +58,7 @@ Captain of the Chat [AK](https://twitter.com/ja_gatka)
 - Landing page where people
 - can sign up for email update
 
-![Marketing, , miss MixPod with a megaphone](./marketing.jpeg)
+![Marketing, miss MixPod with a megaphone](https://github.com/olavea/Rubys-TimeShip/blob/main/content/blog/2023/11/04/marketing.jpeg)
 
 ## Future ideas
 
@@ -73,7 +73,7 @@ Captain of the Chat [AK](https://twitter.com/ja_gatka)
 
 [Could we do AI clips?](https://cloudinary.com/documentation/ai_in_action#ai_based_highlights)
 
-![Future ideas For Building In Public of MixPod](./Ideas.jpeg)
+![Future ideas For Building In Public of MixPod](https://github.com/olavea/Rubys-TimeShip/blob/main/content/blog/2023/11/04/Ideas.jpeg)
 
 ## Editor Flow
 
@@ -87,7 +87,7 @@ Captain of the Chat [AK](https://twitter.com/ja_gatka)
 - Add notes
 
 
-![Editor Flow, miss MixPod with a spanner head](./creator-1.jpeg)
+![Editor Flow, miss MixPod with a spanner head](https://github.com/olavea/Rubys-TimeShip/blob/main/content/blog/2023/11/04/creator-1.jpeg)
 
 ## Consumer Flow
 
@@ -95,7 +95,7 @@ Captain of the Chat [AK](https://twitter.com/ja_gatka)
 - Subscribe in their podcast player
 - Listen from the webpage
 
-![Consumer Flow, miss MixPod with one big ear](./Consumer.jpeg)
+![Consumer Flow, miss MixPod with one big ear](https://github.com/olavea/Rubys-TimeShip/blob/main/content/blog/2023/11/04/Consumer.jpeg)
 
 
 ## Pirate Princess MixPod
