@@ -40,7 +40,6 @@ All the best,
 
 Ola
 Pirate-Dev
- and
 
 Hi dev!
 
@@ -58,8 +57,6 @@ All the best,
 
 Ola
 Pirate-Dev
-
-
 
 Hi ,
 
@@ -82,28 +79,14 @@ Pirate-Dev
 What do I mean by piraty?
 Let's find out, while podcasting
 
-
-
 to talk about experiments in living more and working less for a half hour or so?
 
 My  with this
 
-
-
-
-
-
-
-
-
-
-
 Expect an invitation to drop into your mailbox the next handful of years
-
-
-
 
 I'd love to have you on my piraty podcast because ....
 
 it sounds like you've decided to LIVE more and work less. I'm keen on hearing what you've found out about living YOUR life.
 And stories about what made you into who you are now.
+
