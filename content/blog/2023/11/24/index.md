@@ -8,6 +8,12 @@ date: 2023-11-26
 
 ## Making soup soon
 
+10+ liters of soup
+
+onions
+carrots
+
+
 ## Day XX of #100daysofjavascript
 
 Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
