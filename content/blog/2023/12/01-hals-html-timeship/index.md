@@ -45,3 +45,14 @@ TimeShip
 By
 Lillian Raae-Vea (8 🏴‍☠️👸)
 & Ola Vea
+
+
+![](https://pbs.twimg.com/media/GAWo4vFW0AAe5_X?format=jpg&name=small)
+
+## Our Lost Lassies
+
+It's not all fun
+and feastdays at
+our Bridge.
+South of us is
+Southie.
