@@ -73,7 +73,7 @@ have gone
 missing from
 our Bridge.
 
-![](https://pbs.twimg.com/media/GAbWoMlWcAAtWBK?format=jpg&name=small)
+![](https://pbs.twimg.com/media/GAf9LSLWMAAh-nW?format=jpg&name=small)
 
 
 Word on our
@@ -84,6 +84,8 @@ Southie Baddies 💀
 
 
 
-![](https://pbs.twimg.com/media/GAf9LSLWMAAh-nW?format=jpg&name=small)
+![]()
 
-
+The watchmen hasn't
+patrolled into
+Southie for 12 years.

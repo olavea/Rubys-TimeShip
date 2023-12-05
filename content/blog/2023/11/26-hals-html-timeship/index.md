@@ -38,9 +38,7 @@ our Bridge. South
 of us is Southie.
 
 
-The watchmen hasn't
-patrolled into
-Southie for 12 years.
+
 And this spring
 2 lassies have
 gone missing from our Bridge.
@@ -51,6 +49,9 @@ our lost lassies
 got kidnapped by
 Southie baddies.
 
+The watchmen hasn't
+patrolled into
+Southie for 12 years.
 
 The morning after
 the feast a banging on
