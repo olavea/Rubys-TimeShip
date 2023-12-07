@@ -86,4 +86,18 @@ Southie Baddies 💀
 
 ![](https://pbs.twimg.com/media/GAf9LSLWMAAh-nW?format=jpg&name=small)
 
+Word on
+our Bridge is,
+our lost lassies
+got kidnapped by
+Southie baddies.
 
+
+![](https://pbs.twimg.com/media/GAweVtbXYAEIl3y?format=jpg&name=900x900)
+
+The watchmen
+haven't
+patrolled
+into
+Southie
+for 12 years.
