@@ -102,11 +102,12 @@ into
 Southie
 for 12 years.
 
+![](https://pbs.twimg.com/media/GBFa9SAXEAAcHkR?format=jpg&name=small)
 
 Lotta & I woke to
 banging on
 our door.
 «Ah, it's you.»
 I let in the
-Blacks,from
+Blacks, from
 two houses down.
