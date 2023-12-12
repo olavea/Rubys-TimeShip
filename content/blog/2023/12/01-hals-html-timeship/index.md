@@ -111,3 +111,12 @@ our door.
 I let in the
 Blacks, from
 two houses down.
+
+![](https://pbs.twimg.com/media/GBKnhfOXEAAWz15?format=jpg&name=small)
+
+«Our Lucy sent us a letter.»
+Said mr Black.
+«That's good.»
+I Said. Mrs
+Black sat down
+on the floor, bawling her eyes out.
