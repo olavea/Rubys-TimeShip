@@ -79,34 +79,38 @@ The whole file looks like this
 ```js
 // src / pages / [playListID].xml.js
 
-
 import rss from "@astrojs/rss";
 
 // fake a DB
 const DB = {
   playlist1: {
-    title: "A fabulous MixPod for my friend",
+    title: "Playlist One MixPod for my friend",
     description: "A humble MixPod",
+    episodes: [],
+  },
+  playlist2: {
+    title: "Playlist Two MixPod for my friend",
+    description: "An aweful MixPod",
     episodes: [],
   },
 };
 
-export function GET(context) {
+export function GET({params}) {
   // get the ID for the playlist
-  const playListID = "playlist1";
+   const playListID = DB[params.playlistID];
 
-  const playList = DB[playListID];
+//   const playList = DB[playListID];
   // get the ID for the playlist from the URL [playListID].xml.js?
 
   return rss({
     // `<title>` field in output xml
-    title: playList.title,
+    title: playListID.title,
     // `<description>` field in output xml
-    description: playList.description,
+    description: playListID.description,
     site: context.site,
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
-    items: playList.episodes,
+    items: playListID.episodes,
     // (optional) inject custom xml
     customData: `<language>en-us</language>`,
   });
