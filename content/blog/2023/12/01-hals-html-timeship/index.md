@@ -129,3 +129,36 @@ attached." Said
 mrs Black and
 I reached
 for it.
+
+![](https://pbs.twimg.com/media/GByMl-qWwAAn7i2?format=jpg&name=small)
+
+"Hal!" Lotta
+shouted.
+"Put the
+kettle on,
+that's a
+dear." Lotta thinks I rub some
+people the wrong way sometimes, like now.
+
+![](https://pbs.twimg.com/media/GBu-C9aWkAAU107?format=jpg&name=small)
+
+The Ransom Note
+
+Wanna see
+Yer gurl?
+give us the
+treasure map'o
+the web-dev
+islands.
+
+best wishes X.
+
+![](https://pbs.twimg.com/media/GByJ45LXkAASveL?format=jpg&name=small)
+
+"Why'd the
+Blacks come to
+Lotta & me
+with that
+ransom note?"
+you ask.
+
