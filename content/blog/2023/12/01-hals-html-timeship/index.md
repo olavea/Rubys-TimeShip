@@ -162,3 +162,11 @@ with that
 ransom note?"
 you ask.
 
+![](https://pbs.twimg.com/media/GB4Rg-iakAA9sEt?format=jpg&name=small)
+
+We are
+Detectives,
+Lotta
+& I,
+Pirate
+Detectives.
