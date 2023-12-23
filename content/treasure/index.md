@@ -1,14 +1,14 @@
 ---
 title: Ahoy! I am Captain Ola Vea
-lead: Lillian (8 🏴‍☠️👸) helped me turn my Build-in-Public-Sessions into a treasure hunt. So that every Session i do makes my work-life that little bit more worthwhile.
+
 sections:
-  - title: Is Your Tool Boring Your Users?
+  - title: Unsure how to get your pay piraty unstuck?
     body: ./_section0.md
-  - title: Imagine Your User Having Fun
+  - title: Imagine Your piraty pay raise & the RESPECT the pay raise will earn you from your Captain
     body: ./_section0.md
-  - title: Building and Skills Are Fun For Devs
+  - title: Let's map out your piraty options & plan how to present you as a treasure
     body: ./_section0.md
-  - title: Book a chat with us about how we help your users turn Fun into Skill
+  - title: Book a call to see what your Captain COULD see to treasure you properly
     body: ./_section0.md
 ---
 😺
