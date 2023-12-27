@@ -1,5 +1,5 @@
 ---
-title: Ahoy! I am Captain Ola Vea
+title: 1-on-1 Coaching Call
 
 sections:
   - title: Here’s How It Works
@@ -8,11 +8,11 @@ sections:
       path: /signup
       label: Book a call >>
 ---
-## Not sure how sell your boss on a pay raise?
+## Not sure how to get a pay raise?
 
-Your pay is stuck – You feel your boss is blind to some of the benefits you bring to your team.
+Your pay is stuck – You feel your boss is blind to your increasing benefit to your team.
 
-## Imagine Knowing exactly what to say to your Boss
+## Imagine Knowing exactly how to sell your boss on a pay raise?
 
 Imagine this – Imagine you already know your boss's needs for your team. Imagine you already know your boss's communication style. Imagine you already moved your boss to the third and final step in the sales process:
 1. Know, like and trust (the benefits you bring to your boss's needs)
