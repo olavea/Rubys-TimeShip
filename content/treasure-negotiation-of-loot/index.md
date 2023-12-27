@@ -12,7 +12,7 @@ sections:
 
 Your pay is stuck – You feel your boss is blind to some of the benefits you bring to your team.
 
-## Imagine Knowing exactly what to say
+## Imagine Knowing exactly what to say to your Boss
 
 Imagine this – Imagine you already know your boss's needs for your team. Imagine you already know your boss's communication style. Imagine you already moved your boss to the third and final step in the sales process:
 1. Know, like and trust (the benefits you bring to your boss's needs)
