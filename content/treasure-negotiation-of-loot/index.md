@@ -37,3 +37,5 @@ Or decide NOT to go through with the pay raise meeting
 ## But Don’t Take My Word For it...
 
 Here’s what other folks have said:
+
+![](https://pbs.twimg.com/media/GCRFEySX0AAWJfB?format=jpg&name=small)
