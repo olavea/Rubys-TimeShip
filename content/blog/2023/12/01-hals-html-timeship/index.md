@@ -170,3 +170,12 @@ Lotta
 & I,
 Pirate
 Detectives.
+
+
+Hal fed
+the Blacks
+ginger cookies
+as they
+told us
+their
+tearful tale.
