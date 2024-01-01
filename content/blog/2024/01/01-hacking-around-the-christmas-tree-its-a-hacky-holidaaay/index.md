@@ -27,6 +27,8 @@ You've heard people say about building an app, you start by making a skateboard,
 2. Find a decent christmas tree
 3. Pay for said christmas tree
 4. Drag the christmas tree home by it's heels
+5. Put stuff on the christmas tree
+6. Go around the christmas tree singing loudly
 
 And so we did, see photographic evidence.
 
