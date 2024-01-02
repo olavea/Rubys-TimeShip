@@ -6,7 +6,7 @@ date: 2024-01-01
 
 Yeah we started out making a plan, gathering tools and rounding up the team.
 
-## The team wass
+## The team was
 
 Lillian Raae-Vea (8 🏴‍☠️👸) & Ola Vea (dev-dad)
 
