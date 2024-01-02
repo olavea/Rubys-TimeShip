@@ -27,9 +27,9 @@ Captain of the Chat [AK](https://twitter.com/ja_gatka)
 ## Voyage Plan For Building MixPod In Public
 
 - Voyage 0: Charting our Course
-- Voyage 1: Landing Page + Newsletter Form
-- Voyage 2: Search through podcast episodes
-- Voyage 3: Generate RSS Feed
+- Voyage 1: Landing Page, [github issue](https://github.com/olavea/mixpod/issues/1) + Newsletter Form From Outseta, [github issue](https://github.com/olavea/mixpod/issues/2)
+- Voyage 2: Search through podcast episodes, [github issue](https://github.com/olavea/mixpod/issues/3)
+- Voyage 3: Generate RSS Feed, github issue
 
 
 

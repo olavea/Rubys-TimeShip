@@ -33,11 +33,11 @@ async function slugifyMarkdownRemarkNode(gatsbyUtils) {
 
 ```
 
-## Day XX of #100daysofjavascript
+## Day 38 of #100daysofjavascript
 
-Check out [https://wesbos.com/javascript](https://wesbos.com/javascript) by
+Check out [https://wesbos.com/javascript](https://wesbos.com/javascript/07-logic-and-flow-control/if-statements-function-returns-truthy-falsy) by
 [@wesbos](https://twitter.com/wesbos)
- for more JavaScript
+ for more about if statements in JavaScript
 Price: $0
 
 Because #javascript will never die 💪🥳🏴‍☠️
