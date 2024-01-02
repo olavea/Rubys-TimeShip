@@ -5,7 +5,7 @@ date: 2023-11-01
 ---
 
 
-## Will Plan out how We're Building In Public of MixPod
+## We'll Plan out how We're Building In Public of MixPod
 
 This Saturday at 11 Central European Time (CET) we will plan out how to Build MixPod In Public. This is the link to our plan: (we use TL Draw by .... link coming soon)
 
