@@ -9,11 +9,13 @@ date: 2024-01-03
 
 
 
+## The Dev-life Pirates Podcast
 
+**What:** A podcast about dev-life at it's best, piraty dev-life!
+**What is it for:** inspiration to live life more your way (= more piraty)
+**Who is it for:** a web-dev who wants to make the most of her/his dev-life
 
-What: A podcast about dev-life at it's best, piraty dev-life!
-What is it for: inspiration to live life more your way (= more piraty)
-Who is it for: a web-dev who wants to make the most of Her/his dev-life
+Start by tking the dev-type test
 
 
 ## The Six Areas of Dev-Life
