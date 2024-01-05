@@ -8,6 +8,22 @@ date: 2024-01-02
 
 Ahoy Shipmate!
 
+Welcome to a Piraaaaty Neeew Yeeear! 🏴‍☠️🥳🚀
+And welcome aboard this spanking new email series. ⛵
+
+You'll get links to inspirational writings mainly on .... and updates on our piraty dev-life in three areas:
+
+- Piraty dev-life at work 🔧
+- Piraty dev-life at home and 🏠
+- Piraty dev-life at play 💃
+
+Our new year's resolution is to *make our dev-life more Piraty at play 💃*. You can read about how the Pirate Princess and Cap'n Ola Vea hacked a minimal viable christmas tree.
+
+We polished off a playful holiday by filling our house with a piraty party. Soon we'll have an even more prodigious party for Queen Raae's birthday.
+
+We'd LOVE to hear your new year's resolution, so write it in your reply if you dare. 👻
+
+
 
 Welcome to a Piraaaaty Neeew Yeeear!
 And welcome to this spanking new email series. 📟 Hope you like it, this new email is part of our resolution for 2024. Our new year's resolution is to inspire you to *make the most of your dev-life*. By that we mean, help you make your dev-life more PIRATY  in one of three areas. Help you make your dev-life more:

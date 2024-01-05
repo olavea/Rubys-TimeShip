@@ -1,12 +1,6 @@
 ---
 title: 1-on-1 Coaching Call
 
-sections:
-  - title: Here’s How It Works
-    body: ./_section0.md
-    cta:
-      path: /signup
-      label: Book a call >>
 ---
 ## Not sure how to get a pay raise?
 
@@ -26,6 +20,13 @@ Imagine you already have the sales skills needed for this particular type of sal
 Get your pay Unstuck – Often, what it takes to get your pay unstuck is to get your boss to SAY that the benefit you bring is more valuable now than it was back when your pay was negotiated. Questions then
 and tone of voice
 
+## Here’s How It Works
+
+You book a coaching call with me using my private scheduling link. The event is set for 120 minutes, but you might want to block out extra time in case we go a little long. Our call will take place over Whereby.com. You share your ... with me. I will give you specific instructions about what to do next. Then you practice the pay raise meeting with me
+
+I’ll give you no-nonsense advice that you can put into action immediately. These are not generic “hand-wavy” principles; this is practical “do this next” instruction gained from 1000+ hours of coaching folks just like you.
+
+[Book a $150 call over on savvycal.com>>](https://savvycal.com/raae/pay-raise-prep-coaching-call)
 
 
 ## 100% Money-Back Guarantee!

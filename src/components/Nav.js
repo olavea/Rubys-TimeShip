@@ -53,16 +53,19 @@ export default function Nav({ data }) {
     <>
       <ul>
         <li>
-          <Link to="/">⛵ Ola</Link>
+          <Link to="/">Cap'n Ola Vea ⛵</Link>
         </li>
         <li>
-          <Link to="/olacast/">📺 olaCast</Link>
+          <Link to="/treasure-negotiation-of-loot"> Paid Stuff 💲</Link>
         </li>
         <li>
-          <Link to="/pizzas/">🖼️ Images </Link>
+          <Link to="/pirates">Free Stuff 💜</Link>
         </li>
         <li>
-          <Link to="/pirates">💜 & Friends</Link>
+          <Link to="/olacast/">olaCast 📺</Link>
+        </li>
+        <li>
+          <Link to="/pizzas/">Images 🖼️</Link>
         </li>
       </ul>
     </>
