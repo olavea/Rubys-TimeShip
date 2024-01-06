@@ -4,9 +4,9 @@ title: Skill-Building Coaching For Experienced Devs
 ---
 😺
 
-**A four month private coaching program to get your skill-building to the next level.**
+**A four month private coaching program to get your skill-building back on track.**
 
-Use your strengths – Build better habits – Get rid of wrong attitudes – Present yourself more Truthfully
+Use Your Strengths – Build better habits – Say good bye to bad attitudes – Present yourself more Truthfully
 
 Apply Now >>
 
@@ -16,9 +16,9 @@ Apply Now >>
 - Your focus is all over that map - a ... one week, an ... the next.
 You might be getting better at doing your work, but you’re not getting better at building your skillS.
 
-## Imagine NAILING YOUR skill-building
+## Imagine NAILING YOUR skill-building so your boss KNOWS it
 
-## Private coaching will show you the way
+## Private coaching will show you YOUR skill-building path
 
 My private coaching program is for devs just like you who are looking to improve their skill-building, attract better ..., and have a bigger impact. If your skill-building feels stuck or stalled or inefficient, coaching will show you what’s wrong, what to do about it, and hold you accountable to making progress.
 

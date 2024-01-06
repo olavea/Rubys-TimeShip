@@ -15,7 +15,7 @@ Imagine this – Imagine you already know your boss's needs for your team. Imagi
 
 Imagine you already have the sales skills needed for this particular type of sale.
 
-## Speak with a seasoned sales coach
+## Prepare with a seasoned sales coach
 
 Get your pay Unstuck – Often, what it takes to get your pay unstuck is to get your boss to SAY that the benefit you bring is more valuable now than it was back when your pay was negotiated. Questions then
 and tone of voice
