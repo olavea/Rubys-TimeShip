@@ -4,7 +4,7 @@ title: Skill-Building Coaching For Experienced Devs
 ---
 😺
 
-**A four month private coaching program to get your skill-building back on track.**
+**A three month private coaching program to get your skill-building back on track.**
 
 Use Your Strengths – Build better habits – Say good bye to bad attitudes – Present yourself more Truthfully
 
