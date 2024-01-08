@@ -3,9 +3,12 @@ title: 1-on-1 Coaching Call
 author: "@OlaHolstVea"
 date: 2024-01-08
 ---
-## Not sure how to get a pay raise?
+## Not sure When you'll get a pay raise?
 
 Your pay is stuck – You feel your boss is blind to your increasing benefit to your team.
+
+## Imagine Knowing exactly how to get your pay raise?
+
 
 ## Imagine Knowing exactly how to sell your boss on a pay raise?
 
