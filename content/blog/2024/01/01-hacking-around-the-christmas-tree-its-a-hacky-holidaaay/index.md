@@ -77,3 +77,14 @@ I sat down with an old scout's knife. 🔪 Old, but sharp as a tack. 🌮 And I 
 "Uncle" Allister our Captain during the summer and my training buddy the rest of the year.
 
 !["Uncle" Allister our Captain during the summer and my training buddy the rest of the year.](https://pbs.twimg.com/media/GCw8rmFXIAA9fZt?format=jpg&name=small)
+
+
+## Dragging the christmas tree to the christmas tree graveyard
+
+Watch the video of the Pirate Princess and Cap'n Ola Vea dragging the christmas tree to the christmas tree graveyard. While singing Santa Claus is comin' to town and Jingle Bells. It's over on the twitters.
+
+[a video of the Pirate Princess and Cap'n Ola Vea dragging the christmas tree to the christmas tree graveyard. While singing Santa Claus is comin' to town and Jingle Bells.](https://twitter.com/OlaHolstVea/status/1743681493765869725)
+
+
+
+
