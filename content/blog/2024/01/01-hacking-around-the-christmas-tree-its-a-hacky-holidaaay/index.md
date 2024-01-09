@@ -35,27 +35,27 @@ You've heard people say about building an app, you start by making a skateboard 
 
 Here The Pirate Princess and Cap'n Ola Vea buys 💲 the christmas tree from nobody, but a piece of paper. 📄
 
-[The Pirate Princess and Cap'n Ola Vea buy 💲 the christmas tree from nobody, but a piece of paper.](https://pbs.twimg.com/media/GCw7PFPXUAAzZV2?format=jpg&name=medium)
+![The Pirate Princess and Cap'n Ola Vea buy 💲 the christmas tree from nobody, but a piece of paper.](https://pbs.twimg.com/media/GCw7PFPXUAAzZV2?format=jpg&name=medium)
 
 
 The Pirate Princess and Cap'n Ola Vea draggs the christmas tree home on the skateboard. 🛹 Singing christmas songs slightly too loud and slightly off key. 🔑🎵
 
-[The Pirate Princess and Cap'n Ola Vea draggs the christmas tree home on the skateboard. 🛹 Singing christmas songs slightly too loud and slightly off key. 🔑🎵 ](https://pbs.twimg.com/media/GCw7aCvWoAAlJPf?format=jpg&name=small)
+![The Pirate Princess and Cap'n Ola Vea draggs the christmas tree home on the skateboard. 🛹 Singing christmas songs slightly too loud and slightly off key. 🔑🎵 ](https://pbs.twimg.com/media/GCw7aCvWoAAlJPf?format=jpg&name=small)
 
 Here you see the skateboard 🛹 clearly and The Pirate Princess.
 
-[Her you see the skateboard 🛹 clearly and The Pirate Princess.](https://pbs.twimg.com/media/GCw8uakWkAEdfYA?format=jpg&name=small)
+![Her you see the skateboard 🛹 clearly and The Pirate Princess.](https://pbs.twimg.com/media/GCw8uakWkAEdfYA?format=jpg&name=small)
 
 Back home we sawed off a slice of the christmas tree trunk, as per recipe. 🪓 Making sure the saw dust ended up outside.
 
-[Back home we sawed off a slice of the christmas tree trunk, as per recipe. 🪓](https://pbs.twimg.com/media/GCw7iTJWUAAlV3x?format=jpg&name=medium)
+![Back home we sawed off a slice of the christmas tree trunk, as per recipe. 🪓](https://pbs.twimg.com/media/GCw7iTJWUAAlV3x?format=jpg&name=medium)
 
 
 Queen Raae had dug out the christmas tree foot for us. So we put the christmas tree in it's foot and watered it. 🌊
 
 Lillian took off the tree's red stocking with scissors. ✂️
 
-[christmas](https://pbs.twimg.com/media/GCw7mDIWUAAk09Y?format=jpg&name=900x900)
+![christmas](https://pbs.twimg.com/media/GCw7mDIWUAAk09Y?format=jpg&name=900x900)
 
 
 Then we removed all the stuff that was in the christmas tree's corner including mommo's old treasure chest. 🗃️
@@ -76,4 +76,4 @@ I sat down with an old scout's knife. 🔪 Old, but sharp as a tack. 🌮 And I 
 
 "Uncle" Allister our Captain during the summer and my training buddy the rest of the year.
 
-["Uncle" Allister our Captain during the summer and my training buddy the rest of the year.](https://pbs.twimg.com/media/GCw8rmFXIAA9fZt?format=jpg&name=small)
+!["Uncle" Allister our Captain during the summer and my training buddy the rest of the year.](https://pbs.twimg.com/media/GCw8rmFXIAA9fZt?format=jpg&name=small)
