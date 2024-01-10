@@ -4,15 +4,15 @@ title: Skill-Building Coaching For Experienced Devs
 ---
 😺
 
-**A three month private coaching program to get your skill-building back on track.**
+**A six week private coaching program to get your skill-building-ship afloat again.**
 
-Use Your Strengths – Build better habits – Say good bye to bad attitudes – Present yourself more Truthfully
+Use Your Strengths – Build better habits – Say good bye to bad Attitudes – Present yourself more Truthfully
 
 Apply Now >>
 
 ## Does your skill-building feel stuck?
 
-- You’re doing good work, but you’re building too ... skill.
+- You’re doing good work, but your skill-building is no good.
 - Your focus is all over that map - a ... one week, an ... the next.
 You might be getting better at doing your work, but you’re not getting better at building your skillS.
 
@@ -23,6 +23,7 @@ You might be getting better at doing your work, but you’re not getting better 
 My private coaching program is for devs just like you who are looking to improve their skill-building, attract better ..., and have a bigger impact. If your skill-building feels stuck or stalled or inefficient, coaching will show you what’s wrong, what to do about it, and hold you accountable to making progress.
 
 ## Let’s Refactor Your Skill-Building
+
 If you came across a whole bunch of spaghetti code that some novice programmer wrote, what would you do? You’d probably refactor it to be more efficient, more extensible, and easier to maintain.
 
 Good skill-building should have a ... of .., and a ...,. If you don’t have those things, you’re probably doing  “spaghetti skill-building”.
@@ -30,6 +31,7 @@ Good skill-building should have a ... of .., and a ...,. If you don’t have tho
 Let me help you refactor your spaghetti skill-building using a proven framework that has been battle tested for more than a decade.
 
 ### Benefits of Private Coaching
+
 Increased ...
 - Become the “go-to” person in your number 1 skill
 - Package and sell your expertise to your boss and co-workers
@@ -47,6 +49,7 @@ Increased ...
 etc...
 
 ### The Big Picture
+
 You get four months of private and unlimited 24/7 access to me via (oops: Slack, phone, and email.)
 
 The program includes:
