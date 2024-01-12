@@ -49,3 +49,5 @@ I’m Cap'n Ola Vea and I was a sales consultant and sales coach for the better 
 In my first year as a dev, I started experimenting on myself with skill-building techniques I learned from my father on his little sailing ship. He had over a two decades of real-world experience successfully applying action-based learning techniques on 100s of teenagers like me.
 
 The unconscious acceptance of theory based learning is a collective hallucination that literally keeps me up at night. My mission in life is to spread my father's action-based skill-building legacy to devs like you. Care to join me? You’ll be glad you did. 🔧🥳🏴‍☠️
+
+![Is the non-piraty dev-life worth living?](https://github.com/olavea/Rubys-TimeShip/assets/7642493/6e12dd51-dacf-40e2-a60f-0ece955e302a)
