@@ -1,10 +1,14 @@
 ---
-title: Party!
+title: Queen Raae's birthday Party!
 author: "@OlaHolstVea"
-date: 2024-01-13
+date: 2024-01-16
 ---
 
-Stuff coming, like photos
+A full house!
+
+Happy BIIIRTHDAAAY QUEEN RAAAAEE!
+
+![QUEEN RAAE danincing At her birthday party](https://pbs.twimg.com/media/GD5YbkDWgAMa5IK?format=jpg&name=small)
 
 
 looks like nobody noticed my coffee cup installation... At least nobody drank a drop of coffee.
