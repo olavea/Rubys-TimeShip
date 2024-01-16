@@ -7,10 +7,10 @@ date: 2024-01-17
 ## Not sure how to fix your Gatsby problem?
 
 
-## Imagine fixing your Gatsby thing
+## Imagine your Gatsby working
 
 
-## Gatsby expert code review will show you the way
+## An expert code review will get you unstuck
 
 
 ## Here's How It Works
