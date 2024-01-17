@@ -171,6 +171,7 @@ Lotta
 Pirate
 Detectives.
 
+![](https://pbs.twimg.com/media/GEDo9U3WQAAXvin?format=jpg&name=900x900)
 
 Hal fed
 the Blacks
@@ -179,3 +180,123 @@ as they
 told us
 their
 tearful tale.
+
+![](https://pbs.twimg.com/media/GEDo9U3WQAAXvin?format=jpg&name=4096x4096)
+
+How little Lucy
+went out
+to do a
+morning
+delivery of chocolate
+croissants, never
+to be seen again.
+
+
+![]()
+
+
+
+
+«Leave
+it
+with
+us.»
+Lotta
+said.
+
+![Leave-it-with-us]()
+
+
+«We'll
+find
+this Treasure Map
+of these
+so-called
+'Web-Dev'
+Islands &
+
+![Web-Dev-Islands-1]()
+
+
+
+we'll set
+up an
+exchange,
+don't
+you
+worry.»
+
+
+![exchange-Hal]()
+
+
+
+«YESS!
+We've got a
+new CASE!»
+Said Hal
+when we
+were
+alone.
+
+
+![a-case-Hal]()
+
+
+«And a
+TOUGH
+one.» Said
+Lotta.
+Thoughtfully
+tapping her
+sharp right
+front tooth.
+
+
+![sharp-tooth-Hal]()
+
+
+«So what's
+our next
+move boss?»
+Said Hal.
+«Have you
+ever heard
+of these 'Web-
+Dev Islands?» Said Lotta.
+
+
+
+![web-Dev-Islands-2]()
+
+
+
+«Not a pip, but
+why should I have?
+The whole
+PLACE
+sounds
+insanely
+illegal. "web-dev"! It's pure Treason , innit.» Hal said.
+
+
+
+![web-Dev-Islands-3]()
+
+
+
+«Yeah .... Let's go have some egg & bacon breakfast down at the Dolphin and see what gossip we can pick up about these 'Web-Dev Islands'.» I said
+
+So Hal and I popped into the Dodgy Dolphin for a spot of breakfast. As always there was a loud group of musicians and actors drinking at the bar. We ignored them and went to the fireplace. A handfull of sailors were sitting close to the roaring fire. I say "sailors", but they were proper pirates. We knew them from the "Tarquin Todd case" last summer.
+
+Hal & I brought the pirates a round of grog and a piece of paper with my sketchnoted Web-Dev Islands Treasure Map. Hal & I ate our bacon'n eggs in silence. It's a mistake to ask a question off of a pirate, she'll clam up. But shut up yourself and a pirate will start chatting like a magpie. Can't help herself. Silence is torture to a pirate. Uncle Walsingham told us that.
+
+A hard looking redhead slammed her empty grog on the table.
+
+«Yall heard the one about how ol'Cap'n Crook aaaalmost lost BOTH his hands?» She whispered huskily and pulled a great wad of chewing tobacco out of her upper jaw. I've heard several versions, but I wasn't worried because the tales were all GREAT.
+
+«He wasnae old back then our Cap'n Crook. A beardless cook boy he was. We were boarding a french frigate in the Biscay. Totally legit mind you, we HAD the paperwork. The weather turned treacherous, slapping our ship around. Next thing Captain Pan hisself was down in the drink. Captain Pan floating around unconscious, helpless as a babe in a Bahamas jungle! Young Crook jumped right in after. And wouldn't you know it a shark showed up instantly. Some say Crook had read about the trick in a book, but anyway the boy punched that shark straight in the snout. The shark gave Crook an insulted stare to the count'o 10. Crook though, didn't blink. The boy stared right back into that sharky eye, holding his guard up lika pro. That gave the crew juuuust time enough to hoist Captain Pan» Said .
+
+«.» Said .
+«.» I said
+«.» Said Hal.
