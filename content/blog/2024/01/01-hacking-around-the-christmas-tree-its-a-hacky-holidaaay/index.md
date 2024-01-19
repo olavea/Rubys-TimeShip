@@ -3,9 +3,14 @@ title: Hacking around the christmas tree it's a hacky holidaaay
 author: "@OlaHolstVea"
 date: 2024-01-01
 ---
+**What:** christmas tree
 
-How did the Pirate Princess and Cap'n Ola Vea get a minimal viable christmas tree going?
+**How:** did the Pirate Princess and Cap'n Ola Vea get a minimal viable christmas tree going?
 Yeah we started out making a plan, gathering tools and rounding up the team.
+
+**Why:**
+
+![](https://pbs.twimg.com/media/GENlka5XIAAx_z_?format=jpg&name=large)
 
 ## The team was
 
