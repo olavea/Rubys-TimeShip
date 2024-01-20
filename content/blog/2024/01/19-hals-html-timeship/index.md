@@ -1,241 +1,157 @@
 ---
-title: Hal's HTML TimeShip
+title: Hals HTML TidsSkute
 author: "@OlaHolstVea"
-date: 2023-12-01
+date: 2024-01-19
 ---
 
 
 ![](https://pbs.twimg.com/media/GAQ7mt2XIAA22om?format=jpg&name=900x900)
 
-Halloo!
-Hal here.
-The Hero
-of my tall
-tale isn't
-me, it's my boss Lotta.
+Hallå!
+Hal her.
+Helten i sjørøverhistorien min er ikke meg, men sjefen min Lotta.
 
 
 ![](https://pbs.twimg.com/media/GAQ8LRnXAAAVHQm?format=jpg&name=small)
 
-A story's supposed
-to have a start.
-Sorry about
-that, but I
-NEED to tell
-you today, because ... you'll see.
+En sjørøverhistorie skal egentlig en en start. Sorry, men jeg må fortelle deg i dag, fordi ... du får se sjøl.
+
 
 ![](https://pbs.twimg.com/media/GAQ8u-gWUAAQCN-?format=jpg&name=small)
 
+For lenge siden, på ei bru langt, langt borte ....
 
-A long time ago, on a bridge
-far, far away
-....
 
 ![](https://pbs.twimg.com/media/GAQ9MnDXwAAwyLC?format=jpg&name=small)
 
 
+# Hals HTML TidsSkute
 
-# HAL'S HTML TimeShip
-
-By
+av
 
 ### Lillian Raae-Vea (9 🏴‍☠️👸) & Ola Vea
 
-
 ![](https://pbs.twimg.com/media/GAWo4vFW0AAe5_X?format=jpg&name=small)
 
-## Our Lost Lassies
+## Våre savnede småjenter
 
-It's not all fun
-and feastdays at
-our Bridge.
-South of us is
-Southie.
+Det er ikke bare fest og moro på brua vår. Sør for oss ligger Southie.
 
 
 ![](https://pbs.twimg.com/media/GAbWoMlWcAAtWBK?format=jpg&name=small)
 
-And this
-spring
-alone
-2 lassies
-have gone
-missing from
-our Bridge.
+Og denne ene våren har 2 småjenter blitt borte fra brua vår.
 
 ![](https://pbs.twimg.com/media/GAbWoMlWcAAtWBK?format=jpg&name=small)
 
 
-Word on our
-Bridge is
-our lost lassies 💙
-got kidnapped by
-Southie Baddies 💀
-
+Ryktet på brua er at småjentene våre 💙 blei kidnappa av slemminger fra Southie. 💀
 
 
 ![](https://pbs.twimg.com/media/GAf9LSLWMAAh-nW?format=jpg&name=small)
 
-The watchmen
-haven't
-patrolled
-into
-Southie
-for 12 years.
-
+Nattevaktene har ikke patruljert inn i Southie på 12 år.
 
 ![](https://pbs.twimg.com/media/GAweVtbXYAEIl3y?format=jpg&name=900x900)
+
+Lotta & Hal våkna av hamring på døra.
+
+
+«Ah, det er DERE.»
+Hal slapp inn herr of fru Black fra to hus bortafor.
+
 
 
 ![](https://pbs.twimg.com/media/GBFa9SAXEAAcHkR?format=jpg&name=small)
 
-Lotta & I woke to
-banging on
-our door.
-«Ah, it's you.»
-I let in the
-Blacks, from
-two houses down.
+«Vår Lucy sendte oss et brev.»
+Sa herr Black.
+«Det er jo bra.» Sa Hal fru Black satt seg på gølvet og hylgrein.
+
 
 ![](https://pbs.twimg.com/media/GBKnhfOXEAAWz15?format=jpg&name=small)
 
-«Our Lucy sent us a letter.»
-Said mr Black.
-«That's good.»
-I Said. Mrs
-Black sat down
-on the floor, bawling her eyes out.
+«Se her er et vedlagt enda et brev.» Sa herr Black og Hal strakk seg etter brevet.
+
 
 ![](https://twitter.com/OlaHolstVea/status/1736797797246976216/photo/1)
 
-"Look, there's
-another letter
-attached." Said
-mrs Black and
-I reached
-for it.
+
+«Hal.» Ropte Lotta «Sett over tevannet, er du snill.»
+
+Lotta synes jeg ... , som nå.
+
+( Lotta thinks I rub some
+people the wrong way sometimes, like now. )
 
 ![](https://pbs.twimg.com/media/GByMl-qWwAAn7i2?format=jpg&name=small)
 
-"Hal!" Lotta
-shouted.
-"Put the
-kettle on,
-that's a
-dear." Lotta thinks I rub some
-people the wrong way sometimes, like now.
+
+## Utpressingsbrevet
+
+Vil dere se jenta deres? Gi oss skattekartet over web-dev øyene.
+
+Beste ønsker X.
+
+
 
 ![](https://pbs.twimg.com/media/GBu-C9aWkAAU107?format=jpg&name=small)
 
-The Ransom Note
+«Hvorfor kom herr og fru Black til Lotta & Hal med det utpressingsbrevet?» Spør du.
 
-Wanna see
-Yer gurl?
-give us the
-treasure map'o
-the web-dev
-islands.
 
-best wishes X.
 
 ![](https://pbs.twimg.com/media/GByJ45LXkAASveL?format=jpg&name=small)
 
-"Why'd the
-Blacks come to
-Lotta & me
-with that
-ransom note?"
-you ask.
+Vi er Detektiver, Lotta & jeg, Pirat Detektiver.
+
 
 ![](https://pbs.twimg.com/media/GB4Rg-iakAA9sEt?format=jpg&name=small)
 
-We are
-Detectives,
-Lotta
-& I,
-Pirate
-Detectives.
+
+
+Hal fora herr og fru Black med pepperkaker, mens DE fortalte sin tårevåte historie.
 
 ![](https://pbs.twimg.com/media/GEDo9U3WQAAXvin?format=jpg&name=900x900)
 
-Hal fed
-the Blacks
-ginger cookies
-as they
-told us
-their
-tearful tale.
-
-![](https://pbs.twimg.com/media/GEDo9U3WQAAXvin?format=jpg&name=4096x4096)
-
-How little Lucy
-went out
-to do a
-morning
-delivery of chocolate
-croissants, never
-to be seen again.
-
+Om lille Lucy som dru ut for å gjøre en morgenlevering med sjokolade croissanter og aldri blei sett igjen.
 
 ![](https://pbs.twimg.com/media/GETM3fVXQAAraIz?format=jpg&name=small)
 
+«La oss ta oss av dette.» Sa Lotta.
 
 
-
-«Leave
-it
-with
-us.»
-Lotta
-said.
 
 ![Leave-it-with-us]()
 
 
-«We'll
-find
-this Treasure Map
-of these
-so-called
-'Web-Dev'
-Islands &
+
+«Vi skal finne dette kartet over de såkalte 'Web-Dev' øyene og
+
 
 ![Web-Dev-Islands-1]()
 
 
+så setter vi opp et bytte, ikke bekymr dere.»
 
-we'll set
-up an
-exchange,
-don't
-you
-worry.»
 
 
 ![exchange-Hal]()
 
+![]()
+«.»
 
+«.»
 
-«YESS!
-We've got a
-new CASE!»
-Said Hal
-when we
-were
-alone.
+«.»
+
+«JAAA! Vi har en ny SAK!» Ropte Hal da vi var aleine.
 
 
 ![a-case-Hal]()
 
 
-«And a
-TOUGH
-one.» Said
-Lotta.
-Thoughtfully
-tapping her
-sharp right
-front tooth.
+«Og en tøff sak.» Sa Lotta tankefullt og klikket på den skarpe fortanna si.
 
 
 ![sharp-tooth-Hal]()
