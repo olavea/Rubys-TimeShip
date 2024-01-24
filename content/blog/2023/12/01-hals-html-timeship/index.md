@@ -189,7 +189,7 @@ us.»
 Lotta
 said.
 
-![Leave-it-with-us]()
+![Leave-it-with-us](https://twitter.com/OlaHolstVea/status/1749817494284747022/photo/1)
 
 
 «We'll
