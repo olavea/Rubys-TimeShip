@@ -56,13 +56,33 @@ Style ideas
 Content ideas
 
 - Family news
+  - Recycling a big bag of electronics back to ...
+  -
+  - Hip-Hop dancing class
+  - Birthdays:
+    - 👑
+    - Pirate 👸
+      - b-day singing and sketchNote, donuts (cop)
+      -
+    -
+  -
+
+- Biznizz news
+  -
+  - Gatsby plugin
+  -
+  - Birthdays:
+    - 👑 lots of devs
+    -
+    -
+
 - Pegu news
 - Cat news
 - ... news
 - Good internet news
 - Crew Mood
 - Weather
-- b-day singing and sketchNote, donuts (cop)
+-
 - write in journal
 -
 -
