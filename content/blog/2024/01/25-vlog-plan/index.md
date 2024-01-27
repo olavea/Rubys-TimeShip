@@ -4,6 +4,17 @@ author: "@OlaHolstVea"
 date: 2024-01-24
 ---
 
+- Devs, Dancing and Destruction
+- intro: Ahoy Dev, welcome aboard Cap'n Ola's Log
+- meat:
+
+-
+-
+
+- outro: See you in two weeks, stay Piraty
+
+##
+
 ## Cap'n Ola's Log
 
 Title ideas:
