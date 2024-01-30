@@ -9,7 +9,7 @@ Ahoy future podcast guest
 
 I don't know about you, but I'm a learning-believer.
 
-I'm believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques. More specifically:
+I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques. More specifically:
 
 ## Personalized Skill-Building Techniques
 
@@ -32,7 +32,6 @@ Knowing your personality type I'll be able to ask you questions that might revea
 
 - A time when you adapted a situation to fit your personality type
 changed one factor
-
 
 It is enough that the two of us know your personality type we don't have to tell the audience, if you think it to personal
 
