@@ -3,30 +3,40 @@ title: The Dev-life Pirates Podcast
 author: "@OlaHolstVea"
 date: 2024-01-03
 ---
-the cut: - Think about a Tall Tale, a way to get to know your piraty side. ARR! 💀
 
+Book a recording time  📆😃🎙️
 
+Ahoy! 🥳🏴‍☠️
+Let's do this podcast thing, it's going to be fun 🥳🏴‍☠️
 
+Book a recording time convenient to you. 📆
+Go into our Savvy Calendar:
+https://savvycal.com/raae/c6e5d5f3
+
+I'll send you a recording link. 🎙️ ⚓
 
 ## The Dev-life Pirates Podcast
 
-**What:** A podcast about dev-life at it's best, a PIRATY dev-life! 🥳🏴‍☠️
+**What is it:** A podcast to show: your dev-life can also be a PIRATE'S-life! 🥳🏴‍☠️
 
-**What is it for:** inspiration to live life more your way (= more piraty)
+**What is it for:** inspiration to live life more piraty (= more your way)
 
-**Who is it for:** a dev who wants to make the most of her/his dev-life
+**Who is it for:** devs who want to make the most of their dev-life, You know treasure hunters
 
-savvycal
+P.S.
+
+## Voluntary Preparation
+
+If you'd like to prep, you can choose what area of Dev-Life we'll focus on in our conversation. A focus on one area will help us dive deeper down with our conversation. I'm one of those devs who believe "the deeper you dive the better the treasure hunting".
+
+## So what area of Dev-Life would you like to focus on:
+
+1. dev-life at work 🔧
+2. dev-life at home 🏠
+3. dev-life at play ⛵
+4. Another dev-life area of your choosing 🥳
 
 
-## The 3 Areas of Dev-Life
-
-I'd like you to choose what area of Dev-Life we'll focus on in our conversation. Focus will help us dive deeper down with our conversation. I am one of those devs who believe deeper is better. So what area of Dev-Life would you like to focus on:
-
-1. dev-life at work
-2. dev-life at home
-3. dev-life at play
-4. Another dev-life area of your choosing (a bonus 🥳)
 
 
 ## Questions about dev-life at work
