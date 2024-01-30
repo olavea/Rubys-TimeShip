@@ -9,7 +9,7 @@ Ahoy future podcast guest
 
 I don't know about you, but I'm a learning-believer.
 
-I'm believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques. More specifically:
+I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques. More specifically:
 
 ## Personalized Skill-Building Techniques
 
