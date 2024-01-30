@@ -33,7 +33,6 @@ Knowing your personality type I'll be able to ask you questions that might revea
 - A time when you adapted a situation to fit your personality type
 changed one factor
 
-
 It is enough that the two of us know your personality type we don't have to tell the audience, if you think it to personal
 
 
