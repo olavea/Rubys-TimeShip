@@ -4,20 +4,18 @@ author: "@OlaHolstVea"
 date: 2024-01-21
 ---
 
+Ahoy podcast guest!
 
-Ahoy future podcast guest
-
-I don't know about you, but I'm a learning-believer.
-
-I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques. More specifically:
+I don't know about you, but I believe in learning. I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques. More specifically:
 
 ## Personalized Skill-Building Techniques
 
-The question "what is Personalized Skill-Building Techniques?" is best answered with another question:
+"What! Personalized skill-building techniques?" you may ask. Well let me ask you this back:
 
 Could YOUR skill-building fit your personality type better?
 
-I'd consider it a personal favor if you'd spend the x-x minutes to take this personality type test. Because my experience is that would make our conversation THAT more specific and thus THAT more useful to our audience.
+
+If you take this personality type test, our audience will find our conversation THAT more useful. Because I've seen the test make conversations more specific and thus we can dive deeper down. And come up with some experiments to see if YOUR skill-building could fit your personality type better.
 
 []()
 ## Personality Type and Learning Style
