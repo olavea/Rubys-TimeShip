@@ -6,21 +6,19 @@ date: 2024-01-21
 
 Ahoy podcast guest!
 
-With your chosen area of dev-life
+Whichever area of dev-life you chose for us to focus on there is one common skill I belive is key.
 
-I don't know about you, but I believe in learning. I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques.
-
-dev-life
+I don't know about you, but I believe in learning. And I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques.
 
 More specifically:
 
 ## Personalized Skill-Building Techniques
 
-"What! Personalized skill-building techniques?" you may ask. Well let me ask you this back:
+"What! Personalized skill-building techniques?" you may ask. Well let me ask you this follow-up question:
 
 Could YOUR skill-building fit your personality type better?
 
-One way to find out is if you take a personality type test and we compare the result with your skill-building techniques
+One way to find out is if you take a personality type test and we compare your result with your skill-building techniques.
 
 Our audience will find our conversation THAT more useful if we do a comparison. At least that's what I've seen in past conversations.I've seen the test make a conversation more specific and thus we can dive deeper down. And maybe come up with some experiments to see if your skill-building COULD ould fit your personality type better.
 
@@ -47,6 +45,14 @@ A good step one is to find what personality type you are. There are several test
 
 
 My life's mission is to help devs like you fit your skill-building to YOU and thus empower you to live your dev-life Your Own Way. You know, getting more out of life kinda thing. Or a more piraty dev-life.
+
+
+
+
+## Treasure Hunting for Skill-Building Insights
+
+My way of treasure hunting for skill-building insights is to listen to devs like you tell me about fav personalization techniques. And leading the witness with questions stolen from bleeding edge practice practicioners and leading learning researchers.
+
 
 
 
