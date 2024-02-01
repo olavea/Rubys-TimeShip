@@ -1,12 +1,8 @@
----
-title: Personalization and Skill-Building
-author: "@OlaHolstVea"
-date: 2024-01-21
----
+Subj:
 
 Ahoy podcast guest!
 
-Whichever area of dev-life you chose for us to focus on there is one common skill I belive is key.
+Whichever area of dev-life you chose for us to focus on there is one common skill I believe is key.
 
 I don't know about you, but I believe in learning. And I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques.
 
@@ -18,11 +14,16 @@ More specifically:
 
 Could YOUR skill-building fit your personality type better?
 
+
+## What is Your personality Type?
+
 One way to find out is if you take a personality type test and we compare your result with your skill-building techniques.
 
-Our audience will find our conversation THAT more useful if we do a comparison. At least that's what I've seen in past conversations.I've seen the test make a conversation more specific and thus we can dive deeper down. And maybe come up with some experiments to see if your skill-building COULD ould fit your personality type better.
+[THE TYPEFINDER® PERSONALITY TEST](https://www.truity.com/test/type-finder-personality-test-new?ver=control)
 
-[]()
+Our audience will find our conversation THAT more useful if we do a comparison. At least that's what I've seen in past conversations. I've seen the test make a conversation more specific and thus we can dive deeper down. And maybe come up with some experiments to see if your skill-building COULD fit your personality type better.
+
+
 
 ## Personality Type and Learning Style
 
