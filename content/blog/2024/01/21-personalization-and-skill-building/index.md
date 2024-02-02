@@ -4,6 +4,8 @@ author: "@OlaHolstVea"
 date: 2024-01-21
 ---
 
+# Personalization and Skill-Building
+
 Ahoy dev!
 
 I don't know about you, but I believe in learning. And I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques.
