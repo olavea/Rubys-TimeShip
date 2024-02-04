@@ -2,7 +2,7 @@ Subj:
 
 Ahoy podcast guest!
 
-Whichever area of dev-life you chose for us to focus on there is one common skill I believe is key.
+Whichever area of dev-life you picked for us to focus on there is one thing I believe is key.
 
 I don't know about you, but I believe in learning. And I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques.
 
