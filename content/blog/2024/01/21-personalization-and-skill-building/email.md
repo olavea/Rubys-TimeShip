@@ -2,26 +2,34 @@ Subj:
 
 Ahoy podcast guest!
 
-Whichever area of dev-life you picked for us to focus on there is one thing I believe is key.
+In the three areas of dev-life there is ONE thing I believe is key.
 
-I don't know about you, but I believe in learning. And I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques.
+A key kind of learning.
+
+I believe the learning we devs best can share with each other isn't tech tricks, but skill-building techniques. The key to a more piraty dev-life is learning skill-building techniques.
 
 More specifically:
 
-## Personalized Skill-Building Techniques
+## Learning Personalized Skill-Building Techniques
 
-"What! Personalized skill-building techniques?" you may ask. Well let me ask you this follow-up question:
+"What! Personalized skill-building techniques?" You may ask. Yes and let me ask you this follow up question:
 
-Could YOUR skill-building fit your personality type better?
+## Is there a way to see how YOUR skill-building could better fit your personality type?
 
+Yes maybe, with these two steps:
 
-## What is Your personality Type?
+1. You take a personality type test.
+2. We compare your personality type results with your skill-building techniques.
 
-One way to find out is if you take a personality type test and we compare your result with your skill-building techniques.
-
+The typefinder personality test is free and only takes a few minutes. And it's optional, more about that soon.
 [THE TYPEFINDER® PERSONALITY TEST](https://www.truity.com/test/type-finder-personality-test-new?ver=control)
 
-Our audience will find our conversation THAT more useful if we do a comparison. At least that's what I've seen in past conversations. I've seen the test make a conversation more specific and thus we can dive deeper down. And maybe come up with some experiments to see if your skill-building COULD fit your personality type better.
+## The personality type test is optional, but
+
+Our audience will find our conversation THAT more useful if you take the test. At least that's what I've seen in past conversations. I've seen the test make the conversation more specific and thus we can dive deeper down. And maybe come up with some experiments to see if your skill-building COULD fit your personality type better.
+
+It is enough that the two of us know your personality type we don't need to tell the audience. And it is enough that the two of us know your personality type we don't need to tell the audience. You KNOWING your personality type makes the difference, not WHICH personality type you have.
+
 
 
 

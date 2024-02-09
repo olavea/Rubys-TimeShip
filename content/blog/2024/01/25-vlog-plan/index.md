@@ -15,32 +15,34 @@ date: 2024-01-24
 
 ##
 
-## Cap'n Ola's Log
+## Cap'n Ola's VLog
 
 Title ideas:
-- Cap's Log
+- Cap's VLog
 - Ola's Cap's Log
 -
 -
 
 
-## Our Piraty ... Dev-life
+## Dev-life Pirates
 
 Tagline ideas
-- Should I have?
+-
 -
 -
 
 ##
 
 Style ideas
+- Text at start
 - Look
 - Feel: unpolished
 - Quality: good
 - Structure: intro, meat, outro
 - Who are good role models? In
+- [Alessia framer and webflow](https://twitter.com/ale_sannazzaro)
 - Fireship @Fireship and Jeff Delaney [](https://twitter.com/JeffDelaney23)
-‧
+
 - @Fireship on youtube [](https://www.youtube.com/@Fireship/videos) Gateway drug for devs
 -Tiff In Tech on youtube [](https://www.youtube.com/@TiffInTech/videos)  @TiffInTech 343K subscribers 593 videos Tiffany is a software developer who started her career in the modeling & fashion industry.
 - Dear Mandy [](https://www.youtube.com/channel/UCop1ipytNHIytvGX6ZVcX7w/videos)
