@@ -18,5 +18,5 @@ His fingers went click-click-clickety-click on the keyboard.
 "Thanks man." I said and walked home.
 
 P.S.
-Yo! I saw one of your bboks at the library yesterday. Dog eared, coffee stained pages. Somebody or somebodies have really READ with gusto
+Yo! I saw one of your bboks at the library yesterday. Dog eared, coffee stained pages. Somebody or somebodies have really READ with gusto.
 💪🥳🏴‍☠️
