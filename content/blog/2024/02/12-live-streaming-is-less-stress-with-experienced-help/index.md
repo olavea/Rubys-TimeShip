@@ -1,12 +1,12 @@
 ---
-title:  Live streaming is less stress with an experienced dev to help
+title: Live streaming is less stress with an experienced dev to help
 author: "@OlaHolstVea"
 date: 2024-02-12
 ---
 
 
 
-# Live streaming is less stress with experienced help
+# Live streaming is less stress with an experienced dev to help
 
 ## Are your devs STUCK with their blog-posting? 🤔
 
