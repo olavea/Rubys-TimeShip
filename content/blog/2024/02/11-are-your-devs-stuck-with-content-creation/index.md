@@ -23,6 +23,6 @@ if your devs get helped with EVERYTHING by a more experienced dev they trust.
 
 ## Let MY team do all the "hard" stuff so that YOUR dev only has to show up and talk to me about everyday work stuff while I live code on with YOUR tool.
 
-Version 1. Is here:
-https://docs.google.com/document/d/168rdu5SVA3cQp2bP6qiUiJkzkjEbKGie45l2qBSJ2Po/edit?usp=sharing
 
+Version 2. Is here:
+https://docs.google.com/document/d/1KrhTOxn74nGdfGvcCfaH7N2hLzxN3w6kDGDChIZ735g/edit?usp=sharing
