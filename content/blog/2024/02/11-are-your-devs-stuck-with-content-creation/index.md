@@ -15,6 +15,9 @@ Your dev team’s content creation is stuck. Writing a useful technical blog-pos
 
 ## Imagine your dev team publishing REGULARLY & with visible smiles
 
+Imagine this – Imagine your dev’s UNSTUCK. Imagine your users giving feedback on how useful the technical content is in their job. Imagine knowing exactly how to support your devs to create content with a visible smile.
+
+
 Playfulness with coding has been our strength for over ten years.
 
 ## Live streaming is fun with Queen Raae by your side 😃
